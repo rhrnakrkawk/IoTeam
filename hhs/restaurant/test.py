@@ -48,12 +48,12 @@ def order(id: int, people: int, menu: list):
         else:
             if name in need_ingredient_list.keys():
                 need_list = need_ingredient_list[name]
-                if len(need_list) > 0:
-                    for ingredient,need_stock in need_list.items():
-                        if stock_list[ingredient] < need_stock:
-                            return f"{ingredient}의 재고가 부족합니다."
-                        else:
-                            stock_list[ingredient] -= need_stock
+                for ingredient,need_stock in need_list.items():
+                    if stock_list[ingredient] < need_stock:
+                        return f"{ingredient}의 재고가 부족합니다."
+                    else:
+                        stock_list[ingredient] -= need_stock
+                
     prices = [menu_list[i] for i in range(1, len(menu_list), 3)]
     amounts = [menu_list[i] for i in range(2, len(menu_list), 3)]
     
