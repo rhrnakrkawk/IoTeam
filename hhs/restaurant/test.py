@@ -45,13 +45,26 @@ def order(id: int, people: int, menu: list):
     for name in names:
         if name not in food_list:
             return f"{name}은 메뉴에 없습니다."
-        
+        else:
+            if name in need_ingredient_list.keys():
+                need_list = need_ingredient_list[name]
+                if len(need_list) > 0:
+                    for ingredient,need_stock in need_list.items():
+                        if stock_list[ingredient] < need_stock:
+                            return f"{ingredient}의 재고가 부족합니다."
+                        else:
+                            stock_list[ingredient] -= need_stock
     prices = [menu_list[i] for i in range(1, len(menu_list), 3)]
     amounts = [menu_list[i] for i in range(2, len(menu_list), 3)]
     
     total_price = sum([int(prices[i]) * int(amounts[i]) for i in range(len(prices))])
     total_sales += total_price
     
+    order_list[id]  ={
+        "num_people": num_people,
+        "menu": menu_list,
+        "total_price": total_price,
+    }
     menu_html = ""
     for i in range(len(names)):
         menu_html += f"""
@@ -61,41 +74,15 @@ def order(id: int, people: int, menu: list):
             <td>{amounts[i]}</td>
         </tr>
         """
-    order_list[id]  ={
-        "num_people": num_people,
-        "menu": menu_list,
-        "total_price": total_price,
-    }
     
-    return f"""
-    <html>
-        <head>
-            <title>주문서</title>
-            
-        </head>
-        <body>
-            <h1>주문서</h1>
-            <p>주문번호: {order_id}</p>
-            <p>사람 수: {num_people}</p>
-            <p>주문내역</p>
-            <table>
-                <tr>
-                    <th>메뉴</th>
-                    <th>가격</th>
-                    <th>수량</th>
-                </tr>
-                {menu_html}
-            </table>
-            <p>총 가격: {total_price}</p>
-        </body>
-    </html>
-    """
+    
+    return f""""""
 
 # 주문 내역 확인하기
 @app.get("/order")
 def order():
     if len(order_list) == 0:
-        return "주문 내역이 없습니다."
+        return "No Order."
     else:
         return order_list
 
@@ -112,14 +99,14 @@ def stock(name:str,amount:int):
     return {
             "name": name,
             "amount": stock_list[name],
-            "msg": "재고가 추가되었습니다."
+            "msg": "Success"
         }
 
 # 재고 확인하기
 @app.get("/stock")
 def stock():
     if len(stock_list) == 0:
-        return "재고가 없습니다."
+        return "No Stock"
     else:
         return stock_list
 
@@ -158,6 +145,6 @@ def sales():
 @app.get("/call")
 def call(content:str, table:int,amount:int=0):
     if amount ==0:
-        return f"{table}번 테이블에서 {content}를 호출했습니다."
+        return f"{table}번 테이블에 직원을 호출했습니다."
     else:
         return f"{table}번 테이블에서 {content} {amount}개를 호출했습니다."
