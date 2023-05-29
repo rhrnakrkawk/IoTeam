@@ -153,3 +153,11 @@ def food(name:str,price:int,need_ingredient:list):
 @app.get("/sales")
 def sales():
     return total_sales
+
+# 직원 호출
+@app.get("/call")
+def call(content:str, table:int,amount:int=0):
+    if amount ==0:
+        return f"{table}번 테이블에서 {content}를 호출했습니다."
+    else:
+        return f"{table}번 테이블에서 {content} {amount}개를 호출했습니다."
