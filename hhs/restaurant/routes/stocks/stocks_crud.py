@@ -1,11 +1,12 @@
 from sqlalchemy.orm import Session
-from routes.stocks.stocks_schema import StocksCreate,StockUpdate
+from routes.stocks.stocks_schema import StocksCreate,StocksUpdate
 from models import Stocks
 
 # 재고 전체 리스트 조회
-def get_stocks_list(db:Session, skip:int = 0, limit:int = 10):
-    stocks_list = db.query(Stocks).offset(skip).limit(limit).all()
+def get_stocks_list(db:Session):
+    stocks_list = db.query(Stocks).all()
     total = db.query(Stocks).count()
+    
     return total, stocks_list
 
 # 재고 상세 조회
@@ -18,7 +19,7 @@ def create_stocks(db:Session, stock_create:StocksCreate):
     db.add(db_stock)
     db.commit()
     
-def update_stocks(db:Session,stock:Stocks, stock_update:StockUpdate):
+def update_stocks(db:Session,stock:Stocks, stock_update:StocksUpdate):
     stock.name = stock_update.name
     stock.price = stock_update.price
     stock.amount = stock_update.amount

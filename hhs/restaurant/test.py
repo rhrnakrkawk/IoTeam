@@ -2,6 +2,8 @@ from fastapi import FastAPI
 from starlette.requests import Request
 from starlette.middleware.cors import CORSMiddleware
 
+import json 
+import pandas as pd
 origins=[
     "http://localhost:3000",
     "http://localhost:5173",

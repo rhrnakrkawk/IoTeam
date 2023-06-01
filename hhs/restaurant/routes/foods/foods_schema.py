@@ -4,7 +4,6 @@ from typing import List
 class Food(BaseModel):
     name: str
     price: int
-    ingredients_id: int = 0
     
     class Config:
         orm_mode = True
@@ -12,8 +11,8 @@ class Food(BaseModel):
 class FoodCreate(BaseModel):
     name: str
     price: int
-    ingredients :dict
-    
+    # 소모 재료
+    # 재료 이름 : 재료 소모량
     @validator('name')
     def validate_name(cls, v):
         if not v or not v.strip():
@@ -32,7 +31,6 @@ class FoodList(BaseModel):
     
 class FoodUpdate(FoodCreate):
     food_id: int
-    ingredients_flag: bool = False
 
 class FoodDelete(BaseModel):
     food_id: int
