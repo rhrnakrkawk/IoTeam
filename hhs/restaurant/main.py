@@ -2,6 +2,7 @@ import fastapi
 from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import FileResponse
 from starlette.staticfiles import StaticFiles
+
 from routes.foods import foods_router
 from routes.receipts import receipts_router
 from routes.orders import orders_router
