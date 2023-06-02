@@ -2,7 +2,7 @@ import fastapi
 from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import FileResponse
 from starlette.staticfiles import StaticFiles
-
+from routes.admin import admin_router
 from routes.foods import foods_router
 from routes.receipts import receipts_router
 from routes.orders import orders_router
@@ -35,9 +35,9 @@ app.include_router(receipts_router.router)
 app.include_router(orders_router.router)
 app.include_router(stocks_router.router)
 app.include_router(tables_router.router)
-
+app.include_router(admin_router.router)
 app.mount("/assets", StaticFiles(directory='frontend_restaurant/dist/assets'))
 
-@app.get("/")
+@app.get("/",summary="Homepage",tags=["Home"])
 def home():
     return FileResponse('frontend_restaurant/dist/index.html')

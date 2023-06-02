@@ -1,6 +1,6 @@
 from pydantic import BaseModel, validator
 from typing import List
-
+from datetime import datetime
 class Orders(BaseModel):
     id: int
     
@@ -11,7 +11,7 @@ class Orders(BaseModel):
     
     call:bool=False
     content:str=None
-
+    order_time:datetime
     class config:
         orm_mode = True
         
@@ -20,7 +20,7 @@ class OrdersCreate(BaseModel):
     
     table_id:int
     menus:List[dict]
-    
+
     @validator('menus')
     def quantity_must_be_positive(cls, value):
         if not value:

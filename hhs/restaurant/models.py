@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, ForeignKey,Boolean
+from sqlalchemy import Column, Integer, String, ForeignKey,Boolean,DateTime
 from sqlalchemy.orm import relationship
 from database import Base
 
@@ -10,7 +10,7 @@ class Foods(Base):
     name = Column(String(255), nullable=False)
     price = Column(Integer, nullable=False)
     populate = Column(Integer, nullable=False)
-    
+    pick = Column(Boolean, nullable=False, default=False)
 # 음식을 만들 때 필요한 재료의 정보 저장 테이블
 class Receipts(Base):
     __tablename__ = "receipts"
@@ -40,6 +40,11 @@ class Tables(Base):
     # 테이블에 앉아있는 손님 수
     customer_count = Column(Integer, nullable=False)
     total_price = Column(Integer, nullable=False, default=0)
+    
+    # 계산 여부 확인
+    # TODO: 계산 여부 확인
+    
+    is_paid = Column(Boolean, nullable=False, default=False)
 
 
 class Orders(Base):
@@ -57,3 +62,5 @@ class Orders(Base):
     # 호출
     call = Column(Boolean, nullable=False, default=False)
     content = Column(String(255), nullable=True)
+    # TODO: 주문한 시간
+    order_time = Column(DateTime, nullable=False)
