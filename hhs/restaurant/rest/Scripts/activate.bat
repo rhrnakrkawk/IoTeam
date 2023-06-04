@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Users\SEC\OneDrive\바탕 화면\HHS\heesane\Backend\BrainWheel_BE\data\restaurant\rest
+set VIRTUAL_ENV=C:\Users\SEC\OneDrive\바탕 화면\HHS\IoTeam\hhs\restaurant\rest
 
 if not defined PROMPT set PROMPT=$P$G
 
