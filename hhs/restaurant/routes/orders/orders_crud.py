@@ -55,8 +55,8 @@ def create_order(db: Session, order_create: orders_schema.OrdersCreate):
 
         # 주문 생성
         order_time = datetime.now()
-        formatted_order_time = order_time.strftime("%Y-%m-%d %H:%M:%S")
-        db_order = Orders(table_id=table_id, menu=food_name, amount=amount, order_time=formatted_order_time)
+        
+        db_order = Orders(table_id=table_id, menu=food_name, amount=amount, order_time=order_time)
         db.add(db_order)
         
         # 음식 선호도 + 1

@@ -41,5 +41,4 @@ class StocksUpdate(StocksCreate):
     stock_id : int
 
 class StocksDelete(BaseModel):
-    stock_id : int
-    
+    stock_id:int

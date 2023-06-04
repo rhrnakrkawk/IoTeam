@@ -4,13 +4,15 @@ from typing import List
 class Food(BaseModel):
     name: str
     price: int
-    
+    pick:bool
+    populate:int
     class Config:
         orm_mode = True
         
 class FoodCreate(BaseModel):
     name: str
     price: int
+    pick:bool
     # 소모 재료
     # 재료 이름 : 재료 소모량
     @validator('name')

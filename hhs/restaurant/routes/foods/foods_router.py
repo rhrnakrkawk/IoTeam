@@ -21,7 +21,7 @@ def get_food_list(db: Session = Depends(get_db)):
             'food_list': db_result
         }
 
-@router.get("/detail/{food_name}", response_model=foods_schema.Food,summary="특정 음식 상세 조회")
+@router.get("/detail/{food_name}", response_model=foods_schema.Food,summary="특정 음식 상세 조회(이름으로 호출)")
 def get_food(food_name:str,db:Session=Depends(get_db)):
     db_result = foods_crud.get_food(db,food_name=food_name)
     if  db_result is None:

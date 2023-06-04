@@ -20,6 +20,7 @@ def create_food(food_create: foods_schema.FoodCreate,
     # 음식 종류만큼 ID 부여
     db_food = Foods(name=food_create.name,
                    price=food_create.price,
+                   pick=food_create.pick,
                    )
     db.add(db_food)
     db.commit()
@@ -29,6 +30,7 @@ def update_food(db:Session, food_update: foods_schema.FoodUpdate):
     db_food = db.query(Foods).get(food_update.food_id)
     db_food.name = food_update.name
     db_food.price = food_update.price
+    db_food.pick = food_update.pick
     db.add(db_food)
     db.commit()
     

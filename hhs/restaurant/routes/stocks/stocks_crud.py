@@ -19,11 +19,13 @@ def create_stocks(db:Session, stock_create:StocksCreate):
     db.add(db_stock)
     db.commit()
     
-def update_stocks(db:Session,stock:Stocks, stock_update:StocksUpdate):
-    stock.name = stock_update.name
-    stock.price = stock_update.price
-    stock.amount = stock_update.amount
-    db.add(stock)
+def update_stocks(db:Session, prev_stock:Stocks,stock_update:StocksUpdate):
+    
+    prev_stock.name = stock_update.name
+    prev_stock.price = stock_update.price
+    prev_stock.amount = stock_update.amount
+    
+    db.add(prev_stock)
     db.commit()
     
 def delete_stocks(db:Session, stock:Stocks):

@@ -9,7 +9,9 @@ class Foods(Base):
     id = Column(Integer, primary_key=True, index=True,autoincrement=True)
     name = Column(String(255), nullable=False)
     price = Column(Integer, nullable=False)
-    populate = Column(Integer, nullable=False)
+    
+    #TODO:
+    populate = Column(Integer, nullable=False,default=0)
     pick = Column(Boolean, nullable=False, default=False)
 # 음식을 만들 때 필요한 재료의 정보 저장 테이블
 class Receipts(Base):
@@ -44,7 +46,7 @@ class Tables(Base):
     # 계산 여부 확인
     # TODO: 계산 여부 확인
     
-    is_paid = Column(Boolean, nullable=False, default=False)
+    # is_paid = Column(Boolean, nullable=False, default=False)
 
 
 class Orders(Base):
@@ -63,4 +65,4 @@ class Orders(Base):
     call = Column(Boolean, nullable=False, default=False)
     content = Column(String(255), nullable=True)
     # TODO: 주문한 시간
-    order_time = Column(DateTime, nullable=False)
+    # order_time = Column(DateTime, nullable=False)
