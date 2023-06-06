@@ -1,4 +1,6 @@
-# Micro Service For Restaurant / IoT Project
+# FastAPI Server For Restaurant / IoT Project
+
+테이블에 배치된 Arduino를 통한 간편 주문 시스템을 위한 Backend API Server
 
 
 ## __[Admins Panel]__
