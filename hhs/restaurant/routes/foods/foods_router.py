@@ -7,7 +7,7 @@ from routes.foods import foods_crud, foods_schema
 
 router = APIRouter(
     prefix="/api/food",
-    tags=["Food"]
+    tags=["Foods"]
 )
 
 @router.get("/list", response_model=foods_schema.FoodList,summary="음식 목록 전체 조회")

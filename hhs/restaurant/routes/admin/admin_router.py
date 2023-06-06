@@ -4,7 +4,7 @@ from database import get_db
 from models import Foods, Receipts, Orders, Stocks, Tables
 router = APIRouter(
     prefix="/api/admin",
-    tags=["admin"],
+    tags=["Admin"],
 )
 
 # 인기 메뉴 조회

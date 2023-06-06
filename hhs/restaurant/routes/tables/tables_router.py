@@ -7,7 +7,7 @@ from routes.tables import tables_crud, tables_schema
 
 router = APIRouter(
     prefix="/api/table",
-    tags=["Table"]
+    tags=["Tables"]
 )
 
 @router.get("/list", response_model=tables_schema.TableList,summary="테이블 목록 전체 조회")
