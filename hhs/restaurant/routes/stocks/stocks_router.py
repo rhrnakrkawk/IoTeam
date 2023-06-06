@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, Depends, HTTPException,Response
 from sqlalchemy.orm import Session
 from starlette import status
 from database import get_db
@@ -32,7 +32,7 @@ def get_stock(stock_name:str,db:Session = Depends(get_db)):
 def create_stocks(_stock_create:stocks_schema.StocksCreate,
                   db:Session = Depends(get_db)):
     stocks_crud.create_stocks(db=db,stock_create=_stock_create)
-    
+    return Response(status_code=status.HTTP_201_CREATED)
 @router.put("/update",status_code=status.HTTP_204_NO_CONTENT,summary="재고 수정")
 def update_stocks(_stock_update:stocks_schema.StocksUpdate,db:Session = Depends(get_db)):
         
@@ -43,6 +43,7 @@ def update_stocks(_stock_update:stocks_schema.StocksUpdate,db:Session = Depends(
                             detail="데이터를 찾을수 없습니다.")
     
     stocks_crud.update_stocks(db=db,prev_stock=db_stock,stock_update=_stock_update)
+    return Response(status_code=status.HTTP_204_NO_CONTENT)
 
 @router.delete("/delete",status_code=status.HTTP_204_NO_CONTENT,summary="재고 삭제")
 def delete_stocks(_stock_delete:int,db:Session=Depends(get_db)):
@@ -54,4 +55,4 @@ def delete_stocks(_stock_delete:int,db:Session=Depends(get_db)):
                             detail="데이터를 찾을수 없습니다.")
     
     stocks_crud.delete_stocks(db,stock=db_stock)
-    
+    return Response(status_code=status.HTTP_204_NO_CONTENT)

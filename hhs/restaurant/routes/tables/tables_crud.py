@@ -12,7 +12,7 @@ def get_table_list(db:Session):
     return total,table_list
 
 def get_table(db:Session, table_id:int):
-    table = db.query(Tables).filter(table_id==table_id).first()
+    table = db.query(Tables).filter(Tables.table_id==table_id).first()
     return table
 
 def create_table(db:Session, table_create:tables_schema.TableCreate):
@@ -26,7 +26,7 @@ def create_table(db:Session, table_create:tables_schema.TableCreate):
     db.commit()
     
 def update_table(db:Session, table_id:int,table_update:tables_schema.TableUpdate):
-    db_table = db.query(Tables).filter(table_id==table_id).first()
+    db_table = db.query(Tables).filter(Tables.table_id==table_id).first()
     
     db_table.table_id = table_update.table_id
     db_table.customer_count = table_update.customer_count
@@ -36,13 +36,13 @@ def update_table(db:Session, table_id:int,table_update:tables_schema.TableUpdate
         
 
 def delete_table(db:Session,table_id:int):
-    db_table = db.query(Tables).filter(table_id == table_id)
+    db_table = db.query(Tables).filter(Tables.table_id == table_id)
     db.delete(db_table)
     db.commit()
     
 def pay_table(db:Session,table_id:int):
-    db_table = db.query(Tables).filter(table_id == table_id).first()
-    if db_table.is_paid == False:
+    db_table = db.query(Tables).filter(Tables.table_id == table_id).first()
+    if db_table.is_paid == False or db_table.is_paid == 0:
         db_table.is_paid = True
         db.add(db_table)
         db.commit()

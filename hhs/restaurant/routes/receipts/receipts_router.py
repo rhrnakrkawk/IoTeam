@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Depends
+from fastapi import APIRouter, Depends,Response
 from sqlalchemy.orm import Session
 from starlette import status
 
@@ -42,9 +42,10 @@ def receipts_detail(receipts_name: str, db: Session = Depends(get_db)):
 def receipts_create(_receipts_create: receipts_schema.ReceiptsCreate,
                     db: Session = Depends(get_db)):
     receipts_crud.create_receipts(db=db, receipts_create=_receipts_create)
+    return Response(status_code=status.HTTP_201_CREATED)
     
 @router.delete("/delete", status_code=status.HTTP_204_NO_CONTENT,summary="레시피 삭제")
 def receipts_delete(_receipts_delete:int,
                     db: Session = Depends(get_db)):
     receipts_crud.delete_receipts(db=db, receipts_id=_receipts_delete)
-    
+    return Response(status_code=status.HTTP_204_NO_CONTENT)

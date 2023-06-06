@@ -51,7 +51,8 @@ def set_pick_menu(db:Session=Depends(get_db), food_name:str=None):
     
     db_food.pick = True
     db.commit()
-    return {"msg":"사장의 PICK 메뉴로 추가되었습니다."}
+    return "사장의 PICK 메뉴로 추가되었습니다."
+
 # 사장의 PICK 메뉴 취소
 @router.delete("/pick",summary="사장의 PICK 메뉴 취소")
 def delete_pick_menu(db:Session=Depends(get_db), food_name:str=None):
@@ -62,7 +63,7 @@ def delete_pick_menu(db:Session=Depends(get_db), food_name:str=None):
     
     db_food.pick = False
     db.commit()
-    return {"msg":"사장의 PICK 메뉴에서 삭제되었습니다."}
+    return "사장의 PICK 메뉴에서 삭제되었습니다."
 
 # 일간 매출 확인
 @router.get("/sales/daily", summary="일간 매출 확인")

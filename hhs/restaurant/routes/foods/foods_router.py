@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Depends,HTTPException
+from fastapi import APIRouter, Depends,HTTPException,Response
 from sqlalchemy.orm import Session
 from starlette import status
 
@@ -33,7 +33,8 @@ def get_food(food_name:str,db:Session=Depends(get_db)):
 @router.post("/create", status_code=status.HTTP_204_NO_CONTENT,summary="음식 추가")
 def create_food(food_create: foods_schema.FoodCreate,db: Session = Depends(get_db)):
     foods_crud.create_food(db=db, food_create=food_create)
-    
+    return Response(status_code=status.HTTP_201_CREATED)
+
 @router.put("/update", status_code=status.HTTP_204_NO_CONTENT,summary="음식 수정")
 def update_food(food_update: foods_schema.FoodUpdate, db: Session = Depends(get_db)):
     db_food = foods_crud.get_food(db, food_id=food_update)
@@ -42,7 +43,8 @@ def update_food(food_update: foods_schema.FoodUpdate, db: Session = Depends(get_
         raise HTTPException(status_code=404, detail="Food not found")
     
     foods_crud.update_food(db=db, food_update=food_update)
-
+    return Response(status_code=status.HTTP_204_NO_CONTENT)
+    
 @router.delete("/delete", status_code=status.HTTP_204_NO_CONTENT,summary="음식 삭제")
 def delete_food(food_name: str, db: Session = Depends(get_db)):
     db_food = foods_crud.get_food(db, food_name=food_name)
@@ -51,3 +53,4 @@ def delete_food(food_name: str, db: Session = Depends(get_db)):
         raise HTTPException(status_code=404, detail="Food not found")
     
     foods_crud.delete_food(db, food_name=food_name)
+    return Response(status_code=status.HTTP_204_NO_CONTENT)

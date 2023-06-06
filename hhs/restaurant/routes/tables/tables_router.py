@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Depends
+from fastapi import APIRouter, Depends,Response
 from sqlalchemy.orm import Session
 from starlette import status
 
@@ -28,16 +28,18 @@ def table_detail(table_id: int, db: Session = Depends(get_db)):
 def table_create(_table_create: tables_schema.TableCreate,
                 db: Session = Depends(get_db)):
     tables_crud.create_table(db=db, table_create=_table_create)
-    
+    return Response(status_code=status.HTTP_201_CREATED)
 
 @router.put("/update", status_code=status.HTTP_204_NO_CONTENT,summary="테이블 수정")
 def table_update(table_id:int,_table_update:tables_schema.TableUpdate,
                 db: Session = Depends(get_db)):
     tables_crud.update_table(db=db, table_id=table_id, table_update=_table_update)
-    
+    return Response(status_code=status.HTTP_204_NO_CONTENT)
+
 @router.delete("/delete", status_code=status.HTTP_204_NO_CONTENT,summary="테이블 삭제")
 def table_delete(table_id: int, db: Session = Depends(get_db)):
     tables_crud.delete_table(db=db, table_id=table_id)
+    return Response(status_code=status.HTTP_204_NO_CONTENT)
 
 @router.get("/pay/{table_id}",summary="결제")
 def table_pay(table_id: int, db: Session = Depends(get_db)):

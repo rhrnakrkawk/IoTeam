@@ -30,7 +30,7 @@ def create_food(food_create: foods_schema.FoodCreate,
     
 # 음식 정보 수정
 def update_food(db:Session, food_update: foods_schema.FoodUpdate):
-    db_food = db.query(Foods).get(food_update.food_id)
+    db_food = db.query(Foods).get(food_update.food_id).first()
     db_food.name = food_update.name
     db_food.price = food_update.price
     db.add(db_food)
@@ -38,7 +38,7 @@ def update_food(db:Session, food_update: foods_schema.FoodUpdate):
     
 # 음식 정보 삭제
 def delete_food(db:Session, food_name:str):
-    db_food = db.query(Foods).get(Foods.name==food_name)
+    db_food = db.query(Foods).filter(Foods.name==food_name).first()
     db.delete(db_food)
     db.commit()
     

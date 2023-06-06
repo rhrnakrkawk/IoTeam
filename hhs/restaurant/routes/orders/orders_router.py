@@ -1,5 +1,6 @@
-from fastapi import APIRouter, Depends, HTTPException, status
+from fastapi import APIRouter, Depends, HTTPException,Response
 from sqlalchemy.orm import Session
+from starlette import status
 from database import get_db
 from routes.orders import orders_crud, orders_schema
 
@@ -30,10 +31,12 @@ def get_orders_detail(table_id:int,db:Session=Depends(get_db)):
 @router.post("/create",summary="주문 생성",status_code=status.HTTP_204_NO_CONTENT)
 def create_orders(order_create:orders_schema.OrdersCreate,db:Session=Depends(get_db)):
     orders_crud.create_order(db=db,order_create=order_create)
+    return Response(status_code=status.HTTP_201_CREATED)
 
 @router.post("/call",summary="호출하기",status_code=status.HTTP_204_NO_CONTENT)
 def call_manager(call:orders_schema.Call,db:Session=Depends(get_db)):
     orders_crud.call_order(db,call=call)
+    return Response(status_code=status.HTTP_201_CREATED)
 
 @router.put("/update",summary="주문 수정",status_code=status.HTTP_204_NO_CONTENT)
 def update_order(order_update:orders_schema.OrdersUpdate,db:Session=Depends(get_db)):
@@ -44,7 +47,7 @@ def update_order(order_update:orders_schema.OrdersUpdate,db:Session=Depends(get_
         raise HTTPException(status_code=404,detail="Order not found")
     
     orders_crud.update_order(db=db,order_update=order_update)
-    
+    return Response(status_code=status.HTTP_204_NO_CONTENT)
     
 @router.delete("/delete",summary="주문 삭제",status_code=status.HTTP_204_NO_CONTENT)
 def delete_order(order_delete:orders_schema.OrdersDelete,db:Session=Depends(get_db)):
@@ -55,6 +58,7 @@ def delete_order(order_delete:orders_schema.OrdersDelete,db:Session=Depends(get_
         raise HTTPException(status_code=404,detail="Order not found")
     
     orders_crud.delete_order(db=db,order_delete=order_delete)
+    return Response(status_code=status.HTTP_204_NO_CONTENT)
 
 @router.get("/call/list",summary="호출 목록 조회")
 def get_call_list(db:Session=Depends(get_db)):
