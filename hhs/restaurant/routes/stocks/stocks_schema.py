@@ -2,6 +2,7 @@ from pydantic import BaseModel, validator
 from typing import List
 
 class Stocks(BaseModel):
+    id:int
     name:str
     price:int
     amount:int
@@ -38,7 +39,4 @@ class StocksList(BaseModel):
     stocks_list: List[Stocks] = []
     
 class StocksUpdate(StocksCreate):
-    stock_id : int
-
-class StocksDelete(BaseModel):
-    stock_id:int
+    stock_name : str

@@ -2,17 +2,18 @@ from pydantic import BaseModel, validator
 from typing import List
 
 class Food(BaseModel):
+    id:int
     name: str
     price: int
-    pick:bool
-    populate:int
+    pick:bool=False
+    populate:int=0
     class Config:
         orm_mode = True
         
 class FoodCreate(BaseModel):
     name: str
     price: int
-    pick:bool
+    pick:bool=False
     # 소모 재료
     # 재료 이름 : 재료 소모량
     @validator('name')

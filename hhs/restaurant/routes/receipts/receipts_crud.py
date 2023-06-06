@@ -25,6 +25,8 @@ def create_receipts(db:Session, receipts_create:receipts_schema.ReceiptsCreate):
     db.commit()
     
 def delete_receipts(db:Session, receipts_id:int):
-    db_receipts = db.query(Receipts).get(receipts_id)
+    db_receipts = db.query(Receipts).filter(Receipts.id == receipts_id)
+    if db_receipts is None:
+        raise ValueError("해당 레시피가 존재하지 않습니다.")
     db.delete(db_receipts)
     db.commit()

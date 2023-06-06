@@ -36,6 +36,10 @@ def table_update(table_id:int,_table_update:tables_schema.TableUpdate,
     tables_crud.update_table(db=db, table_id=table_id, table_update=_table_update)
     
 @router.delete("/delete", status_code=status.HTTP_204_NO_CONTENT,summary="테이블 삭제")
-def table_delete(table_id: tables_schema.TableDelete, db: Session = Depends(get_db)):
+def table_delete(table_id: int, db: Session = Depends(get_db)):
     tables_crud.delete_table(db=db, table_id=table_id)
-    
+
+@router.get("/pay/{table_id}",summary="결제")
+def table_pay(table_id: int, db: Session = Depends(get_db)):
+    tables_crud.pay_table(db=db, table_id=table_id)
+    return "결제 완료"

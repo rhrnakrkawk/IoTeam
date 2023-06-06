@@ -10,9 +10,12 @@ def get_stocks_list(db:Session):
     return total, stocks_list
 
 # 재고 상세 조회
-def get_stock(db:Session, stock_id:int):
-    stock = db.query(Stocks).get(stock_id)
-    return stock
+def get_stock(db:Session, stock_id:int=0,stock_name:str=""):
+    if stock_id == 0:
+        return db.query(Stocks).filter(Stocks.name == stock_name).first()
+    elif stock_name == "":
+        
+        return db.query(Stocks).get(stock_id).first()
 
 def create_stocks(db:Session, stock_create:StocksCreate):
     db_stock = Stocks(name=stock_create.name, price=stock_create.price, amount=stock_create.amount)

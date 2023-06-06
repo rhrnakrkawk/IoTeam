@@ -44,7 +44,7 @@ def receipts_create(_receipts_create: receipts_schema.ReceiptsCreate,
     receipts_crud.create_receipts(db=db, receipts_create=_receipts_create)
     
 @router.delete("/delete", status_code=status.HTTP_204_NO_CONTENT,summary="레시피 삭제")
-def receipts_delete(_receipts_delete: receipts_schema.ReceiptsDelete,
+def receipts_delete(_receipts_delete:int,
                     db: Session = Depends(get_db)):
     receipts_crud.delete_receipts(db=db, receipts_id=_receipts_delete)
     

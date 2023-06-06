@@ -1,6 +1,7 @@
 from pydantic import BaseModel, validator
 from typing import List
 class Receipts(BaseModel):
+    id:int
     food_name: str
     name: str
     amount: int
@@ -29,10 +30,4 @@ class ReceiptsDetail(BaseModel):
 
 class ReceiptsUpdate(ReceiptsCreate):
     Receipts_id: int
-    
-    class Config:
-        orm_mode = True
-        
-class ReceiptsDelete(BaseModel):
-    Receipts_id: int
-    
+

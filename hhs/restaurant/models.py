@@ -1,7 +1,7 @@
 from sqlalchemy import Column, Integer, String, ForeignKey,Boolean,DateTime
 from sqlalchemy.orm import relationship
 from database import Base
-
+from datetime import datetime
 # 음식에 대한 기본적인 테이블
 class Foods(Base):
     __tablename__ = "foods"
@@ -42,11 +42,14 @@ class Tables(Base):
     # 테이블에 앉아있는 손님 수
     customer_count = Column(Integer, nullable=False)
     total_price = Column(Integer, nullable=False, default=0)
+    # 손님 수 확인용
+    table_time = Column(DateTime, nullable=True, default=datetime.now())
+    
     
     # 계산 여부 확인
     # TODO: 계산 여부 확인
     
-    # is_paid = Column(Boolean, nullable=False, default=False)
+    is_paid = Column(Boolean, nullable=False, default=False)
 
 
 class Orders(Base):
@@ -64,5 +67,7 @@ class Orders(Base):
     # 호출
     call = Column(Boolean, nullable=False, default=False)
     content = Column(String(255), nullable=True)
-    # TODO: 주문한 시간
-    # order_time = Column(DateTime, nullable=False)
+
+    # ----#
+    # 주문시간
+    order_time = Column(DateTime, nullable=True, default=datetime.now())
