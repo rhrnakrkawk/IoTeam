@@ -159,6 +159,11 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
+<<<<<<< HEAD
+
+.vscode/
+.pio/
+=======
 /__pycache__/
 /.vscode/
 
@@ -168,3 +173,4 @@ cython_debug/
 /*/test/
 /__pycache__/
 /.vscode/
+>>>>>>> 93393b47385ad1cb678ca51219bc7abce9e4634c
