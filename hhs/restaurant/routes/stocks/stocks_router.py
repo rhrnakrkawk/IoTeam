@@ -13,7 +13,9 @@ router = APIRouter(
 
 @router.get("/list",response_model = stocks_schema.StocksList,summary="재고 목록 전체 조회")
 def get_stocks_list(db:Session = Depends(get_db)):
-    
+    """
+    전체 재고 목록 조회
+    """
     total,_stock_list = stocks_crud.get_stocks_list(db)
     if total == 0:
         return []
@@ -25,17 +27,25 @@ def get_stocks_list(db:Session = Depends(get_db)):
         
 @router.get("/detail/{stock_name}",response_model = stocks_schema.Stocks,summary="특정 재고 상세 조회")
 def get_stock(stock_name:str,db:Session = Depends(get_db)):
+    """
+    특정 재고 조회
+    """
     stock = stocks_crud.get_stock(db,stock_name=stock_name)
     return stock
 
 @router.post("/create",status_code=status.HTTP_204_NO_CONTENT,summary="재고 추가")
 def create_stocks(_stock_create:stocks_schema.StocksCreate,
                   db:Session = Depends(get_db)):
+    """
+    재고 추가 / 재고 이름이 중복될 경우, 400 에러를 반환
+    """
     stocks_crud.create_stocks(db=db,stock_create=_stock_create)
     return Response(status_code=status.HTTP_201_CREATED)
 @router.put("/update",status_code=status.HTTP_204_NO_CONTENT,summary="재고 수정")
 def update_stocks(_stock_update:stocks_schema.StocksUpdate,db:Session = Depends(get_db)):
-        
+    """
+    재고 수정
+    """
     db_stock = stocks_crud.get_stock(db,stock_name=_stock_update.stock_name)
     # 해당 번호의 재료가 없을 시, 400 에러를 반환
     if not db_stock:
@@ -47,7 +57,9 @@ def update_stocks(_stock_update:stocks_schema.StocksUpdate,db:Session = Depends(
 
 @router.delete("/delete",status_code=status.HTTP_204_NO_CONTENT,summary="재고 삭제")
 def delete_stocks(_stock_delete:int,db:Session=Depends(get_db)):
-    
+    """
+    재고삭제
+    """
     db_stock = db.query(Stocks).get(_stock_delete)
 
     if not db_stock:

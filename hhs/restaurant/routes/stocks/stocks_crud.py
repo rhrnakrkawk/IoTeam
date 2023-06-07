@@ -44,6 +44,10 @@ def create_stocks(db: Session, stock_create: StocksCreate):
         db (Session): SQLAlchemy 세션 객체
         stock_create (StocksCreate): 재고 생성에 필요한 정보
     """
+    
+    if db.query(Stocks).filter(Stocks.name == stock_create.name).first():
+        raise ValueError("이미 존재하는 재고입니다.")
+    
     db_stock = Stocks(name=stock_create.name, price=stock_create.price, amount=stock_create.amount)
     db.add(db_stock)
     db.commit()

@@ -44,6 +44,9 @@ def create_food(food_create: foods_schema.FoodCreate, db: Session):
         food_create (FoodCreate): 음식 생성에 필요한 정보
         db (Session): SQLAlchemy 세션 객체
     """
+    if db.query(Foods).filter(Foods.name == food_create.name).first():
+        raise ValueError("이미 존재하는 음식입니다.")
+    
     db_food = Foods(
         name=food_create.name,
         price=food_create.price,
