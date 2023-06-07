@@ -1,0 +1,51 @@
+[
+    {
+        "id": "5dc70ea22b6ba826",
+        "type": "ui_button",
+        "z": "1dd31230f9311aea",
+        "name": "메뉴판 확인",
+        "group": "bd019abca9e654df",
+        "order": 11,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "메뉴판 확인",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 90,
+        "y": 400,
+        "wires": [
+            [
+                "fd1573bbff46d0b7",
+                "a92279b73c5ae51a",
+                "d427543d1e457d81"
+            ]
+        ]
+    },
+    {
+        "id": "bd019abca9e654df",
+        "type": "ui_group",
+        "name": "메뉴판",
+        "tab": "7cadb7b04eac80e0",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7cadb7b04eac80e0",
+        "type": "ui_tab",
+        "name": "테이블1",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]

@@ -159,12 +159,16 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
-/__pycache__/
-/.vscode/
+restaurant/rest/
 
-/*/.pio/
-/*/.vscode/
-/*/include/
-/*/test/
-/__pycache__/
-/.vscode/
+.vscode/
+restaurant/frontend_restaurant/node_modules/
+restaurant/frontend_restaurant/.vscode/
+restaurant/frontend_restaurant/package-lock.json
+restaurant/frontend_restaurant/public/
+restaurant/frontend_restaurant/node_modules/
+restaurant/frontend_restaurant/svelte.config.js
+restaurant/frontend_restaurant/vite.config.js
+migrations/
+rest/
+alembic.ini
