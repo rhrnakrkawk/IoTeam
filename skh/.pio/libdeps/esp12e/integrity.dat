@@ -1,0 +1,9 @@
+https://github.com/yhur/ConfigPortal8266
+bblanchon/ArduinoJson@^6.18.5
+ESP8266WiFi
+SPI
+https://github.com/yhur/IO7F8266
+adafruit/Adafruit BusIO@^1.9.1
+knolleary/PubSubClient@^2.8
+thingpulse/ESP8266 and ESP32 OLED driver for SSD1306 displays@^4.2.1
+adafruit/Adafruit GFX Library@^1.10.11
