@@ -3,7 +3,7 @@ from typing import List
 from datetime import datetime
 class Table(BaseModel):
     id:int
-    table_id = int
+    table_id : int
     customer_count:int
     total_price:int=0
     table_time:datetime=None
@@ -14,7 +14,6 @@ class Table(BaseModel):
 class TableCreate(BaseModel):
     table_id:int
     customer_count:int
-    total_price:int=0
     
     @validator('customer_count')
     def not_empty(cls, v):

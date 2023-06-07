@@ -61,8 +61,8 @@ class Orders(Base):
     table_id = Column(Integer, nullable=False)
     
     # 메뉴 정보
-    menu = Column(String(255), nullable=False)
-    amount = Column(Integer, nullable=False)
+    menu = Column(String(255), nullable=True)
+    amount = Column(Integer, nullable=True)
     
     # 호출
     call = Column(Boolean, nullable=False, default=False)
