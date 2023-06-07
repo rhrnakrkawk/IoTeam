@@ -8,7 +8,7 @@ async def root():
 
 @app.get("/order")
 async def order(table_id:int, menu:str, quantity:int):
-    content = f"Table {table_id} need {menu} {quantity}\n"
+    content = f"{table_id} {menu} {quantity}\n"
     
     with open("order.txt", "a") as file:
         file.write(content)
@@ -17,7 +17,7 @@ async def order(table_id:int, menu:str, quantity:int):
 
 @app.get("/call")
 async def call(table_id:int,call:str):
-    content = f"Table {table_id} need {call}\n"
+    content = f"{table_id} {call}\n"
     
     with open("call.txt", "a") as file:
         file.write(content)
@@ -26,15 +26,31 @@ async def call(table_id:int,call:str):
 
 @app.get("/get/order")
 async def get_order():
+    
     with open("order.txt", "r") as file:
         content = file.read()
+    
+    # json = []
+    # if content is None:
+    #     return "No "
+    # for line in content.split("\n"):
+    #     if line == "":
+    #         continue
+    #     line = line.split(" ")
         
+    #     table_id = line[0]
+    #     menu = line[1]
+    #     quantity = line[2]
+        
+    #     json.append({"table_id":table_id, "menu":menu, "quantity":quantity})
     return content
 
 @app.get("/get/call")
 async def get_call():
     with open("call.txt", "r") as file:
         content = file.read()
+    
+    
         
     return content
 
