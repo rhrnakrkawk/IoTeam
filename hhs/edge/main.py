@@ -1,6 +1,8 @@
 from fastapi import FastAPI
 
-app = FastAPI()
+app = FastAPI(
+    title="Edge Server",
+)
 
 @app.get("/")
 async def root():
@@ -9,6 +11,30 @@ async def root():
 @app.get("/order")
 async def order(table_id:int, menu:str, amount:int):
     content = f"{table_id} {menu} {amount}\n"
+    read_content =""
+    with open("order.txt", "r") as file:
+        read_content = file.read()
+    
+    for read in read_content.split("\n"):
+        if read == "":
+            continue
+        read = read.split(" ")
+        
+        read_table_id = read[0]
+        read_menu = read[1]
+        read_amount = read[2]
+        
+        if table_id == int(read_table_id) and menu == read_menu:
+            amount += int(read_amount)
+            content = f"{table_id} {menu} {amount}\n"
+            read_content = read_content.replace(f"{read_table_id} {read_menu} {read_amount}", content)
+            break
+        
+        elif table_id == int(read_table_id) and menu != read_menu:
+            read_content = read_content.replace(read, content)
+            break
+        else:
+            read_content += content
     
     with open("order.txt", "a") as file:
         file.write(content)
@@ -68,6 +94,7 @@ async def get_call():
 
 @app.get("/clear")
 async def clear():
+    
     with open("order.txt", "w") as file:
         file.write("")
         
