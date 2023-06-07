@@ -47,10 +47,13 @@ def create_table(db: Session, table_create: tables_schema.TableCreate):
         db (Session): SQLAlchemy 세션 객체
         table_create (TableCreate): 테이블 생성에 필요한 정보
     """
+    if db.query(Tables).filter(and_(Tables.table_id == table_create.table_id),(Tables.is_paid == False)).first():
+        raise ValueError("이미 존재하는 테이블입니다.")
+    
     db_table = Tables(
         table_id=table_create.table_id,
         customer_count=table_create.customer_count,
-        total_price=table_create.total_price,
+        total_price=0,
         table_time=datetime.now(pytz.utc).astimezone(korea_timezone).strftime("%Y-%m-%d")
     )
     db.add(db_table)
@@ -99,7 +102,7 @@ def pay_table(db: Session, table_id: int):
     Raises:
         Exception: 이미 결제된 테이블인 경우 예외 발생
     """
-    db_table = db.query(Tables).filter(Tables.table_id == table_id).first()
+    db_table = db.query(Tables).filter(and_((Tables.table_id == table_id),or_((Tables.is_paid == False),(Tables.is_paid == 0)))).first()
     if db_table.is_paid == False or db_table.is_paid == 0:
         db_table.is_paid = True
         db.add(db_table)

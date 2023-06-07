@@ -161,4 +161,14 @@ cython_debug/
 
 restaurant/rest/
 
-/.vscode
+.vscode/
+restaurant/frontend_restaurant/node_modules/
+restaurant/frontend_restaurant/.vscode/
+restaurant/frontend_restaurant/package-lock.json
+restaurant/frontend_restaurant/public/
+restaurant/frontend_restaurant/node_modules/
+restaurant/frontend_restaurant/svelte.config.js
+restaurant/frontend_restaurant/vite.config.js
+migrations/
+rest/
+alembic.ini

@@ -1,0 +1,1954 @@
+[
+    {
+        "id": "e5c7a484a1e3febd",
+        "type": "tab",
+        "label": "플로우 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "dba58d111680b812",
+        "type": "group",
+        "z": "e5c7a484a1e3febd",
+        "g": "77415dee6b28efb4",
+        "name": "메뉴 정보 입력",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "1db978b1e77bc12a",
+            "5788997105433b26",
+            "0bbcfdff74398aba",
+            "41bf5bc8a678964e",
+            "200c346c2df1e4cd"
+        ],
+        "x": 674,
+        "y": 799,
+        "w": 512,
+        "h": 142
+    },
+    {
+        "id": "3f52daf441c86b62",
+        "type": "group",
+        "z": "e5c7a484a1e3febd",
+        "g": "77415dee6b28efb4",
+        "name": "메뉴 제거",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "1ab9afabfd591bf8",
+            "db68cff7b79c1715",
+            "22ed5e7c13f60f61"
+        ],
+        "x": 714,
+        "y": 699,
+        "w": 472,
+        "h": 82
+    },
+    {
+        "id": "41935cb7dffe9ba1",
+        "type": "group",
+        "z": "e5c7a484a1e3febd",
+        "g": "a171f922b5e0f533",
+        "name": "인기메뉴",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "62aa03311ee25f9d",
+            "4eed908237b63728",
+            "b50cb54c69d66d17",
+            "346746df0ecfd615"
+        ],
+        "x": 1254,
+        "y": 839,
+        "w": 672,
+        "h": 82
+    },
+    {
+        "id": "606430c463b74780",
+        "type": "group",
+        "z": "e5c7a484a1e3febd",
+        "g": "a171f922b5e0f533",
+        "name": "음식 총 주문 횟수",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "d18cb61355d8347c",
+            "f36ee54f94e00646",
+            "dc05a246598b8d87",
+            "c14085f16396c0a7"
+        ],
+        "x": 1254,
+        "y": 739,
+        "w": 692,
+        "h": 82
+    },
+    {
+        "id": "5550bad1bc97dcff",
+        "type": "group",
+        "z": "e5c7a484a1e3febd",
+        "g": "a171f922b5e0f533",
+        "name": "재고 확인",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "034e70dead263943",
+            "abfd7d6bd4522f89",
+            "a2d0492e2769b6f7",
+            "58bf5739784bd0b3",
+            "63ce68811c8210f6",
+            "b9708b0bb7c45060"
+        ],
+        "x": 1254,
+        "y": 379,
+        "w": 692,
+        "h": 122
+    },
+    {
+        "id": "813fef19d4b33f9a",
+        "type": "group",
+        "z": "e5c7a484a1e3febd",
+        "g": "77415dee6b28efb4",
+        "name": "재고 생성",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "e016721541b5bd79",
+            "dfc1842d60f88381"
+        ],
+        "x": 854,
+        "y": 379,
+        "w": 332,
+        "h": 82
+    },
+    {
+        "id": "b914c2e202dfe3ea",
+        "type": "group",
+        "z": "e5c7a484a1e3febd",
+        "g": "77415dee6b28efb4",
+        "name": "재고 삭제",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "f9ccf61c4baf4974",
+            "3fca24db7853ce79",
+            "6d8ff06c105ad113",
+            "f32e20d227ec17c5",
+            "0ee3860127c8064d"
+        ],
+        "x": 374,
+        "y": 579,
+        "w": 812,
+        "h": 82
+    },
+    {
+        "id": "fd40b517740262fc",
+        "type": "group",
+        "z": "e5c7a484a1e3febd",
+        "g": "a171f922b5e0f533",
+        "name": "일간 방문자 수 확인",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "02dd5dbd1d65a8cf",
+            "312c2177bfa1d148",
+            "2eee0117e3353972",
+            "0ceb3f155ce83ba2"
+        ],
+        "x": 1254,
+        "y": 639,
+        "w": 712,
+        "h": 82
+    },
+    {
+        "id": "84e4ff3ba80be503",
+        "type": "group",
+        "z": "e5c7a484a1e3febd",
+        "g": "a171f922b5e0f533",
+        "name": "현재 테이블 현황",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "a12763f1ed4df51c",
+            "ffe746234416dd3a",
+            "2f1593a27ac58605",
+            "4f1e7d184ea1b30e",
+            "35cf7b9055a311d3"
+        ],
+        "x": 1254,
+        "y": 1079,
+        "w": 932,
+        "h": 82
+    },
+    {
+        "id": "7dd2205a9d24fcf3",
+        "type": "group",
+        "z": "e5c7a484a1e3febd",
+        "g": "a171f922b5e0f533",
+        "name": "사장의 픽",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "e9d62f2e6d3a3128",
+            "7c4d366e0789aa94",
+            "d2e4f219c01669b7",
+            "6ddec9c3cd317728"
+        ],
+        "x": 1254,
+        "y": 979,
+        "w": 692,
+        "h": 82
+    },
+    {
+        "id": "570c50c3e1ea1db9",
+        "type": "group",
+        "z": "e5c7a484a1e3febd",
+        "g": "77415dee6b28efb4",
+        "name": "사장 픽 변경",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "237c6e9ff3b3d6ec",
+            "4781bfe92223ae96",
+            "dae5ccfaac8de4c2",
+            "e50c6fd2e0e14b15",
+            "ba0b84767a34dda1",
+            "aa5d1595e0b1c6e8"
+        ],
+        "x": 674,
+        "y": 959,
+        "w": 512,
+        "h": 122
+    },
+    {
+        "id": "ea69cdaf98e8959c",
+        "type": "group",
+        "z": "e5c7a484a1e3febd",
+        "g": "77415dee6b28efb4",
+        "name": "재고 변경",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "d39bdbed3d1d825e",
+            "5455fa266fe68c47",
+            "18a28b06d5b39b61"
+        ],
+        "x": 674,
+        "y": 479,
+        "w": 512,
+        "h": 82
+    },
+    {
+        "id": "cf5ad31e392515bd",
+        "type": "group",
+        "z": "e5c7a484a1e3febd",
+        "g": "a171f922b5e0f533",
+        "name": "일간 매출 확인",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "b9d446f5fd553743",
+            "3df6785a77f4aa34",
+            "773a1e93c9f0713b",
+            "fe2194066e71bd61"
+        ],
+        "x": 1254,
+        "y": 539,
+        "w": 692,
+        "h": 82
+    },
+    {
+        "id": "77415dee6b28efb4",
+        "type": "group",
+        "z": "e5c7a484a1e3febd",
+        "name": "설정 변경",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "dba58d111680b812",
+            "3f52daf441c86b62",
+            "813fef19d4b33f9a",
+            "b914c2e202dfe3ea",
+            "570c50c3e1ea1db9",
+            "ea69cdaf98e8959c"
+        ],
+        "x": 348,
+        "y": 353,
+        "w": 864,
+        "h": 754
+    },
+    {
+        "id": "a171f922b5e0f533",
+        "type": "group",
+        "z": "e5c7a484a1e3febd",
+        "name": "현황 출력",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "41935cb7dffe9ba1",
+            "606430c463b74780",
+            "5550bad1bc97dcff",
+            "fd40b517740262fc",
+            "84e4ff3ba80be503",
+            "7dd2205a9d24fcf3",
+            "cf5ad31e392515bd"
+        ],
+        "x": 1228,
+        "y": 353,
+        "w": 984,
+        "h": 834
+    },
+    {
+        "id": "d18cb61355d8347c",
+        "type": "inject",
+        "z": "e5c7a484a1e3febd",
+        "g": "606430c463b74780",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"count\":2,\"foodList\":{\"pizza\":{\"totalCount\":5,\"Price\":10000,\"Ingredient\":{\"cheese\":10,\"dough\":1,\"sauce\":10}},\"pasta\":{\"totalCount\":3,\"Price\":8000,\"Ingredient\":{\"cheese\":5,\"noodle\":100,\"sauce\":20}}}}",
+        "payloadType": "json",
+        "x": 1350,
+        "y": 780,
+        "wires": [
+            [
+                "dc05a246598b8d87"
+            ]
+        ]
+    },
+    {
+        "id": "f36ee54f94e00646",
+        "type": "ui_chart",
+        "z": "e5c7a484a1e3febd",
+        "g": "606430c463b74780",
+        "name": "",
+        "group": "fe74f1ecc84760fe",
+        "order": 1,
+        "width": "10",
+        "height": "5",
+        "label": "음식 주문 횟수",
+        "chartType": "bar",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1840,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "62aa03311ee25f9d",
+        "type": "function",
+        "z": "e5c7a484a1e3febd",
+        "g": "41935cb7dffe9ba1",
+        "name": "인기메뉴",
+        "func": "if (typeof msg.payload === 'string')\n    msg.payload = JSON.parse(msg.payload);\n// {\n//     \"Most Popular Food\": \"pizza\",\n//     \"Food Popularity\": {\n//         \"pizza\": 0\n//     }\n// }\n\n\nlet data = msg.payload;\nlet food = data['Popular'];\nlet cnt = data[\"Food\"][food];\n\nconst best = `${food} : ${cnt}`;\nmsg.payload = best;\nreturn msg;\n\n\n\n\n\n\n\n\n\n// let str = `인기메뉴 : \\n`\n// let dbData = msg.payload;\n// let food = Object.keys(msg.payload.foodList);\n// let cnt = 0;\n// let best= [];\n// food.forEach((item)=>{\n//     const food_cnt = dbData['foodList'][item]['totalCount'];\n//     if(cnt < food_cnt)\n//     {\n//         best = [];\n//         best.push(item);\n//         cnt = food_cnt;\n//     }\n//     else if(cnt == food_cnt)\n//     {\n//         best.push(item);\n//     }\n// })\n\n// msg.payload = best.join(', ');\n\n\n\n// return msg;\n// return msg;\n\n\n// let str = `총 주문\\n`\n// let dbData = msg.payload;\n\n// let food = Object.keys(dbData.foodList);\n\n// let foods = {};\n// foods.series = []\n// foods.data = []\n// foods.labels = [\n//     'FOOD'\n// ]\n// for (let item of food) {\n//     foods.series.push(item);\n//     foods.data.push([dbData['foodList'][item]['totalCount']]);\n// }\n// // let cnt = msg.payload[item]['totalOrder'];\n// // str += `${item} : ${cnt}\\n`;\n// // food.series = [\n// //     'Pizza',\n// //     'Pasta',\n// //     'Lasagna'\n// // ]\n\n// // food.data = [\n// //     [24],\n// //     [21],\n// //     [30]\n// // ]\n\n// msg.payload = [foods]\n// //msg.payload = food\n// return msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1700,
+        "y": 880,
+        "wires": [
+            [
+                "4eed908237b63728"
+            ]
+        ]
+    },
+    {
+        "id": "4eed908237b63728",
+        "type": "ui_text",
+        "z": "e5c7a484a1e3febd",
+        "g": "41935cb7dffe9ba1",
+        "group": "16e736076471bd65",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "인기메뉴",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "x": 1840,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "1db978b1e77bc12a",
+        "type": "function",
+        "z": "e5c7a484a1e3febd",
+        "g": "dba58d111680b812",
+        "name": "메뉴 정보",
+        "func": "let data = msg.payload;\nlet firstJsonData = {}\nlet secondJsonData = {};\n// {\n//     \"name\": \"string\",\n//     \"price\": 0\n// }\n\nfirstJsonData[\"name\"] = data.Menu;\nfirstJsonData[\"price\"] = data.Price;\nfirstJsonData[\"pick\"] = false;\nsecondJsonData['food_name'] = data.Menu;\nlet ingredientJson = {}\n\ndata.Ingredient.split('\\n').forEach(item=>{\n    const key = item.split(':')[0].trim();\n    const val = item.split(':')[1].trim();\n\n    ingredientJson[key] = parseInt(val);\n})\nsecondJsonData['content'] = ingredientJson;\nlet firstMsg = {\n    payload: firstJsonData\n}\nlet secondMsg={\n    payload: secondJsonData\n}\n\nglobal.set('idx', 0);\n\nreturn [firstMsg, secondMsg];\n\n\n\n// {\n//     \"food_name\": \"string\",\n//         \"content\": { }\n// }\n\n\n",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 840,
+        "wires": [
+            [
+                "200c346c2df1e4cd"
+            ],
+            [
+                "41bf5bc8a678964e"
+            ]
+        ]
+    },
+    {
+        "id": "5788997105433b26",
+        "type": "ui_form",
+        "z": "e5c7a484a1e3febd",
+        "g": "dba58d111680b812",
+        "name": "",
+        "label": "메뉴 추가",
+        "group": "0ec1ff43d438c423",
+        "order": 1,
+        "width": "10",
+        "height": "8",
+        "options": [
+            {
+                "label": "Menu",
+                "value": "Menu",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Price",
+                "value": "Price",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Ingredient",
+                "value": "Ingredient",
+                "type": "multiline",
+                "required": true,
+                "rows": 3
+            }
+        ],
+        "formValue": {
+            "Menu": "",
+            "Price": "",
+            "Ingredient": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "topic",
+        "topicType": "str",
+        "splitLayout": "",
+        "className": "",
+        "x": 760,
+        "y": 840,
+        "wires": [
+            [
+                "1db978b1e77bc12a"
+            ]
+        ]
+    },
+    {
+        "id": "b50cb54c69d66d17",
+        "type": "http request",
+        "z": "e5c7a484a1e3febd",
+        "g": "41935cb7dffe9ba1",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://3.216.219.9:4400/api/admin/populate",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1530,
+        "y": 880,
+        "wires": [
+            [
+                "62aa03311ee25f9d"
+            ]
+        ]
+    },
+    {
+        "id": "346746df0ecfd615",
+        "type": "inject",
+        "z": "e5c7a484a1e3febd",
+        "g": "41935cb7dffe9ba1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1370,
+        "y": 880,
+        "wires": [
+            [
+                "b50cb54c69d66d17"
+            ]
+        ]
+    },
+    {
+        "id": "dc05a246598b8d87",
+        "type": "http request",
+        "z": "e5c7a484a1e3febd",
+        "g": "606430c463b74780",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://3.216.219.9:4400/api/foods/list",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1490,
+        "y": 780,
+        "wires": [
+            [
+                "c14085f16396c0a7"
+            ]
+        ]
+    },
+    {
+        "id": "c14085f16396c0a7",
+        "type": "function",
+        "z": "e5c7a484a1e3febd",
+        "g": "606430c463b74780",
+        "name": "function 5",
+        "func": "if (typeof msg.payload === 'string')\n    msg.payload = JSON.parse(msg.payload);\n\n\n// return msg\nlet dbData = msg.payload;\n\nlet cnt = dbData.total;\nconst foodList = dbData[\"food_list\"];\nlet foods = {};\nfoods.series = []\nfoods.data = []\nfoods.labels = [\n    'FOOD'\n]\n\nfor(let i = 0 ;i < cnt; i++){\n    foods.series.push(foodList[i][\"name\"]);\n    foods.data.push([foodList[i][\"populate\"]]);\n}\n\nmsg.payload = [foods];\n\nreturn msg;\n\n\n\n\n\n// let food = Object.keys(dbData.foodList);\n\n// let foods = {};\n// foods.series = []\n// foods.data = []\n// foods.labels = [\n//     'FOOD'\n// ]\n// for (let item of food) {\n//     foods.series.push(item);\n//     foods.data.push([dbData['foodList'][item]['totalCount']]);\n// }\n\n// msg.payload = [foods]\n// //msg.payload = food\n// return msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1660,
+        "y": 780,
+        "wires": [
+            [
+                "f36ee54f94e00646"
+            ]
+        ]
+    },
+    {
+        "id": "0bbcfdff74398aba",
+        "type": "http request",
+        "z": "e5c7a484a1e3febd",
+        "g": "dba58d111680b812",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://3.216.219.9:4400/api/receipts/create",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1090,
+        "y": 900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "41bf5bc8a678964e",
+        "type": "function",
+        "z": "e5c7a484a1e3febd",
+        "g": "dba58d111680b812",
+        "name": "재료 정보",
+        "func": "let idx = global.get('idx');\n\n\nlet arr = Object.keys(msg.payload.content);\nlet remsg = {\n    payload : msg.payload\n}\n\nlet jsonData = {};\njsonData['food_name'] = msg.payload.food_name;\n\n\nlet jsonContent = {};\narr.forEach(item=>{\n    jsonContent[item] = msg.payload.content[item];\n})\n//jsonContent[arr[idx]] = msg.payload.content[arr[idx]];\n\n\njsonData['content'] = jsonContent;\n// jsonData['content']['amount'] = jsonData['content'][arr[idx]];\n\n// msg.payload = jsonData;\nmsg.payload = jsonData;\n\n//return [msg, remsg];\nreturn msg;\n\n\n\n\n// {\n//     \"food_name\": \"\",\n//         \"content\": {\n//         \"name\": \"foods\",\n//             \"amount\": 30\n//     }\n// }\n\n\n// data.Ingredient.split('\\n').forEach(item => {\n//     const key = item.split(':')[0].trim();\n//     const val = item.split(':')[1].trim();\n\n//     ingredientJson[key] = parseInt(val);\n// })",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 900,
+        "wires": [
+            [
+                "0bbcfdff74398aba"
+            ]
+        ]
+    },
+    {
+        "id": "1ab9afabfd591bf8",
+        "type": "ui_form",
+        "z": "e5c7a484a1e3febd",
+        "g": "3f52daf441c86b62",
+        "name": "",
+        "label": "메뉴 제거",
+        "group": "0ec1ff43d438c423",
+        "order": 2,
+        "width": "10",
+        "height": "5",
+        "options": [
+            {
+                "label": "Menu",
+                "value": "Menu",
+                "type": "text",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "Menu": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 800,
+        "y": 740,
+        "wires": [
+            [
+                "db68cff7b79c1715"
+            ]
+        ]
+    },
+    {
+        "id": "db68cff7b79c1715",
+        "type": "function",
+        "z": "e5c7a484a1e3febd",
+        "g": "3f52daf441c86b62",
+        "name": "function 9",
+        "func": "\n\nmsg.url = `http://3.216.219.9:4400/api/foods/delete?food_name=${msg.payload.Menu}`\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 940,
+        "y": 740,
+        "wires": [
+            [
+                "22ed5e7c13f60f61"
+            ]
+        ]
+    },
+    {
+        "id": "200c346c2df1e4cd",
+        "type": "http request",
+        "z": "e5c7a484a1e3febd",
+        "g": "dba58d111680b812",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://3.216.219.9:4400/api/foods/create",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1090,
+        "y": 840,
+        "wires": [
+            [
+                "dc05a246598b8d87"
+            ]
+        ]
+    },
+    {
+        "id": "034e70dead263943",
+        "type": "inject",
+        "z": "e5c7a484a1e3febd",
+        "g": "5550bad1bc97dcff",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1370,
+        "y": 440,
+        "wires": [
+            [
+                "abfd7d6bd4522f89"
+            ]
+        ]
+    },
+    {
+        "id": "abfd7d6bd4522f89",
+        "type": "http request",
+        "z": "e5c7a484a1e3febd",
+        "g": "5550bad1bc97dcff",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://3.216.219.9:4400/api/stocks/list",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1530,
+        "y": 440,
+        "wires": [
+            [
+                "a2d0492e2769b6f7",
+                "63ce68811c8210f6"
+            ]
+        ]
+    },
+    {
+        "id": "a2d0492e2769b6f7",
+        "type": "function",
+        "z": "e5c7a484a1e3febd",
+        "g": "5550bad1bc97dcff",
+        "name": "function 14",
+        "func": "if (typeof msg.payload === 'string')\n    msg.payload = JSON.parse(msg.payload);\n\n\nlet dbData = msg.payload;\n\nlet cnt = dbData.total;\nconst stockList = dbData[\"stocks_list\"];\nlet stocks = {};\nstocks.series = []\nstocks.data = []\nstocks.labels = [\n    'STOCK'\n]\n\nfor (let i = 0; i < cnt; i++) {\n    stocks.series.push(stockList[i][\"name\"]);\n    stocks.data.push([stockList[i][\"amount\"]]);\n}\n\n\n//msg.payload = stockList;\nmsg.payload = [stocks];\n\nreturn msg;\n\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1710,
+        "y": 420,
+        "wires": [
+            [
+                "58bf5739784bd0b3"
+            ]
+        ]
+    },
+    {
+        "id": "58bf5739784bd0b3",
+        "type": "ui_chart",
+        "z": "e5c7a484a1e3febd",
+        "g": "5550bad1bc97dcff",
+        "name": "",
+        "group": "fe74f1ecc84760fe",
+        "order": 3,
+        "width": "10",
+        "height": "5",
+        "label": "재고",
+        "chartType": "bar",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1850,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "22ed5e7c13f60f61",
+        "type": "http request",
+        "z": "e5c7a484a1e3febd",
+        "g": "3f52daf441c86b62",
+        "name": "",
+        "method": "DELETE",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1090,
+        "y": 740,
+        "wires": [
+            [
+                "dc05a246598b8d87"
+            ]
+        ]
+    },
+    {
+        "id": "e016721541b5bd79",
+        "type": "ui_form",
+        "z": "e5c7a484a1e3febd",
+        "g": "813fef19d4b33f9a",
+        "name": "",
+        "label": "재고 추가",
+        "group": "3610e521ef61d15b",
+        "order": 7,
+        "width": "10",
+        "height": "8",
+        "options": [
+            {
+                "label": "Stock",
+                "value": "name",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Price",
+                "value": "price",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Amount",
+                "value": "amount",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "name": "",
+            "price": "",
+            "amount": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "topic",
+        "topicType": "str",
+        "splitLayout": "",
+        "className": "",
+        "x": 940,
+        "y": 420,
+        "wires": [
+            [
+                "dfc1842d60f88381"
+            ]
+        ]
+    },
+    {
+        "id": "dfc1842d60f88381",
+        "type": "http request",
+        "z": "e5c7a484a1e3febd",
+        "g": "813fef19d4b33f9a",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://3.216.219.9:4400/api/stocks/create",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1090,
+        "y": 420,
+        "wires": [
+            [
+                "abfd7d6bd4522f89"
+            ]
+        ]
+    },
+    {
+        "id": "f9ccf61c4baf4974",
+        "type": "ui_form",
+        "z": "e5c7a484a1e3febd",
+        "g": "b914c2e202dfe3ea",
+        "name": "",
+        "label": "재고 삭제",
+        "group": "3610e521ef61d15b",
+        "order": 4,
+        "width": "10",
+        "height": "5",
+        "options": [
+            {
+                "label": "stock",
+                "value": "name",
+                "type": "text",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "name": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 460,
+        "y": 620,
+        "wires": [
+            [
+                "3fca24db7853ce79"
+            ]
+        ]
+    },
+    {
+        "id": "3fca24db7853ce79",
+        "type": "function",
+        "z": "e5c7a484a1e3febd",
+        "g": "b914c2e202dfe3ea",
+        "name": "function 18",
+        "func": "global.set('stock', msg.payload);\n\nreturn msg\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 620,
+        "wires": [
+            [
+                "6d8ff06c105ad113"
+            ]
+        ]
+    },
+    {
+        "id": "6d8ff06c105ad113",
+        "type": "http request",
+        "z": "e5c7a484a1e3febd",
+        "g": "b914c2e202dfe3ea",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://3.216.219.9:4400/api/stocks/list",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 770,
+        "y": 620,
+        "wires": [
+            [
+                "f32e20d227ec17c5"
+            ]
+        ]
+    },
+    {
+        "id": "f32e20d227ec17c5",
+        "type": "function",
+        "z": "e5c7a484a1e3febd",
+        "g": "b914c2e202dfe3ea",
+        "name": "function 19",
+        "func": "if (typeof msg.payload === 'string')\n    msg.payload = JSON.parse(msg.payload);\n\nlet del = global.get('stock');\n\nlet stocks_list = msg.payload.stocks_list;\nlet cnt = msg.payload.total;\nlet stock_id;\nfor(let i = 0 ; i < cnt; i++){\n    if(del.name === stocks_list[i]['name']){\n            stock_id = stocks_list[i]['id'];\n        break;\n    }\n}\n\n\nmsg.url = `http://3.216.219.9:4400/api/stocks/delete?_stock_delete=${stock_id}`\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 620,
+        "wires": [
+            [
+                "0ee3860127c8064d"
+            ]
+        ]
+    },
+    {
+        "id": "0ee3860127c8064d",
+        "type": "http request",
+        "z": "e5c7a484a1e3febd",
+        "g": "b914c2e202dfe3ea",
+        "name": "",
+        "method": "DELETE",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1090,
+        "y": 620,
+        "wires": [
+            [
+                "abfd7d6bd4522f89"
+            ]
+        ]
+    },
+    {
+        "id": "63ce68811c8210f6",
+        "type": "function",
+        "z": "e5c7a484a1e3febd",
+        "g": "5550bad1bc97dcff",
+        "name": "function 21",
+        "func": "if (typeof msg.payload === 'string')\n    msg.payload = JSON.parse(msg.payload);\n\n\nlet dbData = msg.payload;\n\nlet cnt = dbData.total;\nconst stockList = dbData[\"stocks_list\"];\nlet deff = [];\nfor (let i = 0; i < cnt; i++) {\n    if (stockList[i][\"amount\"] <= 500){\n        deff.push(stockList[i][\"name\"]);\n    }\n}\n\nmsg.payload = deff.join(\", \");\n//msg.payload = stockList;\n\nreturn msg;\n\n\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1710,
+        "y": 460,
+        "wires": [
+            [
+                "b9708b0bb7c45060"
+            ]
+        ]
+    },
+    {
+        "id": "b9708b0bb7c45060",
+        "type": "ui_text",
+        "z": "e5c7a484a1e3febd",
+        "g": "5550bad1bc97dcff",
+        "group": "16e736076471bd65",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "name": "재고 부족",
+        "label": "<font color=red>부족</font>",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "x": 1860,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "02dd5dbd1d65a8cf",
+        "type": "inject",
+        "z": "e5c7a484a1e3febd",
+        "g": "fd40b517740262fc",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1370,
+        "y": 680,
+        "wires": [
+            [
+                "312c2177bfa1d148"
+            ]
+        ]
+    },
+    {
+        "id": "312c2177bfa1d148",
+        "type": "http request",
+        "z": "e5c7a484a1e3febd",
+        "g": "fd40b517740262fc",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://3.216.219.9:4400/api/admin/customer/daily",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1530,
+        "y": 680,
+        "wires": [
+            [
+                "2eee0117e3353972"
+            ]
+        ]
+    },
+    {
+        "id": "2eee0117e3353972",
+        "type": "function",
+        "z": "e5c7a484a1e3febd",
+        "g": "fd40b517740262fc",
+        "name": "function 22",
+        "func": "if (typeof msg.payload === 'string')\n    msg.payload = JSON.parse(msg.payload);\n\nlet dbData = msg.payload;\nlet arrData = Object.keys(dbData);\nlet YearMonth = arrData[0].split('-')[0] + '-' + arrData[0].split('-')[1];\n\nlet customers = {};\ncustomers.series = [];\ncustomers.data = [];\ncustomers.labels = [\n    `${YearMonth}`\n];\n\nfor (let i = 0; i < arrData.length; i++) {\n    customers.series.push(arrData[i].split('-')[2]);\n    customers.data.push([dbData[arrData[i]]]);\n}\n\nmsg.payload = [customers];\nreturn msg;\n\n\n\n\n\n\n\n// let cnt = dbData.total;\n// const stockList = dbData[\"sales_list\"];\n// let sales = {};\n// sales.series = []\n// sales.data = []\n// sales.labels = [\n//     'SALES'\n// ]\n\n// for (let i = 0; i < cnt; i++) {\n//     sales.series.push(stockList[i][\"name\"]);\n//     sales.data.push([stockList[i][\"amount\"]]);\n// }\n\n\n// //msg.payload = stockList;\n// msg.payload = [sales];\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1690,
+        "y": 680,
+        "wires": [
+            [
+                "0ceb3f155ce83ba2"
+            ]
+        ]
+    },
+    {
+        "id": "0ceb3f155ce83ba2",
+        "type": "ui_chart",
+        "z": "e5c7a484a1e3febd",
+        "g": "fd40b517740262fc",
+        "name": "",
+        "group": "fe74f1ecc84760fe",
+        "order": 5,
+        "width": "20",
+        "height": "5",
+        "label": "일간 방문자 수",
+        "chartType": "bar",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1860,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a12763f1ed4df51c",
+        "type": "inject",
+        "z": "e5c7a484a1e3febd",
+        "g": "84e4ff3ba80be503",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1370,
+        "y": 1120,
+        "wires": [
+            [
+                "ffe746234416dd3a"
+            ]
+        ]
+    },
+    {
+        "id": "ffe746234416dd3a",
+        "type": "http request",
+        "z": "e5c7a484a1e3febd",
+        "g": "84e4ff3ba80be503",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://3.216.219.9:4400/api/tables/list",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1530,
+        "y": 1120,
+        "wires": [
+            [
+                "2f1593a27ac58605"
+            ]
+        ]
+    },
+    {
+        "id": "2f1593a27ac58605",
+        "type": "function",
+        "z": "e5c7a484a1e3febd",
+        "g": "84e4ff3ba80be503",
+        "name": "테이블 현황 파악",
+        "func": "if (typeof msg.payload === 'string')\n    msg.payload = JSON.parse(msg.payload);\nlet dbData = msg.payload;\n\nlet cnt = dbData.total;\nlet tables = Array(cnt).fill(0);\nlet arrData = dbData.table_list;\nfor(let i = 0; i < cnt; i++){\n    if (arrData[i].is_paid === false) {\n       tables[arrData[i].table_id - 1] = arrData[i].customer_count;\n    }\n    else\n        tables[arrData[i].table_id - 1] = 0;\n}\n\nmsg.payload = tables;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1710,
+        "y": 1120,
+        "wires": [
+            [
+                "4f1e7d184ea1b30e"
+            ]
+        ]
+    },
+    {
+        "id": "4f1e7d184ea1b30e",
+        "type": "function",
+        "z": "e5c7a484a1e3febd",
+        "g": "84e4ff3ba80be503",
+        "name": "테이블 그래프 출력",
+        "func": "\nlet dbData = msg.payload;\n\nlet tables = {};\ntables.series = [];\ntables.data = [];\ntables.labels = [\n    'TABLES'\n];\n\nfor (let i = 0; i < dbData.length; i++) {\n    tables.series.push((i+1).toString());\n    tables.data.push([dbData[i]]);\n}\n\nmsg.payload = [tables];\nreturn msg;\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1910,
+        "y": 1120,
+        "wires": [
+            [
+                "35cf7b9055a311d3"
+            ]
+        ]
+    },
+    {
+        "id": "35cf7b9055a311d3",
+        "type": "ui_chart",
+        "z": "e5c7a484a1e3febd",
+        "g": "84e4ff3ba80be503",
+        "name": "",
+        "group": "fe74f1ecc84760fe",
+        "order": 2,
+        "width": "10",
+        "height": "5",
+        "label": "테이블 현황",
+        "chartType": "bar",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 2090,
+        "y": 1120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "237c6e9ff3b3d6ec",
+        "type": "ui_form",
+        "z": "e5c7a484a1e3febd",
+        "g": "570c50c3e1ea1db9",
+        "name": "",
+        "label": "사장 픽",
+        "group": "5b8e7d67613bd874",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Menu",
+                "value": "food_name",
+                "type": "text",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "food_name": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "topic",
+        "topicType": "str",
+        "splitLayout": "",
+        "className": "",
+        "x": 780,
+        "y": 1000,
+        "wires": [
+            [
+                "dae5ccfaac8de4c2"
+            ]
+        ]
+    },
+    {
+        "id": "4781bfe92223ae96",
+        "type": "http request",
+        "z": "e5c7a484a1e3febd",
+        "g": "570c50c3e1ea1db9",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1090,
+        "y": 1000,
+        "wires": [
+            [
+                "7c4d366e0789aa94"
+            ]
+        ]
+    },
+    {
+        "id": "dae5ccfaac8de4c2",
+        "type": "function",
+        "z": "e5c7a484a1e3febd",
+        "g": "570c50c3e1ea1db9",
+        "name": "function 26",
+        "func": "msg.url = `http://3.216.219.9:4400/api/admin/pick?food_name=${msg.payload.food_name}`\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 1000,
+        "wires": [
+            [
+                "4781bfe92223ae96"
+            ]
+        ]
+    },
+    {
+        "id": "e50c6fd2e0e14b15",
+        "type": "ui_form",
+        "z": "e5c7a484a1e3febd",
+        "g": "570c50c3e1ea1db9",
+        "name": "",
+        "label": "사장 픽 제거",
+        "group": "5b8e7d67613bd874",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Menu",
+                "value": "food_name",
+                "type": "text",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "food_name": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "topic",
+        "topicType": "str",
+        "splitLayout": "",
+        "className": "",
+        "x": 770,
+        "y": 1040,
+        "wires": [
+            [
+                "ba0b84767a34dda1"
+            ]
+        ]
+    },
+    {
+        "id": "ba0b84767a34dda1",
+        "type": "function",
+        "z": "e5c7a484a1e3febd",
+        "g": "570c50c3e1ea1db9",
+        "name": "function 27",
+        "func": "msg.url = `http://3.216.219.9:4400/api/admin/pick?food_name=${msg.payload.food_name}`\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 1040,
+        "wires": [
+            [
+                "aa5d1595e0b1c6e8"
+            ]
+        ]
+    },
+    {
+        "id": "aa5d1595e0b1c6e8",
+        "type": "http request",
+        "z": "e5c7a484a1e3febd",
+        "g": "570c50c3e1ea1db9",
+        "name": "",
+        "method": "DELETE",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1090,
+        "y": 1040,
+        "wires": [
+            [
+                "7c4d366e0789aa94"
+            ]
+        ]
+    },
+    {
+        "id": "e9d62f2e6d3a3128",
+        "type": "inject",
+        "z": "e5c7a484a1e3febd",
+        "g": "7dd2205a9d24fcf3",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1370,
+        "y": 1020,
+        "wires": [
+            [
+                "7c4d366e0789aa94"
+            ]
+        ]
+    },
+    {
+        "id": "7c4d366e0789aa94",
+        "type": "http request",
+        "z": "e5c7a484a1e3febd",
+        "g": "7dd2205a9d24fcf3",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://3.216.219.9:4400/api/admin/pick",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1530,
+        "y": 1020,
+        "wires": [
+            [
+                "d2e4f219c01669b7"
+            ]
+        ]
+    },
+    {
+        "id": "d2e4f219c01669b7",
+        "type": "function",
+        "z": "e5c7a484a1e3febd",
+        "g": "7dd2205a9d24fcf3",
+        "name": "function 28",
+        "func": "if (typeof msg.payload === 'string')\n    msg.payload = JSON.parse(msg.payload);\n\nlet dbData = msg.payload;\n\nlet str = [];\n\ndbData.forEach(item=>{\n    str.push(item.name);\n})\n\nmsg.payload = str.join(\", \");\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1690,
+        "y": 1020,
+        "wires": [
+            [
+                "6ddec9c3cd317728"
+            ]
+        ]
+    },
+    {
+        "id": "6ddec9c3cd317728",
+        "type": "ui_text",
+        "z": "e5c7a484a1e3febd",
+        "g": "7dd2205a9d24fcf3",
+        "group": "16e736076471bd65",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "사장의 픽",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "x": 1860,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "d39bdbed3d1d825e",
+        "type": "ui_form",
+        "z": "e5c7a484a1e3febd",
+        "g": "ea69cdaf98e8959c",
+        "name": "",
+        "label": "재고 변경",
+        "group": "3610e521ef61d15b",
+        "order": 3,
+        "width": "10",
+        "height": "5",
+        "options": [
+            {
+                "label": "Stock",
+                "value": "name",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Price",
+                "value": "price",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Amount",
+                "value": "amount",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "name": "",
+            "price": "",
+            "amount": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "topic",
+        "topicType": "str",
+        "splitLayout": "",
+        "className": "",
+        "x": 760,
+        "y": 520,
+        "wires": [
+            [
+                "5455fa266fe68c47"
+            ]
+        ]
+    },
+    {
+        "id": "5455fa266fe68c47",
+        "type": "function",
+        "z": "e5c7a484a1e3febd",
+        "g": "ea69cdaf98e8959c",
+        "name": "function 17",
+        "func": "let data ={};\n\ndata.name = msg.payload.name;\n\ndata.price = msg.payload.price;\ndata.amount = msg.payload.amount;\ndata.stock_name = msg.payload.name;\nmsg.payload = data;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 520,
+        "wires": [
+            [
+                "18a28b06d5b39b61"
+            ]
+        ]
+    },
+    {
+        "id": "18a28b06d5b39b61",
+        "type": "http request",
+        "z": "e5c7a484a1e3febd",
+        "g": "ea69cdaf98e8959c",
+        "name": "",
+        "method": "PUT",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://3.216.219.9:4400/api/stocks/update",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1090,
+        "y": 520,
+        "wires": [
+            [
+                "abfd7d6bd4522f89"
+            ]
+        ]
+    },
+    {
+        "id": "b9d446f5fd553743",
+        "type": "inject",
+        "z": "e5c7a484a1e3febd",
+        "g": "cf5ad31e392515bd",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1370,
+        "y": 580,
+        "wires": [
+            [
+                "3df6785a77f4aa34"
+            ]
+        ]
+    },
+    {
+        "id": "3df6785a77f4aa34",
+        "type": "http request",
+        "z": "e5c7a484a1e3febd",
+        "g": "cf5ad31e392515bd",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://3.216.219.9:4400/api/admin/sales/daily",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1530,
+        "y": 580,
+        "wires": [
+            [
+                "773a1e93c9f0713b"
+            ]
+        ]
+    },
+    {
+        "id": "773a1e93c9f0713b",
+        "type": "function",
+        "z": "e5c7a484a1e3febd",
+        "g": "cf5ad31e392515bd",
+        "name": "function 16",
+        "func": "if (typeof msg.payload === 'string')\n    msg.payload = JSON.parse(msg.payload);\n\n\nlet dbData = msg.payload;\n\nlet arrData = Object.keys(dbData);\nlet YearMonth = arrData[0].split('-')[0] + '-'+ arrData[0].split('-')[1];\nlet sales = {};\nsales.series = [];\nsales.data = [];\nsales.labels = [\n    `${YearMonth}`\n];\n\n    \nfor(let i = 0; i < arrData.length; i++){\n    sales.series.push(arrData[i].split('-')[2]);\n    sales.data.push([dbData[arrData[i]]]);\n}\n\nmsg.payload = [sales];\n// let cnt = dbData.total;\n// const stockList = dbData[\"sales_list\"];\n// let sales = {};\n// sales.series = []\n// sales.data = []\n// sales.labels = [\n//     'SALES'\n// ]\n\n// for (let i = 0; i < cnt; i++) {\n//     sales.series.push(stockList[i][\"name\"]);\n//     sales.data.push([stockList[i][\"amount\"]]);\n// }\n\n\n// //msg.payload = stockList;\n// msg.payload = [sales];\n\nreturn msg;\n\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1690,
+        "y": 580,
+        "wires": [
+            [
+                "fe2194066e71bd61"
+            ]
+        ]
+    },
+    {
+        "id": "fe2194066e71bd61",
+        "type": "ui_chart",
+        "z": "e5c7a484a1e3febd",
+        "g": "cf5ad31e392515bd",
+        "name": "",
+        "group": "fe74f1ecc84760fe",
+        "order": 4,
+        "width": "10",
+        "height": "5",
+        "label": "일간매출",
+        "chartType": "bar",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1860,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a66694e0efc5cab6",
+        "type": "ui_spacer",
+        "z": "e5c7a484a1e3febd",
+        "name": "spacer",
+        "group": "c65c46336f9a49f1",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "fe74f1ecc84760fe",
+        "type": "ui_group",
+        "name": "Current Status",
+        "tab": "686c5b2df5e1c286",
+        "order": 2,
+        "disp": true,
+        "width": 20,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "16e736076471bd65",
+        "type": "ui_group",
+        "name": "text",
+        "tab": "686c5b2df5e1c286",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0ec1ff43d438c423",
+        "type": "ui_group",
+        "name": "Menu",
+        "tab": "dbb09173da4f3f2b",
+        "order": 1,
+        "disp": true,
+        "width": "10",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3610e521ef61d15b",
+        "type": "ui_group",
+        "name": "Stock",
+        "tab": "dbb09173da4f3f2b",
+        "order": 2,
+        "disp": true,
+        "width": "10",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5b8e7d67613bd874",
+        "type": "ui_group",
+        "name": "Pick",
+        "tab": "dbb09173da4f3f2b",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c65c46336f9a49f1",
+        "type": "ui_group",
+        "name": "Menu",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "686c5b2df5e1c286",
+        "type": "ui_tab",
+        "name": "Current Status",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "dbb09173da4f3f2b",
+        "type": "ui_tab",
+        "name": "Change",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
