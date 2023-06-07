@@ -42,7 +42,7 @@ async def get_order():
         menu = line[1]
         quantity = line[2]
         
-        json.append({"table_id":table_id, "menu":menu, "amount":quantity})
+        json.append({"table_id":int(table_id), "menu":menu, "amount":quantity})
     return json
 
 @app.get("/get/call")
@@ -62,7 +62,7 @@ async def get_call():
         call = line[1]
         
         
-        json.append({"table_id":table_id, "call":call})
+        json.append({"table_id":int(table_id), "call":call})
         
     return content
 
