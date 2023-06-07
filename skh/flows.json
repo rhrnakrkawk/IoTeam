@@ -1,10 +1,376 @@
 [
     {
-        "id": "5dc70ea22b6ba826",
-        "type": "ui_button",
-        "z": "1dd31230f9311aea",
+        "id": "4a363fee4c747bdb",
+        "type": "tab",
+        "label": "플로우 4",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b06a025196836c04",
+        "type": "group",
+        "z": "4a363fee4c747bdb",
+        "name": "테이블 입력",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "92defc86f8c1f449",
+            "7497551b20b60cbb",
+            "8e21a50673e38ef6",
+            "9220ac16599aae67",
+            "34406e06fb5f59b2",
+            "4fcbc32ac1789774",
+            "1a526b70201efed7",
+            "bd2c152910a70680",
+            "bef8c25030e0b40a",
+            "4e3f31e2fabae095"
+        ],
+        "x": 854,
+        "y": 79,
+        "w": 692,
+        "h": 282
+    },
+    {
+        "id": "ef2af648b4e58112",
+        "type": "group",
+        "z": "4a363fee4c747bdb",
         "name": "메뉴판 확인",
-        "group": "bd019abca9e654df",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "7880052789dd3932",
+            "22106b17fbf9ebcd",
+            "5fdd97ef41d36b45",
+            "f7426672f35bf03a",
+            "4ab0bd7acc2a4bfb",
+            "504d2c312d203d83",
+            "e409dd6a3a7db193",
+            "920b408ca1b87392",
+            "4068d487aeab8f89",
+            "f45ab891f0e0f87e",
+            "3d58d463022795a5",
+            "6c8b05231369ee98",
+            "4d105a7264b4f837",
+            "72f8602e49fca6a5",
+            "62a62872823239f0",
+            "71200d87d8f09fab",
+            "d1f53ddacf7c719a",
+            "7880052789dd3932"
+        ],
+        "x": 34,
+        "y": 419,
+        "w": 812,
+        "h": 502
+    },
+    {
+        "id": "1394f5d6c5352c24",
+        "type": "group",
+        "z": "4a363fee4c747bdb",
+        "name": "주문현황 확인",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "26b41c0f15f4abaf",
+            "5d83fa0be59bc8bd",
+            "06391ec3cc906702",
+            "2738331a27375283",
+            "1e810e60f25d4eae",
+            "469d13a83175bf06",
+            "a53e13cfc24b65c7",
+            "2b787b06a11fa548",
+            "dbdf96855c19ee75",
+            "f552b4391456cba3",
+            "3f024f95af77a1a9"
+        ],
+        "x": 34,
+        "y": 79,
+        "w": 792,
+        "h": 302
+    },
+    {
+        "id": "22106b17fbf9ebcd",
+        "type": "http request",
+        "z": "4a363fee4c747bdb",
+        "g": "ef2af648b4e58112",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://3.216.219.9:4400/api/foods/list",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 310,
+        "y": 600,
+        "wires": [
+            [
+                "4ab0bd7acc2a4bfb"
+            ]
+        ]
+    },
+    {
+        "id": "5fdd97ef41d36b45",
+        "type": "http request",
+        "z": "4a363fee4c747bdb",
+        "g": "ef2af648b4e58112",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://3.216.219.9:4400/api/admin/pick",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 350,
+        "y": 800,
+        "wires": [
+            [
+                "504d2c312d203d83"
+            ]
+        ]
+    },
+    {
+        "id": "f7426672f35bf03a",
+        "type": "http request",
+        "z": "4a363fee4c747bdb",
+        "g": "ef2af648b4e58112",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://3.216.219.9:4400/api/admin/populate",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 350,
+        "y": 880,
+        "wires": [
+            [
+                "e409dd6a3a7db193"
+            ]
+        ]
+    },
+    {
+        "id": "4ab0bd7acc2a4bfb",
+        "type": "function",
+        "z": "4a363fee4c747bdb",
+        "g": "ef2af648b4e58112",
+        "name": "function 3",
+        "func": "const data = JSON.parse(msg.payload);\ndata.food_list.forEach(item => {\n    console.log(item.name);\n});\nmsg.payload = data;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 600,
+        "wires": [
+            [
+                "920b408ca1b87392",
+                "4068d487aeab8f89",
+                "f45ab891f0e0f87e",
+                "3d58d463022795a5",
+                "6c8b05231369ee98",
+                "4d105a7264b4f837",
+                "72f8602e49fca6a5",
+                "62a62872823239f0"
+            ]
+        ]
+    },
+    {
+        "id": "504d2c312d203d83",
+        "type": "function",
+        "z": "4a363fee4c747bdb",
+        "g": "ef2af648b4e58112",
+        "name": "function 4",
+        "func": "msg.payload = JSON.parse(msg.payload);\nconst jsonArray = msg.payload;\nconst names = jsonArray.map(item => item.name);\nmsg.payload = names[0];\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 800,
+        "wires": [
+            [
+                "71200d87d8f09fab"
+            ]
+        ]
+    },
+    {
+        "id": "e409dd6a3a7db193",
+        "type": "function",
+        "z": "4a363fee4c747bdb",
+        "g": "ef2af648b4e58112",
+        "name": "function 5",
+        "func": "msg.payload = JSON.parse(msg.payload);\nconst jsonPayload = msg.payload;\nconst pizzaValue = jsonPayload.Popular;\n\nmsg.payload = pizzaValue;\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 880,
+        "wires": [
+            [
+                "d1f53ddacf7c719a"
+            ]
+        ]
+    },
+    {
+        "id": "7497551b20b60cbb",
+        "type": "function",
+        "z": "4a363fee4c747bdb",
+        "g": "b06a025196836c04",
+        "name": "function 6",
+        "func": "msg.payload = {\n    table_id: msg.payload.table_id,\n    menus: [\n        {\n            food_name: msg.payload.food_name,\n            amount: msg.payload.amount\n        }\n    ]\n};\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1100,
+        "y": 120,
+        "wires": [
+            [
+                "8e21a50673e38ef6"
+            ]
+        ]
+    },
+    {
+        "id": "8e21a50673e38ef6",
+        "type": "http request",
+        "z": "4a363fee4c747bdb",
+        "g": "b06a025196836c04",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://3.216.219.9:4400/api/orders/create",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1290,
+        "y": 120,
+        "wires": [
+            [
+                "9220ac16599aae67"
+            ]
+        ]
+    },
+    {
+        "id": "9220ac16599aae67",
+        "type": "http response",
+        "z": "4a363fee4c747bdb",
+        "g": "b06a025196836c04",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1470,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "34406e06fb5f59b2",
+        "type": "http request",
+        "z": "4a363fee4c747bdb",
+        "g": "b06a025196836c04",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://3.216.219.9:4400/api/orders/call",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1210,
+        "y": 220,
+        "wires": [
+            [
+                "1a526b70201efed7"
+            ]
+        ]
+    },
+    {
+        "id": "1a526b70201efed7",
+        "type": "http response",
+        "z": "4a363fee4c747bdb",
+        "g": "b06a025196836c04",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1470,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "bd2c152910a70680",
+        "type": "http request",
+        "z": "4a363fee4c747bdb",
+        "g": "b06a025196836c04",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://3.216.219.9:4400/api/table/create",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1210,
+        "y": 320,
+        "wires": [
+            [
+                "4e3f31e2fabae095"
+            ]
+        ]
+    },
+    {
+        "id": "4e3f31e2fabae095",
+        "type": "http response",
+        "z": "4a363fee4c747bdb",
+        "g": "b06a025196836c04",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1470,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "7880052789dd3932",
+        "type": "ui_button",
+        "z": "4a363fee4c747bdb",
+        "g": "ef2af648b4e58112",
+        "name": "메뉴판 확인",
+        "group": "6c3895c441c81113",
         "order": 11,
         "width": 0,
         "height": 0,
@@ -13,38 +379,611 @@
         "tooltip": "",
         "color": "",
         "bgcolor": "",
-        "className": "",
         "icon": "",
         "payload": "",
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 90,
-        "y": 400,
+        "x": 130,
+        "y": 600,
         "wires": [
             [
-                "fd1573bbff46d0b7",
-                "a92279b73c5ae51a",
-                "d427543d1e457d81"
+                "22106b17fbf9ebcd",
+                "5fdd97ef41d36b45",
+                "f7426672f35bf03a"
             ]
         ]
     },
     {
-        "id": "bd019abca9e654df",
+        "id": "920b408ca1b87392",
+        "type": "ui_text",
+        "z": "4a363fee4c747bdb",
+        "g": "ef2af648b4e58112",
+        "group": "6c3895c441c81113",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "menu1",
+        "label": "menu1",
+        "format": "{{msg.payload.food_list[0].name}}",
+        "layout": "row-spread",
+        "x": 710,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "4068d487aeab8f89",
+        "type": "ui_text",
+        "z": "4a363fee4c747bdb",
+        "g": "ef2af648b4e58112",
+        "group": "6c3895c441c81113",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "menu1 가격",
+        "label": "menu1 가격",
+        "format": "{{msg.payload.food_list[0].price}}",
+        "layout": "row-spread",
+        "x": 730,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "f45ab891f0e0f87e",
+        "type": "ui_text",
+        "z": "4a363fee4c747bdb",
+        "g": "ef2af648b4e58112",
+        "group": "6c3895c441c81113",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "menu2",
+        "label": "menu2",
+        "format": "{{msg.payload.food_list[1].name}}",
+        "layout": "row-spread",
+        "x": 710,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "3d58d463022795a5",
+        "type": "ui_text",
+        "z": "4a363fee4c747bdb",
+        "g": "ef2af648b4e58112",
+        "group": "6c3895c441c81113",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "menu2 가격",
+        "label": "menu2 가격",
+        "format": "{{msg.payload.food_list[1].price}}",
+        "layout": "row-spread",
+        "x": 730,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "6c8b05231369ee98",
+        "type": "ui_text",
+        "z": "4a363fee4c747bdb",
+        "g": "ef2af648b4e58112",
+        "group": "6c3895c441c81113",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "menu3",
+        "label": "menu3",
+        "format": "{{msg.payload.food_list[2].name}}",
+        "layout": "row-spread",
+        "x": 710,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "4d105a7264b4f837",
+        "type": "ui_text",
+        "z": "4a363fee4c747bdb",
+        "g": "ef2af648b4e58112",
+        "group": "6c3895c441c81113",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "menu3 가격",
+        "label": "menu3 가격",
+        "format": "{{msg.payload.food_list[2].price}}",
+        "layout": "row-spread",
+        "x": 730,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "72f8602e49fca6a5",
+        "type": "ui_text",
+        "z": "4a363fee4c747bdb",
+        "g": "ef2af648b4e58112",
+        "group": "6c3895c441c81113",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "name": "menu4",
+        "label": "menu4",
+        "format": "{{msg.payload.food_list[3].name}}",
+        "layout": "row-spread",
+        "x": 710,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "62a62872823239f0",
+        "type": "ui_text",
+        "z": "4a363fee4c747bdb",
+        "g": "ef2af648b4e58112",
+        "group": "6c3895c441c81113",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "name": "menu4 가격",
+        "label": "menu4 가격",
+        "format": "{{msg.payload.food_list[3].price}}",
+        "layout": "row-spread",
+        "x": 730,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "71200d87d8f09fab",
+        "type": "ui_text",
+        "z": "4a363fee4c747bdb",
+        "g": "ef2af648b4e58112",
+        "group": "6c3895c441c81113",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "name": "사장's 추천픽",
+        "label": "사장's 추천픽",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 740,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "d1f53ddacf7c719a",
+        "type": "ui_text",
+        "z": "4a363fee4c747bdb",
+        "g": "ef2af648b4e58112",
+        "group": "6c3895c441c81113",
+        "order": 10,
+        "width": 0,
+        "height": 0,
+        "name": "이번주 인기메뉴",
+        "label": "이번주 인기메뉴",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 740,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "92defc86f8c1f449",
+        "type": "ui_form",
+        "z": "4a363fee4c747bdb",
+        "g": "b06a025196836c04",
+        "name": "주문",
+        "label": "주문",
+        "group": "5907bb25048da031",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "메뉴를 입력해주세요 ex)pizza",
+                "value": "food_name",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "주문할 음식 개수 ex)2",
+                "value": "amount",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "테이블 번호 ex)1",
+                "value": "table_id",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "food_name": "",
+            "amount": "",
+            "table_id": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "x": 930,
+        "y": 120,
+        "wires": [
+            [
+                "7497551b20b60cbb"
+            ]
+        ]
+    },
+    {
+        "id": "4fcbc32ac1789774",
+        "type": "ui_form",
+        "z": "4a363fee4c747bdb",
+        "g": "b06a025196836c04",
+        "name": "직원호출",
+        "label": "직원호출",
+        "group": "5907bb25048da031",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "필요한것을 적어주세요",
+                "value": "content",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "반드시 체크해주세요",
+                "value": "call",
+                "type": "checkbox",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "테이블 번호를 입력해주세요 EX)1",
+                "value": "table_id",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "content": "",
+            "call": false,
+            "table_id": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "x": 940,
+        "y": 220,
+        "wires": [
+            [
+                "34406e06fb5f59b2"
+            ]
+        ]
+    },
+    {
+        "id": "bef8c25030e0b40a",
+        "type": "ui_form",
+        "z": "4a363fee4c747bdb",
+        "g": "b06a025196836c04",
+        "name": "테이블 형성",
+        "label": "테이블 번호 및 인원제출 (주문하기전 먼저 실행해주세요)",
+        "group": "5907bb25048da031",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "테이블 번호를 입력하세요 EX)0",
+                "value": "table_id",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "사람수를 입력하세요 EX)4",
+                "value": "customer_count",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "0입력후 제출해주세요 EX)0",
+                "value": "total_price",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "table_id": "",
+            "customer_count": "",
+            "total_price": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "x": 950,
+        "y": 320,
+        "wires": [
+            [
+                "bd2c152910a70680"
+            ]
+        ]
+    },
+    {
+        "id": "26b41c0f15f4abaf",
+        "type": "ui_button",
+        "z": "4a363fee4c747bdb",
+        "g": "1394f5d6c5352c24",
+        "name": "주문현황 확인",
+        "group": "482d74a7f761bc80",
+        "order": 11,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "주문현황 확인",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 140,
+        "y": 140,
+        "wires": [
+            [
+                "5d83fa0be59bc8bd",
+                "06391ec3cc906702"
+            ]
+        ]
+    },
+    {
+        "id": "5d83fa0be59bc8bd",
+        "type": "http request",
+        "z": "4a363fee4c747bdb",
+        "g": "1394f5d6c5352c24",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://3.216.219.9:4400/api/orders/detail?table_id=1",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 350,
+        "y": 140,
+        "wires": [
+            [
+                "2738331a27375283"
+            ]
+        ]
+    },
+    {
+        "id": "06391ec3cc906702",
+        "type": "http request",
+        "z": "4a363fee4c747bdb",
+        "g": "1394f5d6c5352c24",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://3.216.219.9:4400/api/tables/detail?table_id=1",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 350,
+        "y": 280,
+        "wires": [
+            [
+                "1e810e60f25d4eae"
+            ]
+        ]
+    },
+    {
+        "id": "2738331a27375283",
+        "type": "function",
+        "z": "4a363fee4c747bdb",
+        "g": "1394f5d6c5352c24",
+        "name": "function 1",
+        "func": "msg.payload = JSON.parse(msg.payload);\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 140,
+        "wires": [
+            [
+                "469d13a83175bf06",
+                "a53e13cfc24b65c7"
+            ]
+        ]
+    },
+    {
+        "id": "1e810e60f25d4eae",
+        "type": "function",
+        "z": "4a363fee4c747bdb",
+        "g": "1394f5d6c5352c24",
+        "name": "function 2",
+        "func": "msg.payload = JSON.parse(msg.payload);\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 280,
+        "wires": [
+            [
+                "2b787b06a11fa548",
+                "dbdf96855c19ee75",
+                "f552b4391456cba3",
+                "3f024f95af77a1a9"
+            ]
+        ]
+    },
+    {
+        "id": "469d13a83175bf06",
+        "type": "ui_text",
+        "z": "4a363fee4c747bdb",
+        "g": "1394f5d6c5352c24",
+        "group": "482d74a7f761bc80",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "메뉴",
+        "label": "메뉴",
+        "format": "{{msg.payload.menu}}",
+        "layout": "row-spread",
+        "x": 710,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "a53e13cfc24b65c7",
+        "type": "ui_text",
+        "z": "4a363fee4c747bdb",
+        "g": "1394f5d6c5352c24",
+        "group": "482d74a7f761bc80",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "개수",
+        "label": "개수",
+        "format": "{{msg.payload.amount}}",
+        "layout": "row-spread",
+        "x": 710,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "2b787b06a11fa548",
+        "type": "ui_text",
+        "z": "4a363fee4c747bdb",
+        "g": "1394f5d6c5352c24",
+        "group": "482d74a7f761bc80",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "name": "테이블 번호",
+        "label": "테이블 번호",
+        "format": "{{msg.payload.id}}",
+        "layout": "row-spread",
+        "x": 730,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "dbdf96855c19ee75",
+        "type": "ui_text",
+        "z": "4a363fee4c747bdb",
+        "g": "1394f5d6c5352c24",
+        "group": "482d74a7f761bc80",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "name": "테이블 인원",
+        "label": "테이블 인원",
+        "format": "{{msg.payload.customer_count}}",
+        "layout": "row-spread",
+        "x": 730,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "f552b4391456cba3",
+        "type": "ui_text",
+        "z": "4a363fee4c747bdb",
+        "g": "1394f5d6c5352c24",
+        "group": "482d74a7f761bc80",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "name": "총 가격",
+        "label": "총 가격",
+        "format": "{{msg.payload.total_price}}",
+        "layout": "row-spread",
+        "x": 720,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "3f024f95af77a1a9",
+        "type": "ui_text",
+        "z": "4a363fee4c747bdb",
+        "g": "1394f5d6c5352c24",
+        "group": "482d74a7f761bc80",
+        "order": 10,
+        "width": 0,
+        "height": 0,
+        "name": "계산 여부",
+        "label": "계산 여부",
+        "format": "{{msg.payload.is_paid}}",
+        "layout": "row-spread",
+        "x": 720,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "6c3895c441c81113",
         "type": "ui_group",
-        "name": "메뉴판",
-        "tab": "7cadb7b04eac80e0",
+        "name": "메뉴판확인",
+        "tab": "99d17ef3c3dc2345",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "5907bb25048da031",
+        "type": "ui_group",
+        "name": "주문",
+        "tab": "99d17ef3c3dc2345",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "482d74a7f761bc80",
+        "type": "ui_group",
+        "name": "주문현황 확인",
+        "tab": "99d17ef3c3dc2345",
         "order": 1,
         "disp": true,
         "width": "6",
-        "collapse": false,
-        "className": ""
+        "collapse": false
     },
     {
-        "id": "7cadb7b04eac80e0",
+        "id": "99d17ef3c3dc2345",
         "type": "ui_tab",
-        "name": "테이블1",
+        "name": "테이블 1",
         "icon": "dashboard",
+        "order": 3,
         "disabled": false,
         "hidden": false
     }
