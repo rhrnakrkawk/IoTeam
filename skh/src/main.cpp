@@ -15,13 +15,15 @@ volatile int lastEncoded = 0;
 volatile int encoderValue = 0;
 volatile bool pressed = false;
 
-const char *ssid = "skh612";
-const char *pass = "rudgh612";
+const char *ssid = "heesane";
+const char *pass = "97289728";
 SSD1306 display(0x3c, 4, 5, GEOMETRY_128_32);
+
 HTTPClient http;
 HTTPClient httppost;
 HTTPClient orderhttp;
 HTTPClient edge_orderhttp;
+
 WiFiClient clientGet;
 WiFiClient clientPost;
 WiFiClient orderclient;
@@ -47,7 +49,7 @@ String person = "";
 String names[3];
 int prices[3];
 String price_display[3];
-int table_id = 1; // 테이블(아두이노)마다 바꿔주세요
+int table_id = 1;
 String table_id1 = "1";
 boolean order_flag = false;
 boolean staff_flag = false;
@@ -83,6 +85,7 @@ void contentpush()
     encoderValue = 0;
   }
 }
+
 void number2push()
 {
   if (encoderValue < 10)
@@ -219,20 +222,22 @@ IRAM_ATTR void buttonClicked()
   Serial.println("pushed");
 }
 
-boolean edge_OrderPost(int number_1) // 주소만 바꿀것
+boolean edge_OrderPost(int number_1) // 엣지서버 http통신
 {
   if (order_flag == true)
   {
-    Serial.println("edge_menu");
-    String edge_server = "http://3.226.142.20:4400/order?";
+
+    String edge_server = "http://192.168.133.99:4400/order?";
     String edge_tableid = "table_id=" + table_id1 + "&";
     String edge_menu = "menu=" + names[number_1] + "&";
     String edge_quantity = "amount=" + number;
-    String edge = "http://3.226.142.20:4400/order?" + edge_tableid + edge_menu + edge_quantity;
+    String edge = "http://192.168.133.99:4400/order?" + edge_tableid + edge_menu + edge_quantity;
     Serial.println(edge);
     edge_orderhttp.begin(edge_orderclient, edge);
     order_flag = false;
+
     int edge_httpResponseCode = edge_orderhttp.GET();
+
     if (edge_httpResponseCode > 0)
     {
       Serial.println(edge_httpResponseCode);
@@ -250,16 +255,17 @@ boolean edge_OrderPost(int number_1) // 주소만 바꿀것
   }
   if (staff_flag == true)
   {
-    Serial.println("edge_call");
+
     staff_flag = false;
     staff_content = content + number2;
-    String edge_server = "http://3.226.142.20:4400/call?";
+    String edge_server = "http://192.168.133.99:4400/call?";
     String edge_tableid = "table_id=" + table_id1;
     String edge_call = "&call=" + staff_content;
     String edge = edge_server + edge_tableid + edge_call;
     edge_orderhttp.begin(edge_orderclient, edge);
     Serial.println(edge);
     int edge_httpResponseCode = edge_orderhttp.GET();
+
     if (edge_httpResponseCode > 0)
     {
       Serial.println(edge_httpResponseCode);
@@ -290,6 +296,7 @@ boolean OrderPost(int number) // 주문 서버에 전송
     JsonObject menu1 = menus.createNestedObject();
     menu1["food_name"] = names[number];
     menu1["amount"] = amount_num;
+    jsonDoc["is_paid"] = "false";
     serializeJsonPretty(jsonDoc, Serial);
 
     orderhttp.begin(orderclient, "http://3.216.219.9:4400/api/orders/create");
@@ -297,8 +304,8 @@ boolean OrderPost(int number) // 주문 서버에 전송
 
     String jsonString;
     serializeJson(jsonDoc, jsonString);
-    // int httpResponseCode = orderhttp.POST(jsonString);
-    int httpResponseCode = -1; // 엣지서버 테스트용
+    int httpResponseCode = orderhttp.POST(jsonString);
+    // int httpResponseCode = -1; // 엣지서버 테스트용
     if (httpResponseCode > 0)
     {
       String response = orderhttp.getString();
@@ -308,7 +315,7 @@ boolean OrderPost(int number) // 주문 서버에 전송
       delay(300);
       return true;
     }
-    else
+    else // 본서버에 문제가 생겼을시 엣지서버로 주문전송
     {
       Serial.print("Error code: ");
       Serial.println(httpResponseCode);
@@ -344,6 +351,7 @@ boolean OrderPost(int number) // 주문 서버에 전송
     jsonDoc["table_id"] = table_id;
     jsonDoc["call"] = "true";
     jsonDoc["content"] = staff_content;
+    jsonDoc["is_paid"] = "false";
 
     serializeJsonPretty(jsonDoc, Serial);
 
@@ -352,8 +360,8 @@ boolean OrderPost(int number) // 주문 서버에 전송
 
     String jsonString;
     serializeJson(jsonDoc, jsonString);
-    // int httpResponseCode = orderhttp.POST(jsonString);
-    int httpResponseCode = -1; // 엣지서버 테스트용
+    int httpResponseCode = orderhttp.POST(jsonString);
+    // int httpResponseCode = -1; // 엣지서버 테스트용
     if (httpResponseCode > 0)
     {
       String response = orderhttp.getString();
@@ -363,7 +371,7 @@ boolean OrderPost(int number) // 주문 서버에 전송
       delay(300);
       return true;
     }
-    else
+    else // 본서버에 문제가 생겼을시 엣지서버로 직원호출전송
     {
       staff_flag = true;
       Serial.print("Error code: ");
@@ -768,6 +776,4 @@ void loop()
 
   delay(200);
   menuSelect();
-
-  // HTTP GET 요청 보내기
 }
