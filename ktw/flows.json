@@ -8,50 +8,10 @@
         "env": []
     },
     {
-        "id": "dba58d111680b812",
-        "type": "group",
-        "z": "e5c7a484a1e3febd",
-        "g": "77415dee6b28efb4",
-        "name": "메뉴 정보 입력",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "1db978b1e77bc12a",
-            "5788997105433b26",
-            "0bbcfdff74398aba",
-            "41bf5bc8a678964e",
-            "200c346c2df1e4cd"
-        ],
-        "x": 674,
-        "y": 799,
-        "w": 512,
-        "h": 142
-    },
-    {
-        "id": "3f52daf441c86b62",
-        "type": "group",
-        "z": "e5c7a484a1e3febd",
-        "g": "77415dee6b28efb4",
-        "name": "메뉴 제거",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "1ab9afabfd591bf8",
-            "db68cff7b79c1715",
-            "22ed5e7c13f60f61"
-        ],
-        "x": 714,
-        "y": 699,
-        "w": 472,
-        "h": 82
-    },
-    {
         "id": "41935cb7dffe9ba1",
         "type": "group",
         "z": "e5c7a484a1e3febd",
-        "g": "a171f922b5e0f533",
+        "g": "90c98bbb3a56af4f",
         "name": "인기메뉴",
         "style": {
             "label": true
@@ -62,8 +22,8 @@
             "b50cb54c69d66d17",
             "346746df0ecfd615"
         ],
-        "x": 1254,
-        "y": 839,
+        "x": 2274,
+        "y": 799,
         "w": 672,
         "h": 82
     },
@@ -71,7 +31,7 @@
         "id": "606430c463b74780",
         "type": "group",
         "z": "e5c7a484a1e3febd",
-        "g": "a171f922b5e0f533",
+        "g": "90c98bbb3a56af4f",
         "name": "음식 총 주문 횟수",
         "style": {
             "label": true
@@ -82,8 +42,8 @@
             "dc05a246598b8d87",
             "c14085f16396c0a7"
         ],
-        "x": 1254,
-        "y": 739,
+        "x": 2274,
+        "y": 699,
         "w": 692,
         "h": 82
     },
@@ -91,7 +51,7 @@
         "id": "5550bad1bc97dcff",
         "type": "group",
         "z": "e5c7a484a1e3febd",
-        "g": "a171f922b5e0f533",
+        "g": "90c98bbb3a56af4f",
         "name": "재고 확인",
         "style": {
             "label": true
@@ -104,55 +64,16 @@
             "63ce68811c8210f6",
             "b9708b0bb7c45060"
         ],
-        "x": 1254,
-        "y": 379,
+        "x": 2274,
+        "y": 459,
         "w": 692,
         "h": 122
-    },
-    {
-        "id": "813fef19d4b33f9a",
-        "type": "group",
-        "z": "e5c7a484a1e3febd",
-        "g": "77415dee6b28efb4",
-        "name": "재고 생성",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "e016721541b5bd79",
-            "dfc1842d60f88381"
-        ],
-        "x": 854,
-        "y": 379,
-        "w": 332,
-        "h": 82
-    },
-    {
-        "id": "b914c2e202dfe3ea",
-        "type": "group",
-        "z": "e5c7a484a1e3febd",
-        "g": "77415dee6b28efb4",
-        "name": "재고 삭제",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "f9ccf61c4baf4974",
-            "3fca24db7853ce79",
-            "6d8ff06c105ad113",
-            "f32e20d227ec17c5",
-            "0ee3860127c8064d"
-        ],
-        "x": 374,
-        "y": 579,
-        "w": 812,
-        "h": 82
     },
     {
         "id": "fd40b517740262fc",
         "type": "group",
         "z": "e5c7a484a1e3febd",
-        "g": "a171f922b5e0f533",
+        "g": "90c98bbb3a56af4f",
         "name": "일간 방문자 수 확인",
         "style": {
             "label": true
@@ -163,8 +84,8 @@
             "2eee0117e3353972",
             "0ceb3f155ce83ba2"
         ],
-        "x": 1254,
-        "y": 639,
+        "x": 2274,
+        "y": 999,
         "w": 712,
         "h": 82
     },
@@ -172,7 +93,7 @@
         "id": "84e4ff3ba80be503",
         "type": "group",
         "z": "e5c7a484a1e3febd",
-        "g": "a171f922b5e0f533",
+        "g": "90c98bbb3a56af4f",
         "name": "현재 테이블 현황",
         "style": {
             "label": true
@@ -184,8 +105,8 @@
             "4f1e7d184ea1b30e",
             "35cf7b9055a311d3"
         ],
-        "x": 1254,
-        "y": 1079,
+        "x": 2274,
+        "y": 359,
         "w": 932,
         "h": 82
     },
@@ -193,7 +114,7 @@
         "id": "7dd2205a9d24fcf3",
         "type": "group",
         "z": "e5c7a484a1e3febd",
-        "g": "a171f922b5e0f533",
+        "g": "90c98bbb3a56af4f",
         "name": "사장의 픽",
         "style": {
             "label": true
@@ -204,16 +125,96 @@
             "d2e4f219c01669b7",
             "6ddec9c3cd317728"
         ],
-        "x": 1254,
-        "y": 979,
+        "x": 2274,
+        "y": 1099,
         "w": 692,
+        "h": 82
+    },
+    {
+        "id": "cf5ad31e392515bd",
+        "type": "group",
+        "z": "e5c7a484a1e3febd",
+        "g": "90c98bbb3a56af4f",
+        "name": "일간 매출 확인",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "b9d446f5fd553743",
+            "3df6785a77f4aa34",
+            "773a1e93c9f0713b",
+            "fe2194066e71bd61"
+        ],
+        "x": 2274,
+        "y": 899,
+        "w": 692,
+        "h": 82
+    },
+    {
+        "id": "dba58d111680b812",
+        "type": "group",
+        "z": "e5c7a484a1e3febd",
+        "g": "b3ae25dee66ede07",
+        "name": "메뉴 정보 입력",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "1db978b1e77bc12a",
+            "5788997105433b26",
+            "0bbcfdff74398aba",
+            "41bf5bc8a678964e",
+            "200c346c2df1e4cd"
+        ],
+        "x": 1674,
+        "y": 879,
+        "w": 512,
+        "h": 142
+    },
+    {
+        "id": "813fef19d4b33f9a",
+        "type": "group",
+        "z": "e5c7a484a1e3febd",
+        "g": "b3ae25dee66ede07",
+        "name": "재고 생성",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "e016721541b5bd79",
+            "dfc1842d60f88381"
+        ],
+        "x": 1854,
+        "y": 359,
+        "w": 332,
+        "h": 82
+    },
+    {
+        "id": "b914c2e202dfe3ea",
+        "type": "group",
+        "z": "e5c7a484a1e3febd",
+        "g": "b3ae25dee66ede07",
+        "name": "재고 삭제",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "f9ccf61c4baf4974",
+            "3fca24db7853ce79",
+            "6d8ff06c105ad113",
+            "f32e20d227ec17c5",
+            "0ee3860127c8064d"
+        ],
+        "x": 1374,
+        "y": 559,
+        "w": 812,
         "h": 82
     },
     {
         "id": "570c50c3e1ea1db9",
         "type": "group",
         "z": "e5c7a484a1e3febd",
-        "g": "77415dee6b28efb4",
+        "g": "b3ae25dee66ede07",
         "name": "사장 픽 변경",
         "style": {
             "label": true
@@ -226,8 +227,8 @@
             "ba0b84767a34dda1",
             "aa5d1595e0b1c6e8"
         ],
-        "x": 674,
-        "y": 959,
+        "x": 1674,
+        "y": 1059,
         "w": 512,
         "h": 122
     },
@@ -235,7 +236,7 @@
         "id": "ea69cdaf98e8959c",
         "type": "group",
         "z": "e5c7a484a1e3febd",
-        "g": "77415dee6b28efb4",
+        "g": "b3ae25dee66ede07",
         "name": "재고 변경",
         "style": {
             "label": true
@@ -245,33 +246,61 @@
             "5455fa266fe68c47",
             "18a28b06d5b39b61"
         ],
-        "x": 674,
-        "y": 479,
+        "x": 1674,
+        "y": 459,
         "w": 512,
         "h": 82
     },
     {
-        "id": "cf5ad31e392515bd",
+        "id": "f3659fb3b8faeefd",
         "type": "group",
         "z": "e5c7a484a1e3febd",
-        "g": "a171f922b5e0f533",
-        "name": "일간 매출 확인",
+        "g": "b3ae25dee66ede07",
+        "name": "메뉴 및 레시피 제거",
         "style": {
             "label": true
         },
         "nodes": [
-            "b9d446f5fd553743",
-            "3df6785a77f4aa34",
-            "773a1e93c9f0713b",
-            "fe2194066e71bd61"
+            "1ab9afabfd591bf8",
+            "db68cff7b79c1715",
+            "22ed5e7c13f60f61",
+            "acf9f0c8df105557",
+            "f6d56ca14be8f38f",
+            "29ca8ee2e3069503",
+            "2f94188fe0a796b7",
+            "ba272c93e007858d",
+            "be38b8b4db213051"
         ],
-        "x": 1254,
-        "y": 539,
-        "w": 692,
+        "x": 1054,
+        "y": 679,
+        "w": 1132,
+        "h": 182
+    },
+    {
+        "id": "849493aff09a365f",
+        "type": "group",
+        "z": "e5c7a484a1e3febd",
+        "g": "90c98bbb3a56af4f",
+        "name": "레시피 출력",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "bc35aff7ca121ca9",
+            "05365f4ffd20ea34",
+            "8210a7ff5b2f459b",
+            "9e6d0d93c1fa43a3",
+            "0c9983e405cc6b76",
+            "80cde2230e63bad0",
+            "b11efb2544710362"
+        ],
+        "x": 2274,
+        "y": 599,
+        "w": 1132,
         "h": 82
     },
     {
-        "id": "77415dee6b28efb4",
+        "id": "b3ae25dee66ede07",
         "type": "group",
         "z": "e5c7a484a1e3febd",
         "name": "설정 변경",
@@ -280,19 +309,19 @@
         },
         "nodes": [
             "dba58d111680b812",
-            "3f52daf441c86b62",
             "813fef19d4b33f9a",
             "b914c2e202dfe3ea",
             "570c50c3e1ea1db9",
-            "ea69cdaf98e8959c"
+            "ea69cdaf98e8959c",
+            "f3659fb3b8faeefd"
         ],
-        "x": 348,
-        "y": 353,
-        "w": 864,
-        "h": 754
+        "x": 1028,
+        "y": 333,
+        "w": 1184,
+        "h": 874
     },
     {
-        "id": "a171f922b5e0f533",
+        "id": "90c98bbb3a56af4f",
         "type": "group",
         "z": "e5c7a484a1e3febd",
         "name": "현황 출력",
@@ -306,12 +335,13 @@
             "fd40b517740262fc",
             "84e4ff3ba80be503",
             "7dd2205a9d24fcf3",
-            "cf5ad31e392515bd"
+            "cf5ad31e392515bd",
+            "849493aff09a365f"
         ],
-        "x": 1228,
-        "y": 353,
-        "w": 984,
-        "h": 834
+        "x": 2248,
+        "y": 333,
+        "w": 1184,
+        "h": 874
     },
     {
         "id": "d18cb61355d8347c",
@@ -335,8 +365,8 @@
         "topic": "",
         "payload": "{\"count\":2,\"foodList\":{\"pizza\":{\"totalCount\":5,\"Price\":10000,\"Ingredient\":{\"cheese\":10,\"dough\":1,\"sauce\":10}},\"pasta\":{\"totalCount\":3,\"Price\":8000,\"Ingredient\":{\"cheese\":5,\"noodle\":100,\"sauce\":20}}}}",
         "payloadType": "json",
-        "x": 1350,
-        "y": 780,
+        "x": 2370,
+        "y": 740,
         "wires": [
             [
                 "dc05a246598b8d87"
@@ -351,8 +381,8 @@
         "name": "",
         "group": "fe74f1ecc84760fe",
         "order": 1,
-        "width": "10",
-        "height": "5",
+        "width": 10,
+        "height": 5,
         "label": "음식 주문 횟수",
         "chartType": "bar",
         "legend": "true",
@@ -382,8 +412,8 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 1840,
-        "y": 780,
+        "x": 2860,
+        "y": 740,
         "wires": [
             []
         ]
@@ -400,8 +430,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1700,
-        "y": 880,
+        "x": 2720,
+        "y": 840,
         "wires": [
             [
                 "4eed908237b63728"
@@ -414,7 +444,7 @@
         "z": "e5c7a484a1e3febd",
         "g": "41935cb7dffe9ba1",
         "group": "16e736076471bd65",
-        "order": 6,
+        "order": 3,
         "width": 0,
         "height": 0,
         "name": "",
@@ -422,9 +452,898 @@
         "format": "{{msg.payload}}",
         "layout": "row-left",
         "className": "",
-        "x": 1840,
-        "y": 880,
+        "x": 2860,
+        "y": 840,
         "wires": []
+    },
+    {
+        "id": "b50cb54c69d66d17",
+        "type": "http request",
+        "z": "e5c7a484a1e3febd",
+        "g": "41935cb7dffe9ba1",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://3.216.219.9:4400/api/admin/populate",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 2550,
+        "y": 840,
+        "wires": [
+            [
+                "62aa03311ee25f9d"
+            ]
+        ]
+    },
+    {
+        "id": "346746df0ecfd615",
+        "type": "inject",
+        "z": "e5c7a484a1e3febd",
+        "g": "41935cb7dffe9ba1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 2390,
+        "y": 840,
+        "wires": [
+            [
+                "b50cb54c69d66d17"
+            ]
+        ]
+    },
+    {
+        "id": "dc05a246598b8d87",
+        "type": "http request",
+        "z": "e5c7a484a1e3febd",
+        "g": "606430c463b74780",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://3.216.219.9:4400/api/foods/list",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 2510,
+        "y": 740,
+        "wires": [
+            [
+                "c14085f16396c0a7"
+            ]
+        ]
+    },
+    {
+        "id": "c14085f16396c0a7",
+        "type": "function",
+        "z": "e5c7a484a1e3febd",
+        "g": "606430c463b74780",
+        "name": "function 5",
+        "func": "if (typeof msg.payload === 'string')\n    msg.payload = JSON.parse(msg.payload);\n\n\n// return msg\nlet dbData = msg.payload;\n\nlet cnt = dbData.total;\nconst foodList = dbData[\"food_list\"];\nlet foods = {};\nfoods.series = []\nfoods.data = []\nfoods.labels = [\n    'FOOD'\n]\n\nfor(let i = 0 ;i < cnt; i++){\n    foods.series.push(foodList[i][\"name\"]);\n    foods.data.push([foodList[i][\"populate\"]]);\n}\n\nmsg.payload = [foods];\n\nreturn msg;\n\n\n\n\n\n// let food = Object.keys(dbData.foodList);\n\n// let foods = {};\n// foods.series = []\n// foods.data = []\n// foods.labels = [\n//     'FOOD'\n// ]\n// for (let item of food) {\n//     foods.series.push(item);\n//     foods.data.push([dbData['foodList'][item]['totalCount']]);\n// }\n\n// msg.payload = [foods]\n// //msg.payload = food\n// return msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2680,
+        "y": 740,
+        "wires": [
+            [
+                "f36ee54f94e00646"
+            ]
+        ]
+    },
+    {
+        "id": "034e70dead263943",
+        "type": "inject",
+        "z": "e5c7a484a1e3febd",
+        "g": "5550bad1bc97dcff",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 2390,
+        "y": 520,
+        "wires": [
+            [
+                "abfd7d6bd4522f89"
+            ]
+        ]
+    },
+    {
+        "id": "abfd7d6bd4522f89",
+        "type": "http request",
+        "z": "e5c7a484a1e3febd",
+        "g": "5550bad1bc97dcff",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://3.216.219.9:4400/api/stocks/list",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 2550,
+        "y": 520,
+        "wires": [
+            [
+                "a2d0492e2769b6f7",
+                "63ce68811c8210f6"
+            ]
+        ]
+    },
+    {
+        "id": "a2d0492e2769b6f7",
+        "type": "function",
+        "z": "e5c7a484a1e3febd",
+        "g": "5550bad1bc97dcff",
+        "name": "function 14",
+        "func": "if (typeof msg.payload === 'string')\n    msg.payload = JSON.parse(msg.payload);\n\n\nlet dbData = msg.payload;\n\nlet cnt = dbData.total;\nconst stockList = dbData[\"stocks_list\"];\nlet stocks = {};\nstocks.series = []\nstocks.data = []\nstocks.labels = [\n    'STOCK'\n]\n\nfor (let i = 0; i < cnt; i++) {\n    stocks.series.push(stockList[i][\"name\"]);\n    stocks.data.push([stockList[i][\"amount\"]]);\n}\n\n\n//msg.payload = stockList;\nmsg.payload = [stocks];\n\nreturn msg;\n\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2730,
+        "y": 500,
+        "wires": [
+            [
+                "58bf5739784bd0b3"
+            ]
+        ]
+    },
+    {
+        "id": "58bf5739784bd0b3",
+        "type": "ui_chart",
+        "z": "e5c7a484a1e3febd",
+        "g": "5550bad1bc97dcff",
+        "name": "",
+        "group": "fe74f1ecc84760fe",
+        "order": 3,
+        "width": 10,
+        "height": 5,
+        "label": "재고",
+        "chartType": "bar",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 2870,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "63ce68811c8210f6",
+        "type": "function",
+        "z": "e5c7a484a1e3febd",
+        "g": "5550bad1bc97dcff",
+        "name": "function 21",
+        "func": "if (typeof msg.payload === 'string')\n    msg.payload = JSON.parse(msg.payload);\n\n\nlet dbData = msg.payload;\n\nlet cnt = dbData.total;\nconst stockList = dbData[\"stocks_list\"];\nlet deff = [];\nfor (let i = 0; i < cnt; i++) {\n    if (stockList[i][\"amount\"] <= 500){\n        deff.push(stockList[i][\"name\"]);\n    }\n}\nlet str = deff.join(\", \");\nif(str === ''){\n    msg.payload = 'x';\n}\nelse\n    msg.payload = str;\n\n\nreturn msg;\n\n\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2730,
+        "y": 540,
+        "wires": [
+            [
+                "b9708b0bb7c45060"
+            ]
+        ]
+    },
+    {
+        "id": "b9708b0bb7c45060",
+        "type": "ui_text",
+        "z": "e5c7a484a1e3febd",
+        "g": "5550bad1bc97dcff",
+        "group": "16e736076471bd65",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "재고 부족",
+        "label": "<font color=red>부족</font>",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "x": 2880,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "02dd5dbd1d65a8cf",
+        "type": "inject",
+        "z": "e5c7a484a1e3febd",
+        "g": "fd40b517740262fc",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 2390,
+        "y": 1040,
+        "wires": [
+            [
+                "312c2177bfa1d148"
+            ]
+        ]
+    },
+    {
+        "id": "312c2177bfa1d148",
+        "type": "http request",
+        "z": "e5c7a484a1e3febd",
+        "g": "fd40b517740262fc",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://3.216.219.9:4400/api/admin/customer/daily",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 2550,
+        "y": 1040,
+        "wires": [
+            [
+                "2eee0117e3353972"
+            ]
+        ]
+    },
+    {
+        "id": "2eee0117e3353972",
+        "type": "function",
+        "z": "e5c7a484a1e3febd",
+        "g": "fd40b517740262fc",
+        "name": "function 22",
+        "func": "if (typeof msg.payload === 'string')\n    msg.payload = JSON.parse(msg.payload);\n\nlet dbData = msg.payload;\nlet arrData = Object.keys(dbData);\nlet YearMonth = arrData[0].split('-')[0] + '-' + arrData[0].split('-')[1];\n\nlet customers = {};\ncustomers.series = [];\ncustomers.data = [];\ncustomers.labels = [\n    `${YearMonth}`\n];\n\nfor (let i = 0; i < arrData.length; i++) {\n    customers.series.push(arrData[i].split('-')[2]);\n    customers.data.push([dbData[arrData[i]]]);\n}\n\nmsg.payload = [customers];\nreturn msg;\n\n\n\n\n\n\n\n// let cnt = dbData.total;\n// const stockList = dbData[\"sales_list\"];\n// let sales = {};\n// sales.series = []\n// sales.data = []\n// sales.labels = [\n//     'SALES'\n// ]\n\n// for (let i = 0; i < cnt; i++) {\n//     sales.series.push(stockList[i][\"name\"]);\n//     sales.data.push([stockList[i][\"amount\"]]);\n// }\n\n\n// //msg.payload = stockList;\n// msg.payload = [sales];\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2710,
+        "y": 1040,
+        "wires": [
+            [
+                "0ceb3f155ce83ba2"
+            ]
+        ]
+    },
+    {
+        "id": "0ceb3f155ce83ba2",
+        "type": "ui_chart",
+        "z": "e5c7a484a1e3febd",
+        "g": "fd40b517740262fc",
+        "name": "",
+        "group": "fe74f1ecc84760fe",
+        "order": 5,
+        "width": 20,
+        "height": 5,
+        "label": "일간 방문자 수",
+        "chartType": "bar",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 2880,
+        "y": 1040,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a12763f1ed4df51c",
+        "type": "inject",
+        "z": "e5c7a484a1e3febd",
+        "g": "84e4ff3ba80be503",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 2390,
+        "y": 400,
+        "wires": [
+            [
+                "ffe746234416dd3a"
+            ]
+        ]
+    },
+    {
+        "id": "ffe746234416dd3a",
+        "type": "http request",
+        "z": "e5c7a484a1e3febd",
+        "g": "84e4ff3ba80be503",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://3.216.219.9:4400/api/tables/list",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 2550,
+        "y": 400,
+        "wires": [
+            [
+                "2f1593a27ac58605"
+            ]
+        ]
+    },
+    {
+        "id": "2f1593a27ac58605",
+        "type": "function",
+        "z": "e5c7a484a1e3febd",
+        "g": "84e4ff3ba80be503",
+        "name": "테이블 현황 파악",
+        "func": "if (typeof msg.payload === 'string')\n    msg.payload = JSON.parse(msg.payload);\nlet dbData = msg.payload;\n\nlet cnt = dbData.total;\nlet tables = Array(cnt).fill(0);\nlet arrData = dbData.table_list;\nfor(let i = 0; i < cnt; i++){\n    if (arrData[i].is_paid === false) {\n       tables[arrData[i].table_id - 1] = arrData[i].customer_count;\n    }\n    else\n        tables[arrData[i].table_id - 1] = 0;\n}\n\nmsg.payload = tables;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2730,
+        "y": 400,
+        "wires": [
+            [
+                "4f1e7d184ea1b30e"
+            ]
+        ]
+    },
+    {
+        "id": "4f1e7d184ea1b30e",
+        "type": "function",
+        "z": "e5c7a484a1e3febd",
+        "g": "84e4ff3ba80be503",
+        "name": "테이블 그래프 출력",
+        "func": "\nlet dbData = msg.payload;\n\nlet tables = {};\ntables.series = [];\ntables.data = [];\ntables.labels = [\n    'TABLES'\n];\n\nfor (let i = 0; i < dbData.length; i++) {\n    tables.series.push((i+1).toString());\n    tables.data.push([dbData[i]]);\n}\n\nmsg.payload = [tables];\nreturn msg;\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2930,
+        "y": 400,
+        "wires": [
+            [
+                "35cf7b9055a311d3"
+            ]
+        ]
+    },
+    {
+        "id": "35cf7b9055a311d3",
+        "type": "ui_chart",
+        "z": "e5c7a484a1e3febd",
+        "g": "84e4ff3ba80be503",
+        "name": "",
+        "group": "fe74f1ecc84760fe",
+        "order": 2,
+        "width": 10,
+        "height": 5,
+        "label": "테이블 현황",
+        "chartType": "bar",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 3110,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e9d62f2e6d3a3128",
+        "type": "inject",
+        "z": "e5c7a484a1e3febd",
+        "g": "7dd2205a9d24fcf3",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 2390,
+        "y": 1140,
+        "wires": [
+            [
+                "7c4d366e0789aa94"
+            ]
+        ]
+    },
+    {
+        "id": "7c4d366e0789aa94",
+        "type": "http request",
+        "z": "e5c7a484a1e3febd",
+        "g": "7dd2205a9d24fcf3",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://3.216.219.9:4400/api/admin/pick",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 2550,
+        "y": 1140,
+        "wires": [
+            [
+                "d2e4f219c01669b7"
+            ]
+        ]
+    },
+    {
+        "id": "d2e4f219c01669b7",
+        "type": "function",
+        "z": "e5c7a484a1e3febd",
+        "g": "7dd2205a9d24fcf3",
+        "name": "function 28",
+        "func": "if (typeof msg.payload === 'string')\n    msg.payload = JSON.parse(msg.payload);\n\nlet dbData = msg.payload;\n\nlet str = [];\n\ndbData.forEach(item=>{\n    str.push(item.name);\n})\n\nmsg.payload = str.join(\", \");\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2710,
+        "y": 1140,
+        "wires": [
+            [
+                "6ddec9c3cd317728"
+            ]
+        ]
+    },
+    {
+        "id": "6ddec9c3cd317728",
+        "type": "ui_text",
+        "z": "e5c7a484a1e3febd",
+        "g": "7dd2205a9d24fcf3",
+        "group": "16e736076471bd65",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "사장의 픽",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "x": 2880,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "b9d446f5fd553743",
+        "type": "inject",
+        "z": "e5c7a484a1e3febd",
+        "g": "cf5ad31e392515bd",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 2390,
+        "y": 940,
+        "wires": [
+            [
+                "3df6785a77f4aa34"
+            ]
+        ]
+    },
+    {
+        "id": "3df6785a77f4aa34",
+        "type": "http request",
+        "z": "e5c7a484a1e3febd",
+        "g": "cf5ad31e392515bd",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://3.216.219.9:4400/api/admin/sales/daily",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 2550,
+        "y": 940,
+        "wires": [
+            [
+                "773a1e93c9f0713b"
+            ]
+        ]
+    },
+    {
+        "id": "773a1e93c9f0713b",
+        "type": "function",
+        "z": "e5c7a484a1e3febd",
+        "g": "cf5ad31e392515bd",
+        "name": "function 16",
+        "func": "if (typeof msg.payload === 'string')\n    msg.payload = JSON.parse(msg.payload);\n\n\nlet dbData = msg.payload;\n\nlet arrData = Object.keys(dbData);\nlet YearMonth = arrData[0].split('-')[0] + '-'+ arrData[0].split('-')[1];\nlet sales = {};\nsales.series = [];\nsales.data = [];\nsales.labels = [\n    `${YearMonth}`\n];\n\n    \nfor(let i = 0; i < arrData.length; i++){\n    sales.series.push(arrData[i].split('-')[2]);\n    sales.data.push([dbData[arrData[i]]]);\n}\n\nmsg.payload = [sales];\n// let cnt = dbData.total;\n// const stockList = dbData[\"sales_list\"];\n// let sales = {};\n// sales.series = []\n// sales.data = []\n// sales.labels = [\n//     'SALES'\n// ]\n\n// for (let i = 0; i < cnt; i++) {\n//     sales.series.push(stockList[i][\"name\"]);\n//     sales.data.push([stockList[i][\"amount\"]]);\n// }\n\n\n// //msg.payload = stockList;\n// msg.payload = [sales];\n\nreturn msg;\n\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2710,
+        "y": 940,
+        "wires": [
+            [
+                "fe2194066e71bd61"
+            ]
+        ]
+    },
+    {
+        "id": "fe2194066e71bd61",
+        "type": "ui_chart",
+        "z": "e5c7a484a1e3febd",
+        "g": "cf5ad31e392515bd",
+        "name": "",
+        "group": "fe74f1ecc84760fe",
+        "order": 4,
+        "width": 10,
+        "height": 5,
+        "label": "일간매출",
+        "chartType": "bar",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 2880,
+        "y": 940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bc35aff7ca121ca9",
+        "type": "ui_table",
+        "z": "e5c7a484a1e3febd",
+        "g": "849493aff09a365f",
+        "group": "16e736076471bd65",
+        "name": "메뉴 정보",
+        "order": 1,
+        "width": 6,
+        "height": 5,
+        "columns": [],
+        "outputs": 0,
+        "cts": false,
+        "x": 3320,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "05365f4ffd20ea34",
+        "type": "inject",
+        "z": "e5c7a484a1e3febd",
+        "g": "849493aff09a365f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 2380,
+        "y": 640,
+        "wires": [
+            [
+                "9e6d0d93c1fa43a3"
+            ]
+        ]
+    },
+    {
+        "id": "8210a7ff5b2f459b",
+        "type": "http request",
+        "z": "e5c7a484a1e3febd",
+        "g": "849493aff09a365f",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://3.216.219.9:4400/api/receipts/list",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 2850,
+        "y": 640,
+        "wires": [
+            [
+                "80cde2230e63bad0"
+            ]
+        ]
+    },
+    {
+        "id": "9e6d0d93c1fa43a3",
+        "type": "http request",
+        "z": "e5c7a484a1e3febd",
+        "g": "849493aff09a365f",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://3.216.219.9:4400/api/foods/list",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 2530,
+        "y": 640,
+        "wires": [
+            [
+                "0c9983e405cc6b76"
+            ]
+        ]
+    },
+    {
+        "id": "0c9983e405cc6b76",
+        "type": "function",
+        "z": "e5c7a484a1e3febd",
+        "g": "849493aff09a365f",
+        "name": "function 29",
+        "func": "if (typeof msg.payload === 'string')\n    msg.payload = JSON.parse(msg.payload);\n\nlet arr = msg.payload.food_list;\n\nlet cnt = msg.payload.total;\n\nlet foods = [];\n\narr.forEach(item=>{\n    foods.push(item.name);\n})\n\nglobal.set('foods', foods);\nmsg.payload = foods;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2690,
+        "y": 640,
+        "wires": [
+            [
+                "8210a7ff5b2f459b"
+            ]
+        ]
+    },
+    {
+        "id": "80cde2230e63bad0",
+        "type": "function",
+        "z": "e5c7a484a1e3febd",
+        "g": "849493aff09a365f",
+        "name": "function 30",
+        "func": "if (typeof msg.payload === 'string')\n    msg.payload = JSON.parse(msg.payload);\n\nlet foods = global.get('foods');\n\nlet json = new Object();\n\n\nlet cnt = msg.payload.total;\nlet arr = msg.payload.Receipts_list;\n\nfor(let i = 0 ; i < cnt; i++){\n    if(json[arr[i]['food_name']] === undefined){\n        json[arr[i]['food_name']] = new Object();\n    }\n    json[arr[i]['food_name']][arr[i].name] = arr[i].amount;\n}\n\n//msg.payload = json[arr[0]['food_name']]\nmsg.payload = json\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 3010,
+        "y": 640,
+        "wires": [
+            [
+                "b11efb2544710362"
+            ]
+        ]
+    },
+    {
+        "id": "b11efb2544710362",
+        "type": "function",
+        "z": "e5c7a484a1e3febd",
+        "g": "849493aff09a365f",
+        "name": "function 31",
+        "func": "let foods = Object.keys(msg.payload);\nlet data = []\nfoods.forEach(item=>{\n    let json = new Object();\n    json.Menu = item;\n    let receipt = Object.keys(msg.payload[item])\n    json.receipt = receipt.join(\", \");\n    data.push(json)\n})\n\n\nmsg.payload = data\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 3170,
+        "y": 640,
+        "wires": [
+            [
+                "bc35aff7ca121ca9"
+            ]
+        ]
     },
     {
         "id": "1db978b1e77bc12a",
@@ -438,8 +1357,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 900,
-        "y": 840,
+        "x": 1900,
+        "y": 920,
         "wires": [
             [
                 "200c346c2df1e4cd"
@@ -495,111 +1414,11 @@
         "topicType": "str",
         "splitLayout": "",
         "className": "",
-        "x": 760,
-        "y": 840,
+        "x": 1760,
+        "y": 920,
         "wires": [
             [
                 "1db978b1e77bc12a"
-            ]
-        ]
-    },
-    {
-        "id": "b50cb54c69d66d17",
-        "type": "http request",
-        "z": "e5c7a484a1e3febd",
-        "g": "41935cb7dffe9ba1",
-        "name": "",
-        "method": "GET",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "http://3.216.219.9:4400/api/admin/populate",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 1530,
-        "y": 880,
-        "wires": [
-            [
-                "62aa03311ee25f9d"
-            ]
-        ]
-    },
-    {
-        "id": "346746df0ecfd615",
-        "type": "inject",
-        "z": "e5c7a484a1e3febd",
-        "g": "41935cb7dffe9ba1",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "60",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 1370,
-        "y": 880,
-        "wires": [
-            [
-                "b50cb54c69d66d17"
-            ]
-        ]
-    },
-    {
-        "id": "dc05a246598b8d87",
-        "type": "http request",
-        "z": "e5c7a484a1e3febd",
-        "g": "606430c463b74780",
-        "name": "",
-        "method": "GET",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "http://3.216.219.9:4400/api/foods/list",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 1490,
-        "y": 780,
-        "wires": [
-            [
-                "c14085f16396c0a7"
-            ]
-        ]
-    },
-    {
-        "id": "c14085f16396c0a7",
-        "type": "function",
-        "z": "e5c7a484a1e3febd",
-        "g": "606430c463b74780",
-        "name": "function 5",
-        "func": "if (typeof msg.payload === 'string')\n    msg.payload = JSON.parse(msg.payload);\n\n\n// return msg\nlet dbData = msg.payload;\n\nlet cnt = dbData.total;\nconst foodList = dbData[\"food_list\"];\nlet foods = {};\nfoods.series = []\nfoods.data = []\nfoods.labels = [\n    'FOOD'\n]\n\nfor(let i = 0 ;i < cnt; i++){\n    foods.series.push(foodList[i][\"name\"]);\n    foods.data.push([foodList[i][\"populate\"]]);\n}\n\nmsg.payload = [foods];\n\nreturn msg;\n\n\n\n\n\n// let food = Object.keys(dbData.foodList);\n\n// let foods = {};\n// foods.series = []\n// foods.data = []\n// foods.labels = [\n//     'FOOD'\n// ]\n// for (let item of food) {\n//     foods.series.push(item);\n//     foods.data.push([dbData['foodList'][item]['totalCount']]);\n// }\n\n// msg.payload = [foods]\n// //msg.payload = food\n// return msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1660,
-        "y": 780,
-        "wires": [
-            [
-                "f36ee54f94e00646"
             ]
         ]
     },
@@ -620,8 +1439,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 1090,
-        "y": 900,
+        "x": 2090,
+        "y": 980,
         "wires": [
             []
         ]
@@ -638,8 +1457,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 900,
-        "y": 900,
+        "x": 1900,
+        "y": 980,
         "wires": [
             [
                 "0bbcfdff74398aba"
@@ -647,10 +1466,35 @@
         ]
     },
     {
+        "id": "200c346c2df1e4cd",
+        "type": "http request",
+        "z": "e5c7a484a1e3febd",
+        "g": "dba58d111680b812",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://3.216.219.9:4400/api/foods/create",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 2090,
+        "y": 920,
+        "wires": [
+            [
+                "dc05a246598b8d87"
+            ]
+        ]
+    },
+    {
         "id": "1ab9afabfd591bf8",
         "type": "ui_form",
         "z": "e5c7a484a1e3febd",
-        "g": "3f52daf441c86b62",
+        "g": "f3659fb3b8faeefd",
         "name": "",
         "label": "메뉴 제거",
         "group": "0ec1ff43d438c423",
@@ -676,8 +1520,8 @@
         "topicType": "msg",
         "splitLayout": "",
         "className": "",
-        "x": 800,
-        "y": 740,
+        "x": 1140,
+        "y": 720,
         "wires": [
             [
                 "db68cff7b79c1715"
@@ -688,7 +1532,7 @@
         "id": "db68cff7b79c1715",
         "type": "function",
         "z": "e5c7a484a1e3febd",
-        "g": "3f52daf441c86b62",
+        "g": "f3659fb3b8faeefd",
         "name": "function 9",
         "func": "\n\nmsg.url = `http://3.216.219.9:4400/api/foods/delete?food_name=${msg.payload.Menu}`\nreturn msg;",
         "outputs": 1,
@@ -696,165 +1540,20 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 940,
-        "y": 740,
+        "x": 1280,
+        "y": 720,
         "wires": [
             [
+                "acf9f0c8df105557",
                 "22ed5e7c13f60f61"
             ]
-        ]
-    },
-    {
-        "id": "200c346c2df1e4cd",
-        "type": "http request",
-        "z": "e5c7a484a1e3febd",
-        "g": "dba58d111680b812",
-        "name": "",
-        "method": "POST",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "http://3.216.219.9:4400/api/foods/create",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 1090,
-        "y": 840,
-        "wires": [
-            [
-                "dc05a246598b8d87"
-            ]
-        ]
-    },
-    {
-        "id": "034e70dead263943",
-        "type": "inject",
-        "z": "e5c7a484a1e3febd",
-        "g": "5550bad1bc97dcff",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "60",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 1370,
-        "y": 440,
-        "wires": [
-            [
-                "abfd7d6bd4522f89"
-            ]
-        ]
-    },
-    {
-        "id": "abfd7d6bd4522f89",
-        "type": "http request",
-        "z": "e5c7a484a1e3febd",
-        "g": "5550bad1bc97dcff",
-        "name": "",
-        "method": "GET",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "http://3.216.219.9:4400/api/stocks/list",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 1530,
-        "y": 440,
-        "wires": [
-            [
-                "a2d0492e2769b6f7",
-                "63ce68811c8210f6"
-            ]
-        ]
-    },
-    {
-        "id": "a2d0492e2769b6f7",
-        "type": "function",
-        "z": "e5c7a484a1e3febd",
-        "g": "5550bad1bc97dcff",
-        "name": "function 14",
-        "func": "if (typeof msg.payload === 'string')\n    msg.payload = JSON.parse(msg.payload);\n\n\nlet dbData = msg.payload;\n\nlet cnt = dbData.total;\nconst stockList = dbData[\"stocks_list\"];\nlet stocks = {};\nstocks.series = []\nstocks.data = []\nstocks.labels = [\n    'STOCK'\n]\n\nfor (let i = 0; i < cnt; i++) {\n    stocks.series.push(stockList[i][\"name\"]);\n    stocks.data.push([stockList[i][\"amount\"]]);\n}\n\n\n//msg.payload = stockList;\nmsg.payload = [stocks];\n\nreturn msg;\n\n\n\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1710,
-        "y": 420,
-        "wires": [
-            [
-                "58bf5739784bd0b3"
-            ]
-        ]
-    },
-    {
-        "id": "58bf5739784bd0b3",
-        "type": "ui_chart",
-        "z": "e5c7a484a1e3febd",
-        "g": "5550bad1bc97dcff",
-        "name": "",
-        "group": "fe74f1ecc84760fe",
-        "order": 3,
-        "width": "10",
-        "height": "5",
-        "label": "재고",
-        "chartType": "bar",
-        "legend": "true",
-        "xformat": "HH:mm:ss",
-        "interpolate": "linear",
-        "nodata": "",
-        "dot": false,
-        "ymin": "0",
-        "ymax": "",
-        "removeOlder": 1,
-        "removeOlderPoints": "",
-        "removeOlderUnit": "3600",
-        "cutout": 0,
-        "useOneColor": false,
-        "useUTC": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "outputs": 1,
-        "useDifferentColor": false,
-        "className": "",
-        "x": 1850,
-        "y": 420,
-        "wires": [
-            []
         ]
     },
     {
         "id": "22ed5e7c13f60f61",
         "type": "http request",
         "z": "e5c7a484a1e3febd",
-        "g": "3f52daf441c86b62",
+        "g": "f3659fb3b8faeefd",
         "name": "",
         "method": "DELETE",
         "ret": "txt",
@@ -867,12 +1566,10 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 1090,
-        "y": 740,
+        "x": 1430,
+        "y": 720,
         "wires": [
-            [
-                "dc05a246598b8d87"
-            ]
+            []
         ]
     },
     {
@@ -921,8 +1618,8 @@
         "topicType": "str",
         "splitLayout": "",
         "className": "",
-        "x": 940,
-        "y": 420,
+        "x": 1940,
+        "y": 400,
         "wires": [
             [
                 "dfc1842d60f88381"
@@ -946,8 +1643,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 1090,
-        "y": 420,
+        "x": 2090,
+        "y": 400,
         "wires": [
             [
                 "abfd7d6bd4522f89"
@@ -984,8 +1681,8 @@
         "topicType": "msg",
         "splitLayout": "",
         "className": "",
-        "x": 460,
-        "y": 620,
+        "x": 1460,
+        "y": 600,
         "wires": [
             [
                 "3fca24db7853ce79"
@@ -1004,8 +1701,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 610,
-        "y": 620,
+        "x": 1610,
+        "y": 600,
         "wires": [
             [
                 "6d8ff06c105ad113"
@@ -1029,8 +1726,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 770,
-        "y": 620,
+        "x": 1770,
+        "y": 600,
         "wires": [
             [
                 "f32e20d227ec17c5"
@@ -1049,8 +1746,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 930,
-        "y": 620,
+        "x": 1930,
+        "y": 600,
         "wires": [
             [
                 "0ee3860127c8064d"
@@ -1074,310 +1771,12 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 1090,
-        "y": 620,
+        "x": 2090,
+        "y": 600,
         "wires": [
             [
                 "abfd7d6bd4522f89"
             ]
-        ]
-    },
-    {
-        "id": "63ce68811c8210f6",
-        "type": "function",
-        "z": "e5c7a484a1e3febd",
-        "g": "5550bad1bc97dcff",
-        "name": "function 21",
-        "func": "if (typeof msg.payload === 'string')\n    msg.payload = JSON.parse(msg.payload);\n\n\nlet dbData = msg.payload;\n\nlet cnt = dbData.total;\nconst stockList = dbData[\"stocks_list\"];\nlet deff = [];\nfor (let i = 0; i < cnt; i++) {\n    if (stockList[i][\"amount\"] <= 500){\n        deff.push(stockList[i][\"name\"]);\n    }\n}\n\nmsg.payload = deff.join(\", \");\n//msg.payload = stockList;\n\nreturn msg;\n\n\n\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1710,
-        "y": 460,
-        "wires": [
-            [
-                "b9708b0bb7c45060"
-            ]
-        ]
-    },
-    {
-        "id": "b9708b0bb7c45060",
-        "type": "ui_text",
-        "z": "e5c7a484a1e3febd",
-        "g": "5550bad1bc97dcff",
-        "group": "16e736076471bd65",
-        "order": 7,
-        "width": 0,
-        "height": 0,
-        "name": "재고 부족",
-        "label": "<font color=red>부족</font>",
-        "format": "{{msg.payload}}",
-        "layout": "row-left",
-        "className": "",
-        "x": 1860,
-        "y": 460,
-        "wires": []
-    },
-    {
-        "id": "02dd5dbd1d65a8cf",
-        "type": "inject",
-        "z": "e5c7a484a1e3febd",
-        "g": "fd40b517740262fc",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "60",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 1370,
-        "y": 680,
-        "wires": [
-            [
-                "312c2177bfa1d148"
-            ]
-        ]
-    },
-    {
-        "id": "312c2177bfa1d148",
-        "type": "http request",
-        "z": "e5c7a484a1e3febd",
-        "g": "fd40b517740262fc",
-        "name": "",
-        "method": "GET",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "http://3.216.219.9:4400/api/admin/customer/daily",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 1530,
-        "y": 680,
-        "wires": [
-            [
-                "2eee0117e3353972"
-            ]
-        ]
-    },
-    {
-        "id": "2eee0117e3353972",
-        "type": "function",
-        "z": "e5c7a484a1e3febd",
-        "g": "fd40b517740262fc",
-        "name": "function 22",
-        "func": "if (typeof msg.payload === 'string')\n    msg.payload = JSON.parse(msg.payload);\n\nlet dbData = msg.payload;\nlet arrData = Object.keys(dbData);\nlet YearMonth = arrData[0].split('-')[0] + '-' + arrData[0].split('-')[1];\n\nlet customers = {};\ncustomers.series = [];\ncustomers.data = [];\ncustomers.labels = [\n    `${YearMonth}`\n];\n\nfor (let i = 0; i < arrData.length; i++) {\n    customers.series.push(arrData[i].split('-')[2]);\n    customers.data.push([dbData[arrData[i]]]);\n}\n\nmsg.payload = [customers];\nreturn msg;\n\n\n\n\n\n\n\n// let cnt = dbData.total;\n// const stockList = dbData[\"sales_list\"];\n// let sales = {};\n// sales.series = []\n// sales.data = []\n// sales.labels = [\n//     'SALES'\n// ]\n\n// for (let i = 0; i < cnt; i++) {\n//     sales.series.push(stockList[i][\"name\"]);\n//     sales.data.push([stockList[i][\"amount\"]]);\n// }\n\n\n// //msg.payload = stockList;\n// msg.payload = [sales];\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1690,
-        "y": 680,
-        "wires": [
-            [
-                "0ceb3f155ce83ba2"
-            ]
-        ]
-    },
-    {
-        "id": "0ceb3f155ce83ba2",
-        "type": "ui_chart",
-        "z": "e5c7a484a1e3febd",
-        "g": "fd40b517740262fc",
-        "name": "",
-        "group": "fe74f1ecc84760fe",
-        "order": 5,
-        "width": "20",
-        "height": "5",
-        "label": "일간 방문자 수",
-        "chartType": "bar",
-        "legend": "true",
-        "xformat": "HH:mm:ss",
-        "interpolate": "linear",
-        "nodata": "",
-        "dot": false,
-        "ymin": "0",
-        "ymax": "",
-        "removeOlder": 1,
-        "removeOlderPoints": "",
-        "removeOlderUnit": "3600",
-        "cutout": 0,
-        "useOneColor": false,
-        "useUTC": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "outputs": 1,
-        "useDifferentColor": false,
-        "className": "",
-        "x": 1860,
-        "y": 680,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "a12763f1ed4df51c",
-        "type": "inject",
-        "z": "e5c7a484a1e3febd",
-        "g": "84e4ff3ba80be503",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "60",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 1370,
-        "y": 1120,
-        "wires": [
-            [
-                "ffe746234416dd3a"
-            ]
-        ]
-    },
-    {
-        "id": "ffe746234416dd3a",
-        "type": "http request",
-        "z": "e5c7a484a1e3febd",
-        "g": "84e4ff3ba80be503",
-        "name": "",
-        "method": "GET",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "http://3.216.219.9:4400/api/tables/list",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 1530,
-        "y": 1120,
-        "wires": [
-            [
-                "2f1593a27ac58605"
-            ]
-        ]
-    },
-    {
-        "id": "2f1593a27ac58605",
-        "type": "function",
-        "z": "e5c7a484a1e3febd",
-        "g": "84e4ff3ba80be503",
-        "name": "테이블 현황 파악",
-        "func": "if (typeof msg.payload === 'string')\n    msg.payload = JSON.parse(msg.payload);\nlet dbData = msg.payload;\n\nlet cnt = dbData.total;\nlet tables = Array(cnt).fill(0);\nlet arrData = dbData.table_list;\nfor(let i = 0; i < cnt; i++){\n    if (arrData[i].is_paid === false) {\n       tables[arrData[i].table_id - 1] = arrData[i].customer_count;\n    }\n    else\n        tables[arrData[i].table_id - 1] = 0;\n}\n\nmsg.payload = tables;\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1710,
-        "y": 1120,
-        "wires": [
-            [
-                "4f1e7d184ea1b30e"
-            ]
-        ]
-    },
-    {
-        "id": "4f1e7d184ea1b30e",
-        "type": "function",
-        "z": "e5c7a484a1e3febd",
-        "g": "84e4ff3ba80be503",
-        "name": "테이블 그래프 출력",
-        "func": "\nlet dbData = msg.payload;\n\nlet tables = {};\ntables.series = [];\ntables.data = [];\ntables.labels = [\n    'TABLES'\n];\n\nfor (let i = 0; i < dbData.length; i++) {\n    tables.series.push((i+1).toString());\n    tables.data.push([dbData[i]]);\n}\n\nmsg.payload = [tables];\nreturn msg;\n\n\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1910,
-        "y": 1120,
-        "wires": [
-            [
-                "35cf7b9055a311d3"
-            ]
-        ]
-    },
-    {
-        "id": "35cf7b9055a311d3",
-        "type": "ui_chart",
-        "z": "e5c7a484a1e3febd",
-        "g": "84e4ff3ba80be503",
-        "name": "",
-        "group": "fe74f1ecc84760fe",
-        "order": 2,
-        "width": "10",
-        "height": "5",
-        "label": "테이블 현황",
-        "chartType": "bar",
-        "legend": "true",
-        "xformat": "HH:mm:ss",
-        "interpolate": "linear",
-        "nodata": "",
-        "dot": false,
-        "ymin": "0",
-        "ymax": "",
-        "removeOlder": 1,
-        "removeOlderPoints": "",
-        "removeOlderUnit": "3600",
-        "cutout": 0,
-        "useOneColor": false,
-        "useUTC": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "outputs": 1,
-        "useDifferentColor": false,
-        "className": "",
-        "x": 2090,
-        "y": 1120,
-        "wires": [
-            []
         ]
     },
     {
@@ -1410,8 +1809,8 @@
         "topicType": "str",
         "splitLayout": "",
         "className": "",
-        "x": 780,
-        "y": 1000,
+        "x": 1780,
+        "y": 1100,
         "wires": [
             [
                 "dae5ccfaac8de4c2"
@@ -1435,8 +1834,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 1090,
-        "y": 1000,
+        "x": 2090,
+        "y": 1100,
         "wires": [
             [
                 "7c4d366e0789aa94"
@@ -1455,8 +1854,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 930,
-        "y": 1000,
+        "x": 1930,
+        "y": 1100,
         "wires": [
             [
                 "4781bfe92223ae96"
@@ -1493,8 +1892,8 @@
         "topicType": "str",
         "splitLayout": "",
         "className": "",
-        "x": 770,
-        "y": 1040,
+        "x": 1770,
+        "y": 1140,
         "wires": [
             [
                 "ba0b84767a34dda1"
@@ -1513,8 +1912,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 930,
-        "y": 1040,
+        "x": 1930,
+        "y": 1140,
         "wires": [
             [
                 "aa5d1595e0b1c6e8"
@@ -1538,106 +1937,13 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 1090,
-        "y": 1040,
+        "x": 2090,
+        "y": 1140,
         "wires": [
             [
                 "7c4d366e0789aa94"
             ]
         ]
-    },
-    {
-        "id": "e9d62f2e6d3a3128",
-        "type": "inject",
-        "z": "e5c7a484a1e3febd",
-        "g": "7dd2205a9d24fcf3",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "60",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 1370,
-        "y": 1020,
-        "wires": [
-            [
-                "7c4d366e0789aa94"
-            ]
-        ]
-    },
-    {
-        "id": "7c4d366e0789aa94",
-        "type": "http request",
-        "z": "e5c7a484a1e3febd",
-        "g": "7dd2205a9d24fcf3",
-        "name": "",
-        "method": "GET",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "http://3.216.219.9:4400/api/admin/pick",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 1530,
-        "y": 1020,
-        "wires": [
-            [
-                "d2e4f219c01669b7"
-            ]
-        ]
-    },
-    {
-        "id": "d2e4f219c01669b7",
-        "type": "function",
-        "z": "e5c7a484a1e3febd",
-        "g": "7dd2205a9d24fcf3",
-        "name": "function 28",
-        "func": "if (typeof msg.payload === 'string')\n    msg.payload = JSON.parse(msg.payload);\n\nlet dbData = msg.payload;\n\nlet str = [];\n\ndbData.forEach(item=>{\n    str.push(item.name);\n})\n\nmsg.payload = str.join(\", \");\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1690,
-        "y": 1020,
-        "wires": [
-            [
-                "6ddec9c3cd317728"
-            ]
-        ]
-    },
-    {
-        "id": "6ddec9c3cd317728",
-        "type": "ui_text",
-        "z": "e5c7a484a1e3febd",
-        "g": "7dd2205a9d24fcf3",
-        "group": "16e736076471bd65",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "사장의 픽",
-        "format": "{{msg.payload}}",
-        "layout": "row-left",
-        "className": "",
-        "x": 1860,
-        "y": 1020,
-        "wires": []
     },
     {
         "id": "d39bdbed3d1d825e",
@@ -1685,8 +1991,8 @@
         "topicType": "str",
         "splitLayout": "",
         "className": "",
-        "x": 760,
-        "y": 520,
+        "x": 1760,
+        "y": 500,
         "wires": [
             [
                 "5455fa266fe68c47"
@@ -1705,8 +2011,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 910,
-        "y": 520,
+        "x": 1910,
+        "y": 500,
         "wires": [
             [
                 "18a28b06d5b39b61"
@@ -1730,8 +2036,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 1090,
-        "y": 520,
+        "x": 2090,
+        "y": 500,
         "wires": [
             [
                 "abfd7d6bd4522f89"
@@ -1739,45 +2045,51 @@
         ]
     },
     {
-        "id": "b9d446f5fd553743",
-        "type": "inject",
+        "id": "acf9f0c8df105557",
+        "type": "function",
         "z": "e5c7a484a1e3febd",
-        "g": "cf5ad31e392515bd",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "60",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 1370,
-        "y": 580,
+        "g": "f3659fb3b8faeefd",
+        "name": "function 32",
+        "func": "global.set('menu', msg.payload.Menu);\nglobal.set('idx', 0);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1430,
+        "y": 760,
         "wires": [
             [
-                "3df6785a77f4aa34"
+                "f6d56ca14be8f38f"
             ]
         ]
     },
     {
-        "id": "3df6785a77f4aa34",
+        "id": "262018ce6bcf2d52",
+        "type": "debug",
+        "z": "e5c7a484a1e3febd",
+        "name": "debug 33",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1080,
+        "y": 2060,
+        "wires": []
+    },
+    {
+        "id": "f6d56ca14be8f38f",
         "type": "http request",
         "z": "e5c7a484a1e3febd",
-        "g": "cf5ad31e392515bd",
+        "g": "f3659fb3b8faeefd",
         "name": "",
         "method": "GET",
         "ret": "txt",
         "paytoqs": "ignore",
-        "url": "http://3.216.219.9:4400/api/admin/sales/daily",
+        "url": "http://3.216.219.9:4400/api/receipts/list",
         "tls": "",
         "persist": false,
         "proxy": "",
@@ -1785,77 +2097,102 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 1530,
-        "y": 580,
+        "x": 1590,
+        "y": 760,
         "wires": [
             [
-                "773a1e93c9f0713b"
+                "29ca8ee2e3069503"
             ]
         ]
     },
     {
-        "id": "773a1e93c9f0713b",
+        "id": "29ca8ee2e3069503",
         "type": "function",
         "z": "e5c7a484a1e3febd",
-        "g": "cf5ad31e392515bd",
-        "name": "function 16",
-        "func": "if (typeof msg.payload === 'string')\n    msg.payload = JSON.parse(msg.payload);\n\n\nlet dbData = msg.payload;\n\nlet arrData = Object.keys(dbData);\nlet YearMonth = arrData[0].split('-')[0] + '-'+ arrData[0].split('-')[1];\nlet sales = {};\nsales.series = [];\nsales.data = [];\nsales.labels = [\n    `${YearMonth}`\n];\n\n    \nfor(let i = 0; i < arrData.length; i++){\n    sales.series.push(arrData[i].split('-')[2]);\n    sales.data.push([dbData[arrData[i]]]);\n}\n\nmsg.payload = [sales];\n// let cnt = dbData.total;\n// const stockList = dbData[\"sales_list\"];\n// let sales = {};\n// sales.series = []\n// sales.data = []\n// sales.labels = [\n//     'SALES'\n// ]\n\n// for (let i = 0; i < cnt; i++) {\n//     sales.series.push(stockList[i][\"name\"]);\n//     sales.data.push([stockList[i][\"amount\"]]);\n// }\n\n\n// //msg.payload = stockList;\n// msg.payload = [sales];\n\nreturn msg;\n\n\n\n",
+        "g": "f3659fb3b8faeefd",
+        "name": "function 33",
+        "func": "if (typeof msg.payload === 'string')\n    msg.payload = JSON.parse(msg.payload);\n\nlet dbData = msg.payload;\nlet re = {\n    payload : dbData\n};\n\n\nglobal.set('cnt', dbData.total);\n\nlet arr = dbData.Receipts_list;\n// let idx = global.get('idx');\n// let menu = global.get('menu')\n// let id = 0;\n// let a = []\n// if(arr[idx].food_name === menu){\n//     a.push(arr[idx].id)\n// }\nmsg.payload = arr;\nreturn msg;\n\n\n//msg.url = `http://3.216.219.9:4400/api/receipts/delete?_receipts_delete=${}`;\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1690,
-        "y": 580,
+        "x": 1750,
+        "y": 760,
         "wires": [
             [
-                "fe2194066e71bd61"
+                "be38b8b4db213051"
             ]
         ]
     },
     {
-        "id": "fe2194066e71bd61",
-        "type": "ui_chart",
+        "id": "2f94188fe0a796b7",
+        "type": "http request",
         "z": "e5c7a484a1e3febd",
-        "g": "cf5ad31e392515bd",
+        "g": "f3659fb3b8faeefd",
         "name": "",
-        "group": "fe74f1ecc84760fe",
-        "order": 4,
-        "width": "10",
-        "height": "5",
-        "label": "일간매출",
-        "chartType": "bar",
-        "legend": "true",
-        "xformat": "HH:mm:ss",
-        "interpolate": "linear",
-        "nodata": "",
-        "dot": false,
-        "ymin": "0",
-        "ymax": "",
-        "removeOlder": 1,
-        "removeOlderPoints": "",
-        "removeOlderUnit": "3600",
-        "cutout": 0,
-        "useOneColor": false,
-        "useUTC": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "outputs": 1,
-        "useDifferentColor": false,
-        "className": "",
-        "x": 1860,
-        "y": 580,
+        "method": "DELETE",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 2090,
+        "y": 740,
         "wires": [
-            []
+            [
+                "9e6d0d93c1fa43a3",
+                "dc05a246598b8d87",
+                "b50cb54c69d66d17"
+            ]
+        ]
+    },
+    {
+        "id": "ba272c93e007858d",
+        "type": "function",
+        "z": "e5c7a484a1e3febd",
+        "g": "f3659fb3b8faeefd",
+        "name": "function 34",
+        "func": "let idx = global.get('idx')\nlet cnt = global.get('cnt');\nidx +=1;\nglobal.set('idx', idx)\n\nif(cnt == idx)\n    return null;\nelse\n    return msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1910,
+        "y": 820,
+        "wires": [
+            [
+                "be38b8b4db213051"
+            ]
+        ]
+    },
+    {
+        "id": "be38b8b4db213051",
+        "type": "function",
+        "z": "e5c7a484a1e3febd",
+        "g": "f3659fb3b8faeefd",
+        "name": "function 35",
+        "func": "let idx = global.get('idx');\nlet menu = global.get('menu');\n\nlet arr = msg.payload;\nlet remsg = {\n    payload: arr\n}\nlet id = 0;\nif(menu === arr[idx].food_name){\n    id = arr[idx].id\n}\n\n\nmsg.url = `http://3.216.219.9:4400/api/receipts/delete?_receipts_delete=${id}`\nreturn [msg, remsg];",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1910,
+        "y": 760,
+        "wires": [
+            [
+                "2f94188fe0a796b7"
+            ],
+            [
+                "ba272c93e007858d"
+            ]
         ]
     },
     {
@@ -1871,18 +2208,18 @@
     {
         "id": "fe74f1ecc84760fe",
         "type": "ui_group",
-        "name": "Current Status",
+        "name": " ",
         "tab": "686c5b2df5e1c286",
         "order": 2,
         "disp": true,
-        "width": 20,
+        "width": "20",
         "collapse": false,
         "className": ""
     },
     {
         "id": "16e736076471bd65",
         "type": "ui_group",
-        "name": "text",
+        "name": " ",
         "tab": "686c5b2df5e1c286",
         "order": 2,
         "disp": true,
@@ -1937,7 +2274,7 @@
     {
         "id": "686c5b2df5e1c286",
         "type": "ui_tab",
-        "name": "Current Status",
+        "name": "Status",
         "icon": "dashboard",
         "order": 1,
         "disabled": false,
