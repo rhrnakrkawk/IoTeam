@@ -296,6 +296,7 @@ boolean OrderPost(int number) // 주문 서버에 전송
     JsonObject menu1 = menus.createNestedObject();
     menu1["food_name"] = names[number];
     menu1["amount"] = amount_num;
+    jsonDoc["is_paid"] = "false";
     serializeJsonPretty(jsonDoc, Serial);
 
     orderhttp.begin(orderclient, "http://3.216.219.9:4400/api/orders/create");
@@ -350,6 +351,7 @@ boolean OrderPost(int number) // 주문 서버에 전송
     jsonDoc["table_id"] = table_id;
     jsonDoc["call"] = "true";
     jsonDoc["content"] = staff_content;
+    jsonDoc["is_paid"] = "false";
 
     serializeJsonPretty(jsonDoc, Serial);
 
