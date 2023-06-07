@@ -949,6 +949,220 @@
         "wires": []
     },
     {
+        "id": "10b3d5de2ac9fc6d",
+        "type": "ui_button",
+        "z": "4a363fee4c747bdb",
+        "name": "주문현황 확인",
+        "group": "4d7a5d2fe044259b",
+        "order": 11,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "주문현황 확인",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1040,
+        "y": 520,
+        "wires": [
+            [
+                "91726d0cddd8778a",
+                "b68c06314aa1f1d8"
+            ]
+        ]
+    },
+    {
+        "id": "91726d0cddd8778a",
+        "type": "http request",
+        "z": "4a363fee4c747bdb",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://3.216.219.9:4400/api/orders/detail?table_id=2",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1250,
+        "y": 520,
+        "wires": [
+            [
+                "3644bddba4deb0d1"
+            ]
+        ]
+    },
+    {
+        "id": "b68c06314aa1f1d8",
+        "type": "http request",
+        "z": "4a363fee4c747bdb",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://3.216.219.9:4400/api/tables/detail?table_id=2",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1250,
+        "y": 660,
+        "wires": [
+            [
+                "554bd252245db97e"
+            ]
+        ]
+    },
+    {
+        "id": "3644bddba4deb0d1",
+        "type": "function",
+        "z": "4a363fee4c747bdb",
+        "name": "function 7",
+        "func": "msg.payload = JSON.parse(msg.payload);\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1420,
+        "y": 520,
+        "wires": [
+            [
+                "450a0401a0101861",
+                "b31169fe18314b08"
+            ]
+        ]
+    },
+    {
+        "id": "554bd252245db97e",
+        "type": "function",
+        "z": "4a363fee4c747bdb",
+        "name": "function 8",
+        "func": "msg.payload = JSON.parse(msg.payload);\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1440,
+        "y": 660,
+        "wires": [
+            [
+                "f05522ace55078e4",
+                "efd8bee2d6212471",
+                "7cf56c3acff96802",
+                "b4f1f91c5b96cd00"
+            ]
+        ]
+    },
+    {
+        "id": "450a0401a0101861",
+        "type": "ui_text",
+        "z": "4a363fee4c747bdb",
+        "group": "4d7a5d2fe044259b",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "메뉴",
+        "label": "메뉴",
+        "format": "{{msg.payload.menu}}",
+        "layout": "row-spread",
+        "x": 1610,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "b31169fe18314b08",
+        "type": "ui_text",
+        "z": "4a363fee4c747bdb",
+        "group": "4d7a5d2fe044259b",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "개수",
+        "label": "개수",
+        "format": "{{msg.payload.amount}}",
+        "layout": "row-spread",
+        "x": 1610,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "f05522ace55078e4",
+        "type": "ui_text",
+        "z": "4a363fee4c747bdb",
+        "group": "4d7a5d2fe044259b",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "name": "테이블 번호",
+        "label": "테이블 번호",
+        "format": "{{msg.payload.id}}",
+        "layout": "row-spread",
+        "x": 1630,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "efd8bee2d6212471",
+        "type": "ui_text",
+        "z": "4a363fee4c747bdb",
+        "group": "4d7a5d2fe044259b",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "name": "테이블 인원",
+        "label": "테이블 인원",
+        "format": "{{msg.payload.customer_count}}",
+        "layout": "row-spread",
+        "x": 1630,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "7cf56c3acff96802",
+        "type": "ui_text",
+        "z": "4a363fee4c747bdb",
+        "group": "4d7a5d2fe044259b",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "name": "총 가격",
+        "label": "총 가격",
+        "format": "{{msg.payload.total_price}}",
+        "layout": "row-spread",
+        "x": 1620,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "b4f1f91c5b96cd00",
+        "type": "ui_text",
+        "z": "4a363fee4c747bdb",
+        "group": "4d7a5d2fe044259b",
+        "order": 10,
+        "width": 0,
+        "height": 0,
+        "name": "계산 여부",
+        "label": "계산 여부",
+        "format": "{{msg.payload.is_paid}}",
+        "layout": "row-spread",
+        "x": 1620,
+        "y": 720,
+        "wires": []
+    },
+    {
         "id": "6c3895c441c81113",
         "type": "ui_group",
         "name": "메뉴판확인",
@@ -979,11 +1193,29 @@
         "collapse": false
     },
     {
+        "id": "4d7a5d2fe044259b",
+        "type": "ui_group",
+        "name": "주문현황확인",
+        "tab": "5ba5e0847e280a7b",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
         "id": "99d17ef3c3dc2345",
         "type": "ui_tab",
         "name": "테이블 1",
         "icon": "dashboard",
         "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "5ba5e0847e280a7b",
+        "type": "ui_tab",
+        "name": "테이블2",
+        "icon": "dashboard",
         "disabled": false,
         "hidden": false
     }

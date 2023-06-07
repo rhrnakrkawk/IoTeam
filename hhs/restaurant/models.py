@@ -60,13 +60,15 @@ class Orders(Base):
     table_id = Column(Integer, nullable=False)
     
     # 메뉴 정보
-    menu = Column(String(255), nullable=False)
-    amount = Column(Integer, nullable=False)
+    menu = Column(String(255), nullable=True)
+    amount = Column(Integer, nullable=True)
     
     # 호출
     call = Column(Boolean, nullable=False, default=False)
     content = Column(String(255), nullable=True)
-
+    # 결제 여부
+    is_paid = Column(Boolean, nullable=False, default=False)
+    
     # ----#
     # 주문시간
     order_time = Column(DateTime, nullable=True, default=datetime.now())
