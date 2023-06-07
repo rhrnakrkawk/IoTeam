@@ -49,8 +49,8 @@ String person = "";
 String names[3];
 int prices[3];
 String price_display[3];
-int table_id = 1;
-String table_id1 = "1";
+int table_id = 1;       // 아두이노별로 다르게할것
+String table_id1 = "1"; // 아두이노별로 다르게할것
 boolean order_flag = false;
 boolean staff_flag = false;
 boolean person_Post = false;
