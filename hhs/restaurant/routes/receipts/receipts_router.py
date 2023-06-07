@@ -16,7 +16,6 @@ def receipts_list(db: Session = Depends(get_db)):
     전체 레시피에 대한 정보 확인
     """
     total,_receipts_list = receipts_crud.get_receipts_list(db)
-    print(total,_receipts_list)
     if total == 0:
         return {
             "total":total,

@@ -21,9 +21,12 @@ def get_orders_list(db: Session):
         list: 주문 목록
     """
     orders_list = db.query(Orders).all()
-    total = db.query(Orders).count()
+    if orders_list is None:
+        return "No data"
+    else:    
+        total = db.query(Orders).count()
 
-    return total, orders_list
+        return total, orders_list
 
 
 def get_order(db: Session, table_id: int):
@@ -38,7 +41,10 @@ def get_order(db: Session, table_id: int):
         Orders: 주문 정보
     """
     order = db.query(Orders).filter(Orders.table_id == table_id).first()
-    return order
+    if order is None:
+        return "No data"
+    else:
+        return order
 
 
 def create_order(db: Session, order_create: orders_schema.OrdersCreate):
@@ -60,7 +66,8 @@ def create_order(db: Session, order_create: orders_schema.OrdersCreate):
     db_table = db.query(Tables).filter(
         and_(
             (Tables.table_id == table_id),
-            or_((Tables.is_paid == False), (Tables.is_paid == 0)),
+            or_((Tables.is_paid == False),
+                (Tables.is_paid == 0)),
         )
     ).first()
     if db_table is None:

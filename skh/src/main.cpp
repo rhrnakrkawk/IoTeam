@@ -21,9 +21,11 @@ SSD1306 display(0x3c, 4, 5, GEOMETRY_128_32);
 HTTPClient http;
 HTTPClient httppost;
 HTTPClient orderhttp;
+HTTPClient edge_orderhttp;
 WiFiClient clientGet;
 WiFiClient clientPost;
 WiFiClient orderclient;
+WiFiClient edge_orderclient;
 
 int amounts[10];
 int menu = 0;
@@ -45,9 +47,8 @@ String person = "";
 String names[3];
 int prices[3];
 String price_display[3];
-int table_id = 1;
+int table_id = 1; // 테이블(아두이노)마다 바꿔주세요
 String table_id1 = "1";
-int s_count = 0;
 boolean order_flag = false;
 boolean staff_flag = false;
 boolean person_Post = false;
@@ -218,6 +219,66 @@ IRAM_ATTR void buttonClicked()
   Serial.println("pushed");
 }
 
+boolean edge_OrderPost(int number_1) // 주소만 바꿀것
+{
+  if (order_flag == true)
+  {
+    Serial.println("edge_menu");
+    String edge_server = "http://3.226.142.20:4400/order?";
+    String edge_tableid = "table_id=" + table_id1 + "&";
+    String edge_menu = "menu=" + names[number_1] + "&";
+    String edge_quantity = "amount=" + number;
+    String edge = "http://3.226.142.20:4400/order?" + edge_tableid + edge_menu + edge_quantity;
+    Serial.println(edge);
+    edge_orderhttp.begin(edge_orderclient, edge);
+    order_flag = false;
+    int edge_httpResponseCode = edge_orderhttp.GET();
+    if (edge_httpResponseCode > 0)
+    {
+      Serial.println(edge_httpResponseCode);
+      edge_orderhttp.end();
+      delay(300);
+      return true;
+    }
+    else
+    {
+      Serial.print("Error code: ");
+      Serial.println(edge_httpResponseCode);
+      edge_orderhttp.end();
+      return false;
+    }
+  }
+  if (staff_flag == true)
+  {
+    Serial.println("edge_call");
+    staff_flag = false;
+    staff_content = content + number2;
+    String edge_server = "http://3.226.142.20:4400/call?";
+    String edge_tableid = "table_id=" + table_id1;
+    String edge_call = "&call=" + staff_content;
+    String edge = edge_server + edge_tableid + edge_call;
+    edge_orderhttp.begin(edge_orderclient, edge);
+    Serial.println(edge);
+    int edge_httpResponseCode = edge_orderhttp.GET();
+    if (edge_httpResponseCode > 0)
+    {
+      Serial.println(edge_httpResponseCode);
+      edge_orderhttp.end();
+      delay(300);
+      return true;
+    }
+    else
+    {
+      Serial.print("Error code: ");
+      Serial.println(edge_httpResponseCode);
+      edge_orderhttp.end();
+      return false;
+    }
+  }
+  else
+    return false;
+}
+
 boolean OrderPost(int number) // 주문 서버에 전송
 {
   if (order_flag == true)
@@ -236,15 +297,15 @@ boolean OrderPost(int number) // 주문 서버에 전송
 
     String jsonString;
     serializeJson(jsonDoc, jsonString);
-    int httpResponseCode = orderhttp.POST(jsonString);
-
+    // int httpResponseCode = orderhttp.POST(jsonString);
+    int httpResponseCode = -1; // 엣지서버 테스트용
     if (httpResponseCode > 0)
     {
       String response = orderhttp.getString();
       Serial.println(httpResponseCode);
       Serial.println(response);
       orderhttp.end();
-      delay(5000);
+      delay(300);
       return true;
     }
     else
@@ -252,15 +313,34 @@ boolean OrderPost(int number) // 주문 서버에 전송
       Serial.print("Error code: ");
       Serial.println(httpResponseCode);
       orderhttp.end();
+      if (menu == 1)
+      {
+        order_flag = true;
+        Serial.println("menu1");
+        edge_OrderPost(1);
+      }
+      if (menu == 2)
+      {
+        order_flag = true;
+        Serial.println("menu2");
+        edge_OrderPost(2);
+      }
+      if (menu == 3)
+      {
+        order_flag = true;
+        Serial.println("menu3");
+        edge_OrderPost(3);
+      }
+
       return false;
     }
   }
   if (staff_flag == true)
   {
     staff_flag = false;
-    staff_content = content + " " + number2;
     StaticJsonDocument<512> jsonDoc;
 
+    staff_content = content + " " + number2;
     jsonDoc["table_id"] = table_id;
     jsonDoc["call"] = "true";
     jsonDoc["content"] = staff_content;
@@ -272,22 +352,25 @@ boolean OrderPost(int number) // 주문 서버에 전송
 
     String jsonString;
     serializeJson(jsonDoc, jsonString);
-    int httpResponseCode = orderhttp.POST(jsonString);
-
+    // int httpResponseCode = orderhttp.POST(jsonString);
+    int httpResponseCode = -1; // 엣지서버 테스트용
     if (httpResponseCode > 0)
     {
       String response = orderhttp.getString();
       Serial.println(httpResponseCode);
       Serial.println(response);
       orderhttp.end();
-      delay(5000);
+      delay(300);
       return true;
     }
     else
     {
+      staff_flag = true;
       Serial.print("Error code: ");
       Serial.println(httpResponseCode);
+      Serial.println("error_call");
       orderhttp.end();
+      edge_OrderPost(0);
       return false;
     }
   }
@@ -306,7 +389,7 @@ boolean PersonPost() // 서버에 사람수 POST
     data["customer_count"] = person_num;
     data["total_price"] = 0;
 
-    httppost.begin(clientPost, "http://3.216.219.9:4400/api/table/create");
+    httppost.begin(clientPost, "http://3.216.219.9:4400/api/tables/create");
     httppost.addHeader("Content-Type", "application/json");
 
     String jsonString;
@@ -320,7 +403,7 @@ boolean PersonPost() // 서버에 사람수 POST
       Serial.println(httpResponseCode);
       Serial.println(response);
       httppost.end();
-      delay(1000);
+      delay(300);
       return true;
     }
     else
@@ -338,7 +421,7 @@ boolean PersonPost() // 서버에 사람수 POST
     JsonObject data = root.to<JsonObject>();
     data["table_id"] = table_id;
     data["is_paid"] = true;
-    String serveradr = "http://3.216.219.9:4400/api/table/pay/" + table_id1;
+    String serveradr = "http://3.216.219.9:4400/api/tables/pay/" + table_id1;
     httppost.begin(clientPost, serveradr); // 나중에 숫자 1로 바꿀것
     httppost.addHeader("Content-Type", "application/json");
 
@@ -351,7 +434,7 @@ boolean PersonPost() // 서버에 사람수 POST
     {
       Serial.println(httpResponseCode);
       httppost.end();
-      delay(1000);
+      delay(300);
       return true;
     }
     else
@@ -368,7 +451,7 @@ boolean PersonPost() // 서버에 사람수 POST
 
 boolean GetFoodList() // 기기를 켜면 부팅되면서 서버에서 메뉴를 가져옴
 {
-  http.begin(clientGet, "http://3.216.219.9:4400/api/food/list");
+  http.begin(clientGet, "http://3.216.219.9:4400/api/foods/list");
 
   int httpCode = http.GET();
   // 응답받기
@@ -407,7 +490,8 @@ boolean PersonDisplay() // 테이블 생성을 위해 사람수를 먼저 입력
 {
   while (true)
   {
-    delay(200);
+    Serial.println(encoderValue);
+    delay(400);
     person_numberpush();
     display.clear();
     display.drawString(35, 0, "person");
@@ -420,7 +504,7 @@ boolean PersonDisplay() // 테이블 생성을 위해 사람수를 먼저 입력
       delay(200);
       encoderValue = 0;
       PersonPost(); // 서버에 사람수 POST
-      delay(5000);
+      delay(500);
       break;
     }
   }
@@ -501,7 +585,7 @@ boolean stfAmount() // 숟가락이나 젓가락 같이 개수가 필요한 호�
 {
   while (true)
   {
-    delay(1000);
+    delay(800);
     Serial.println(encoderValue);
     number2push();
     display.clear();
@@ -525,6 +609,8 @@ boolean stfCall()
 {
   while (true)
   {
+    Serial.println(encoderValue);
+    delay(400);
     contentpush();
     display.clear();
     display.drawString(35, 0, "Staff call");
@@ -544,6 +630,7 @@ boolean stfCall()
       pressed = false;
       delay(100);
       encoderValue = 0;
+      staff_flag = true;
       OrderPost(0);
       return true;
     }
@@ -554,7 +641,7 @@ boolean menuSelect() // 메뉴,직원호출,결제
 {
   while (true)
   {
-    delay(1500);
+    delay(800);
     Serial.printf("encoder value: %d \n", encoderValue);
     if (encoderValue < 10) // 첫번째메뉴
     {
@@ -676,10 +763,6 @@ void loop()
 {
 
   delay(200);
-  // if (!client.connected())
-  // {
-  //   iot_connect();
-  // }
 
   PersonDisplay();
 
