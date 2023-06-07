@@ -19,7 +19,6 @@ String user_html = "";
 String content = "";
 String jsonString = " ";
 
-
 int num = 0;
 
 unsigned long lastPublishMillis = -pubInterval;
@@ -93,6 +92,12 @@ IRAM_ATTR void handleRotary()
   }
 }
 
+IRAM_ATTR void buttonClicked()
+{
+  pressed = true;
+  Serial.println("pushed");
+}
+
 void setup()
 {
   Serial.begin(115200);
@@ -101,6 +106,7 @@ void setup()
   pinMode(pulseB, INPUT_PULLUP);
   attachInterrupt(pulseA, handleRotary, CHANGE);
   attachInterrupt(pulseB, handleRotary, CHANGE);
+  attachInterrupt(pushSW, buttonClicked, FALLING);
   display.init();
   display.flipScreenVertically();
   display.setFont(ArialMT_Plain_10);
@@ -122,15 +128,9 @@ void setup()
   Serial.println(WiFi.localIP());
 
   client.setCallback(message);
-  set_iot_server();
-  iot_connect();
 }
 WiFiClient client1;
-
 void loop() {
-    if (!client.connected()) {
-        iot_connect();
-    }
     delay(500);
     Serial.println(encoderValue);
     tableRotary();
@@ -141,18 +141,18 @@ void loop() {
     if (encoderValue < 10)
     {
       display.clear();
-      display.drawString(35, 00, content);
-      display.drawString(20, 11, "Request : ");      
+      display.drawString(35, 00, content);     
       // HTTP GET 요청 보내기
       http.begin(client1, "http://3.216.219.9:4400/api/orders/detail?table_id=1");
-      int httpCode = http.GET();
+      //int httpCode = http.GET();
       String payload;
       String key;
-      int value;
-      if (httpCode > 0) {
+      //API 서버
+      if (0) {
         payload = http.getString();
         StaticJsonDocument<200> doc;
         DeserializationError error = deserializeJson(doc, payload);
+        display.drawString(20, 11, "Request : "); 
         if (!error) {
           if (doc.containsKey("call")) {
             bool call = doc["call"].as<bool>();
@@ -179,7 +179,73 @@ void loop() {
         }
       Serial.println(payload);
       }
-
+      //EDGE 서버
+      else {
+        //EDGE서버-table1 주문
+        http.begin(client1, "http://192.168.133.99:4400/get/order");
+        int httpCode = http.GET();
+        String payload1;
+        String key;
+        if (httpCode > 0) {
+          payload1 = http.getString();
+          StaticJsonDocument<200> doc1[0];
+          DeserializationError error = deserializeJson(doc1[0], payload1);
+          if (!error) {
+            if (doc1[0].containsKey("table_id")) {
+              int table_id = doc1[0]["table_id"].as<int>();
+              if (table_id == 1) {
+                // table_id = 1인 경우
+                if (doc1[0].containsKey("menu")) {
+                  String menu = doc1[0]["menu"].as<String>();
+		              display.drawString(20,11,menu);
+                  if (doc1[0].containsKey("amount")) {
+                    int amount = doc1[0]["amount"].as<int>();                  		  
+                    display.drawString(65, 11, String(amount)); 
+                  }
+                }
+              }
+            }
+            Serial.println(payload1);
+          }
+          
+        }
+        http.end();
+        //EDGE서버-table1 직원호출
+        http.begin(client1, "http://192.168.133.99:4400/get/call");
+        httpCode = http.GET();
+        String payload2;
+        if (httpCode > 0) {
+          payload2 = http.getString();
+          StaticJsonDocument<200> doc2[0];
+          DeserializationError error = deserializeJson(doc2[0], payload2);
+          if (!error) {
+            if (doc2[0].containsKey("table_id")) {
+              int table_id = doc2[0]["table_id"].as<int>();
+              if (table_id == 1) {
+                // table_id = 1인 경우
+                if (doc2[0].containsKey("call")) {
+                  String call = doc2[0]["call"].as<String>();
+                  Serial.println(call);
+		              display.drawString(20,22,"Call : ");
+                  display.drawString(65,22, call);
+                  display.display();
+                  
+                  
+                }
+              }
+            }
+            Serial.println(payload2);
+          }  
+        }
+        http.end();
+        if (pressed == true) {
+          http.begin(client1, "http://192.168.133.99:4400/clear");
+          Serial.println("skh");
+          httpCode = http.GET();
+          http.end();
+          pressed = false;
+        }
+      } 
       // http통신 종료
       http.end();
       delay(1500);
@@ -190,18 +256,17 @@ void loop() {
     else if (encoderValue > 9 && encoderValue < 20)
     {
       display.clear();
-      display.drawString(35, 00, content);
-      display.drawString(20, 11, "Request : ");      
+      display.drawString(35, 00, content);     
       // HTTP GET 요청 보내기
       http.begin(client1, "http://3.216.219.9:4400/api/orders/detail?table_id=2");
-      int httpCode = http.GET();
+      //int httpCode = http.GET();
       String payload;
       String key;
-      int value;
-      if (httpCode > 0) {
+      if (0) {
         payload = http.getString();
         StaticJsonDocument<200> doc;
         DeserializationError error = deserializeJson(doc, payload);
+        display.drawString(20, 11, "Request : "); 
         if (!error) {
           if (doc.containsKey("call")) {
             bool call = doc["call"].as<bool>();
@@ -228,7 +293,71 @@ void loop() {
         }
       Serial.println(payload);
       }
-
+      //EDGE 서버
+      else {
+        //EDGE서버-table2 주문
+        http.begin(client1, "http://192.168.133.99:4400/get/order");
+        int httpCode = http.GET();
+        String payload1;
+        String key;
+        if (httpCode > 0) {
+          payload1 = http.getString();
+          StaticJsonDocument<200> doc1[0];
+          DeserializationError error = deserializeJson(doc1[0], payload1);
+          if (!error) {
+            if (doc1[0].containsKey("table_id")) {
+              int table_id = doc1[0]["table_id"].as<int>();
+              if (table_id == 2) {
+                // table_id = 2인 경우
+                if (doc1[0].containsKey("menu")) {
+                  String menu = doc1[0]["menu"].as<String>();
+		              display.drawString(20,11,menu);
+                  if (doc1[0].containsKey("amount")) {
+                    int amount = doc1[0]["amount"].as<int>();                  		  
+                    display.drawString(65, 11, String(amount));
+                    
+                  }
+                }
+              }
+            }
+            Serial.println(payload1);
+          }
+          
+        }
+        http.end();
+        //EDGE서버-table2 직원호출
+        http.begin(client1, "http://192.168.133.99:4400/get/call");
+        httpCode = http.GET();
+        String payload2;
+        if (httpCode > 0) {
+          payload2 = http.getString();
+          StaticJsonDocument<200> doc2[0];
+          DeserializationError error = deserializeJson(doc2[0], payload2);
+          if (!error) {
+            if (doc2[0].containsKey("table_id")) {
+              int table_id = doc2[0]["table_id"].as<int>();
+              if (table_id == 2) {
+                // table_id = 2인 경우
+                if (doc2[0][0].containsKey("call")) {
+                  String call = doc2[0][0]["call"].as<String>();
+                  Serial.println(call);
+		              display.drawString(20,22,"Call : ");
+                  display.drawString(65,22, call);
+                  display.display();             
+                }
+              }
+            }
+            Serial.println(payload2);
+          }  
+        }
+        if (pressed == true) {
+          http.begin(client1, "http://192.168.133.99:4400/clear");
+          httpCode = http.GET();
+          http.end();
+          pressed = false;
+        }
+        
+      } 
       // http통신 종료
       http.end();
       delay(1500);
@@ -239,17 +368,16 @@ void loop() {
     {
       display.clear();
       display.drawString(35, 00, content);
-      display.drawString(20, 11, "Request : ");      
       // HTTP GET 요청 보내기
       http.begin(client1, "http://3.216.219.9:4400/api/orders/detail?table_id=3");
-      int httpCode = http.GET();
+      //int httpCode = http.GET();
       String payload;
       String key;
-      int value;
-      if (httpCode > 0) {
+      if (0) {
         payload = http.getString();
         StaticJsonDocument<200> doc;
         DeserializationError error = deserializeJson(doc, payload);
+        display.drawString(20, 11, "Request : ");      
         if (!error) {
           if (doc.containsKey("call")) {
             bool call = doc["call"].as<bool>();
@@ -258,6 +386,7 @@ void loop() {
               if (doc.containsKey("content")) {
                 String content = doc["content"].as<String>();
                 display.drawString(65, 11, content);
+                display.display();
               }
             } 
             else {
@@ -269,6 +398,7 @@ void loop() {
                   int amount = doc["amount"].as<int>();
                   display.drawString(20, 22, "Amount : ");
                   display.drawString(65, 22, String(amount));
+                  display.display();
                 }
               }
             }
@@ -276,7 +406,72 @@ void loop() {
         }
       Serial.println(payload);
       }
-
+      //EDGE 서버
+      else {
+        //EDGE서버-table3 주문
+        http.begin(client1, "http://192.168.133.99:4400/get/order");
+        int httpCode = http.GET();
+        String payload1;
+        String key;
+        if (httpCode > 0) {
+          payload1 = http.getString();
+          StaticJsonDocument<200> doc1[0];
+          DeserializationError error = deserializeJson(doc1[0], payload1);
+          if (!error) {
+            if (doc1[0].containsKey("table_id")) {
+              int table_id = doc1[0]["table_id"].as<int>();
+              if (table_id == 3) {
+                // table_id = 3인 경우
+                if (doc1[0].containsKey("menu")) {
+                  String menu = doc1[0]["menu"].as<String>();
+		              display.drawString(20,11,menu);
+                  if (doc1[0].containsKey("amount")) {
+                    int amount = doc1[0]["amount"].as<int>();                  		  
+                    display.drawString(65, 11, String(amount));
+                  }
+                }
+              }
+            }
+          
+            Serial.println(payload1);
+          }
+          
+        }
+        http.end();
+        //EDGE서버-table3 직원호출
+        http.begin(client1, "http://192.168.133.99:4400/get/call");
+        httpCode = http.GET();
+        String payload2;
+        if (httpCode > 0) {
+          payload2 = http.getString();
+          StaticJsonDocument<200> doc2[0];
+          DeserializationError error = deserializeJson(doc2[0], payload2);
+          if (!error) {
+            if (doc2[0].containsKey("table_id")) {
+              int table_id = doc2[0]["table_id"].as<int>();
+              if (table_id == 3) {
+                // table_id = 3인 경우
+                if (doc2[0].containsKey("call")) {
+                  String call = doc2[0]["call"].as<String>();
+                  Serial.println(call);
+		              display.drawString(20,22,"Call : ");
+                  display.drawString(65,22, call);
+                  display.display();
+                  
+                }
+              }
+            }
+          }
+          Serial.println(payload2);
+        }  
+        
+        if (pressed == true) {
+          http.begin(client1, "http://192.168.133.99:4400/clear");
+          httpCode = http.GET();
+          http.end();
+          pressed = false;
+        }
+      } 
       // http통신 종료
       http.end();
       delay(1500);
