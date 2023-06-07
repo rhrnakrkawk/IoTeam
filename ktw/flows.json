@@ -11,48 +11,47 @@
         "id": "dba58d111680b812",
         "type": "group",
         "z": "e5c7a484a1e3febd",
+        "g": "77415dee6b28efb4",
         "name": "메뉴 정보 입력",
         "style": {
             "label": true
         },
         "nodes": [
-            "23af3b20e7284b11",
             "1db978b1e77bc12a",
             "5788997105433b26",
-            "f22019cf3cc280af",
-            "eab43fb8a5400113",
             "0bbcfdff74398aba",
             "41bf5bc8a678964e",
             "200c346c2df1e4cd"
         ],
-        "x": 554,
-        "y": 859,
-        "w": 672,
-        "h": 202
+        "x": 674,
+        "y": 799,
+        "w": 512,
+        "h": 142
     },
     {
         "id": "3f52daf441c86b62",
         "type": "group",
         "z": "e5c7a484a1e3febd",
+        "g": "77415dee6b28efb4",
         "name": "메뉴 제거",
         "style": {
             "label": true
         },
         "nodes": [
             "1ab9afabfd591bf8",
-            "6a282048c09ac97d",
             "db68cff7b79c1715",
             "22ed5e7c13f60f61"
         ],
-        "x": 594,
-        "y": 759,
-        "w": 632,
+        "x": 714,
+        "y": 699,
+        "w": 472,
         "h": 82
     },
     {
         "id": "41935cb7dffe9ba1",
         "type": "group",
         "z": "e5c7a484a1e3febd",
+        "g": "a171f922b5e0f533",
         "name": "인기메뉴",
         "style": {
             "label": true
@@ -61,18 +60,18 @@
             "62aa03311ee25f9d",
             "4eed908237b63728",
             "b50cb54c69d66d17",
-            "346746df0ecfd615",
-            "9b4c5fb207f3a0e6"
+            "346746df0ecfd615"
         ],
-        "x": 1234,
-        "y": 959,
+        "x": 1254,
+        "y": 839,
         "w": 672,
-        "h": 142
+        "h": 82
     },
     {
         "id": "606430c463b74780",
         "type": "group",
         "z": "e5c7a484a1e3febd",
+        "g": "a171f922b5e0f533",
         "name": "음식 총 주문 횟수",
         "style": {
             "label": true
@@ -80,20 +79,19 @@
         "nodes": [
             "d18cb61355d8347c",
             "f36ee54f94e00646",
-            "aa18f2f284bd06ae",
             "dc05a246598b8d87",
-            "c14085f16396c0a7",
-            "59d63d1c4e3e42ac"
+            "c14085f16396c0a7"
         ],
         "x": 1254,
-        "y": 819,
+        "y": 739,
         "w": 692,
-        "h": 122
+        "h": 82
     },
     {
         "id": "5550bad1bc97dcff",
         "type": "group",
         "z": "e5c7a484a1e3febd",
+        "g": "a171f922b5e0f533",
         "name": "재고 확인",
         "style": {
             "label": true
@@ -102,33 +100,12 @@
             "034e70dead263943",
             "abfd7d6bd4522f89",
             "a2d0492e2769b6f7",
-            "6a2f834f33117619",
             "58bf5739784bd0b3",
             "63ce68811c8210f6",
             "b9708b0bb7c45060"
         ],
-        "x": 1234,
-        "y": 339,
-        "w": 712,
-        "h": 162
-    },
-    {
-        "id": "cf5ad31e392515bd",
-        "type": "group",
-        "z": "e5c7a484a1e3febd",
-        "name": "일간 매출 확인",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "b9d446f5fd553743",
-            "3df6785a77f4aa34",
-            "773a1e93c9f0713b",
-            "fe2194066e71bd61",
-            "a5ddf3ee11bd65c6"
-        ],
-        "x": 1234,
-        "y": 539,
+        "x": 1254,
+        "y": 379,
         "w": 692,
         "h": 122
     },
@@ -136,43 +113,25 @@
         "id": "813fef19d4b33f9a",
         "type": "group",
         "z": "e5c7a484a1e3febd",
+        "g": "77415dee6b28efb4",
         "name": "재고 생성",
         "style": {
             "label": true
         },
         "nodes": [
             "e016721541b5bd79",
-            "8da251f48c7125cd",
             "dfc1842d60f88381"
         ],
-        "x": 714,
-        "y": 239,
-        "w": 492,
+        "x": 854,
+        "y": 379,
+        "w": 332,
         "h": 82
-    },
-    {
-        "id": "ea69cdaf98e8959c",
-        "type": "group",
-        "z": "e5c7a484a1e3febd",
-        "name": "재고 변경",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "d39bdbed3d1d825e",
-            "5455fa266fe68c47",
-            "422660fcc9d40bd0",
-            "18a28b06d5b39b61"
-        ],
-        "x": 694,
-        "y": 359,
-        "w": 512,
-        "h": 122
     },
     {
         "id": "b914c2e202dfe3ea",
         "type": "group",
         "z": "e5c7a484a1e3febd",
+        "g": "77415dee6b28efb4",
         "name": "재고 삭제",
         "style": {
             "label": true
@@ -184,8 +143,8 @@
             "f32e20d227ec17c5",
             "0ee3860127c8064d"
         ],
-        "x": 394,
-        "y": 499,
+        "x": 374,
+        "y": 579,
         "w": 812,
         "h": 82
     },
@@ -193,6 +152,7 @@
         "id": "fd40b517740262fc",
         "type": "group",
         "z": "e5c7a484a1e3febd",
+        "g": "a171f922b5e0f533",
         "name": "일간 방문자 수 확인",
         "style": {
             "label": true
@@ -201,18 +161,18 @@
             "02dd5dbd1d65a8cf",
             "312c2177bfa1d148",
             "2eee0117e3353972",
-            "22c3bbe670c37e3b",
             "0ceb3f155ce83ba2"
         ],
-        "x": 1234,
-        "y": 679,
+        "x": 1254,
+        "y": 639,
         "w": 712,
-        "h": 122
+        "h": 82
     },
     {
         "id": "84e4ff3ba80be503",
         "type": "group",
         "z": "e5c7a484a1e3febd",
+        "g": "a171f922b5e0f533",
         "name": "현재 테이블 현황",
         "style": {
             "label": true
@@ -224,8 +184,8 @@
             "4f1e7d184ea1b30e",
             "35cf7b9055a311d3"
         ],
-        "x": 1234,
-        "y": 1259,
+        "x": 1254,
+        "y": 1079,
         "w": 932,
         "h": 82
     },
@@ -233,6 +193,7 @@
         "id": "7dd2205a9d24fcf3",
         "type": "group",
         "z": "e5c7a484a1e3febd",
+        "g": "a171f922b5e0f533",
         "name": "사장의 픽",
         "style": {
             "label": true
@@ -243,8 +204,8 @@
             "d2e4f219c01669b7",
             "6ddec9c3cd317728"
         ],
-        "x": 1234,
-        "y": 1139,
+        "x": 1254,
+        "y": 979,
         "w": 692,
         "h": 82
     },
@@ -252,6 +213,7 @@
         "id": "570c50c3e1ea1db9",
         "type": "group",
         "z": "e5c7a484a1e3febd",
+        "g": "77415dee6b28efb4",
         "name": "사장 픽 변경",
         "style": {
             "label": true
@@ -264,10 +226,92 @@
             "ba0b84767a34dda1",
             "aa5d1595e0b1c6e8"
         ],
-        "x": 634,
-        "y": 1119,
+        "x": 674,
+        "y": 959,
         "w": 512,
         "h": 122
+    },
+    {
+        "id": "ea69cdaf98e8959c",
+        "type": "group",
+        "z": "e5c7a484a1e3febd",
+        "g": "77415dee6b28efb4",
+        "name": "재고 변경",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "d39bdbed3d1d825e",
+            "5455fa266fe68c47",
+            "18a28b06d5b39b61"
+        ],
+        "x": 674,
+        "y": 479,
+        "w": 512,
+        "h": 82
+    },
+    {
+        "id": "cf5ad31e392515bd",
+        "type": "group",
+        "z": "e5c7a484a1e3febd",
+        "g": "a171f922b5e0f533",
+        "name": "일간 매출 확인",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "b9d446f5fd553743",
+            "3df6785a77f4aa34",
+            "773a1e93c9f0713b",
+            "fe2194066e71bd61"
+        ],
+        "x": 1254,
+        "y": 539,
+        "w": 692,
+        "h": 82
+    },
+    {
+        "id": "77415dee6b28efb4",
+        "type": "group",
+        "z": "e5c7a484a1e3febd",
+        "name": "설정 변경",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "dba58d111680b812",
+            "3f52daf441c86b62",
+            "813fef19d4b33f9a",
+            "b914c2e202dfe3ea",
+            "570c50c3e1ea1db9",
+            "ea69cdaf98e8959c"
+        ],
+        "x": 348,
+        "y": 353,
+        "w": 864,
+        "h": 754
+    },
+    {
+        "id": "a171f922b5e0f533",
+        "type": "group",
+        "z": "e5c7a484a1e3febd",
+        "name": "현황 출력",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "41935cb7dffe9ba1",
+            "606430c463b74780",
+            "5550bad1bc97dcff",
+            "fd40b517740262fc",
+            "84e4ff3ba80be503",
+            "7dd2205a9d24fcf3",
+            "cf5ad31e392515bd"
+        ],
+        "x": 1228,
+        "y": 353,
+        "w": 984,
+        "h": 834
     },
     {
         "id": "d18cb61355d8347c",
@@ -292,7 +336,7 @@
         "payload": "{\"count\":2,\"foodList\":{\"pizza\":{\"totalCount\":5,\"Price\":10000,\"Ingredient\":{\"cheese\":10,\"dough\":1,\"sauce\":10}},\"pasta\":{\"totalCount\":3,\"Price\":8000,\"Ingredient\":{\"cheese\":5,\"noodle\":100,\"sauce\":20}}}}",
         "payloadType": "json",
         "x": 1350,
-        "y": 860,
+        "y": 780,
         "wires": [
             [
                 "dc05a246598b8d87"
@@ -339,7 +383,7 @@
         "useDifferentColor": false,
         "className": "",
         "x": 1840,
-        "y": 860,
+        "y": 780,
         "wires": [
             []
         ]
@@ -356,30 +400,13 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1680,
-        "y": 1000,
+        "x": 1700,
+        "y": 880,
         "wires": [
             [
                 "4eed908237b63728"
             ]
         ]
-    },
-    {
-        "id": "aa18f2f284bd06ae",
-        "type": "debug",
-        "z": "e5c7a484a1e3febd",
-        "g": "606430c463b74780",
-        "name": "debug 31",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1660,
-        "y": 900,
-        "wires": []
     },
     {
         "id": "4eed908237b63728",
@@ -395,26 +422,8 @@
         "format": "{{msg.payload}}",
         "layout": "row-left",
         "className": "",
-        "x": 1820,
-        "y": 1000,
-        "wires": []
-    },
-    {
-        "id": "23af3b20e7284b11",
-        "type": "debug",
-        "z": "e5c7a484a1e3febd",
-        "g": "dba58d111680b812",
-        "name": "S/F",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1130,
-        "y": 960,
+        "x": 1840,
+        "y": 880,
         "wires": []
     },
     {
@@ -429,11 +438,10 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 780,
-        "y": 960,
+        "x": 900,
+        "y": 840,
         "wires": [
             [
-                "eab43fb8a5400113",
                 "200c346c2df1e4cd"
             ],
             [
@@ -487,8 +495,8 @@
         "topicType": "str",
         "splitLayout": "",
         "className": "",
-        "x": 640,
-        "y": 960,
+        "x": 760,
+        "y": 840,
         "wires": [
             [
                 "1db978b1e77bc12a"
@@ -512,12 +520,11 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 1510,
-        "y": 1000,
+        "x": 1530,
+        "y": 880,
         "wires": [
             [
-                "62aa03311ee25f9d",
-                "9b4c5fb207f3a0e6"
+                "62aa03311ee25f9d"
             ]
         ]
     },
@@ -543,31 +550,13 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 1350,
-        "y": 1000,
+        "x": 1370,
+        "y": 880,
         "wires": [
             [
                 "b50cb54c69d66d17"
             ]
         ]
-    },
-    {
-        "id": "f22019cf3cc280af",
-        "type": "debug",
-        "z": "e5c7a484a1e3febd",
-        "g": "dba58d111680b812",
-        "name": "S/F",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1110,
-        "y": 1020,
-        "wires": []
     },
     {
         "id": "dc05a246598b8d87",
@@ -587,11 +576,10 @@
         "senderr": false,
         "headers": [],
         "x": 1490,
-        "y": 860,
+        "y": 780,
         "wires": [
             [
-                "c14085f16396c0a7",
-                "aa18f2f284bd06ae"
+                "c14085f16396c0a7"
             ]
         ]
     },
@@ -608,47 +596,12 @@
         "finalize": "",
         "libs": [],
         "x": 1660,
-        "y": 860,
+        "y": 780,
         "wires": [
             [
-                "59d63d1c4e3e42ac",
                 "f36ee54f94e00646"
             ]
         ]
-    },
-    {
-        "id": "59d63d1c4e3e42ac",
-        "type": "debug",
-        "z": "e5c7a484a1e3febd",
-        "g": "606430c463b74780",
-        "name": "debug 33",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1820,
-        "y": 900,
-        "wires": []
-    },
-    {
-        "id": "eab43fb8a5400113",
-        "type": "debug",
-        "z": "e5c7a484a1e3febd",
-        "g": "dba58d111680b812",
-        "name": "debug 34",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 980,
-        "y": 900,
-        "wires": []
     },
     {
         "id": "0bbcfdff74398aba",
@@ -667,12 +620,10 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 950,
-        "y": 1020,
+        "x": 1090,
+        "y": 900,
         "wires": [
-            [
-                "f22019cf3cc280af"
-            ]
+            []
         ]
     },
     {
@@ -687,8 +638,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 780,
-        "y": 1020,
+        "x": 900,
+        "y": 900,
         "wires": [
             [
                 "0bbcfdff74398aba"
@@ -725,31 +676,13 @@
         "topicType": "msg",
         "splitLayout": "",
         "className": "",
-        "x": 680,
-        "y": 800,
+        "x": 800,
+        "y": 740,
         "wires": [
             [
                 "db68cff7b79c1715"
             ]
         ]
-    },
-    {
-        "id": "6a282048c09ac97d",
-        "type": "debug",
-        "z": "e5c7a484a1e3febd",
-        "g": "3f52daf441c86b62",
-        "name": "debug 37",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1120,
-        "y": 800,
-        "wires": []
     },
     {
         "id": "db68cff7b79c1715",
@@ -763,8 +696,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 820,
-        "y": 800,
+        "x": 940,
+        "y": 740,
         "wires": [
             [
                 "22ed5e7c13f60f61"
@@ -788,31 +721,13 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 970,
-        "y": 960,
+        "x": 1090,
+        "y": 840,
         "wires": [
             [
-                "23af3b20e7284b11",
                 "dc05a246598b8d87"
             ]
         ]
-    },
-    {
-        "id": "9b4c5fb207f3a0e6",
-        "type": "debug",
-        "z": "e5c7a484a1e3febd",
-        "g": "41935cb7dffe9ba1",
-        "name": "debug 41",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1680,
-        "y": 1060,
-        "wires": []
     },
     {
         "id": "034e70dead263943",
@@ -836,8 +751,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 1350,
-        "y": 420,
+        "x": 1370,
+        "y": 440,
         "wires": [
             [
                 "abfd7d6bd4522f89"
@@ -861,12 +776,11 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 1510,
-        "y": 420,
+        "x": 1530,
+        "y": 440,
         "wires": [
             [
                 "a2d0492e2769b6f7",
-                "6a2f834f33117619",
                 "63ce68811c8210f6"
             ]
         ]
@@ -883,30 +797,13 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1690,
+        "x": 1710,
         "y": 420,
         "wires": [
             [
                 "58bf5739784bd0b3"
             ]
         ]
-    },
-    {
-        "id": "6a2f834f33117619",
-        "type": "debug",
-        "z": "e5c7a484a1e3febd",
-        "g": "5550bad1bc97dcff",
-        "name": "debug 43",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1680,
-        "y": 380,
-        "wires": []
     },
     {
         "id": "58bf5739784bd0b3",
@@ -970,153 +867,13 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 970,
-        "y": 800,
+        "x": 1090,
+        "y": 740,
         "wires": [
             [
-                "6a282048c09ac97d",
                 "dc05a246598b8d87"
             ]
         ]
-    },
-    {
-        "id": "b9d446f5fd553743",
-        "type": "inject",
-        "z": "e5c7a484a1e3febd",
-        "g": "cf5ad31e392515bd",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "60",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 1350,
-        "y": 620,
-        "wires": [
-            [
-                "3df6785a77f4aa34"
-            ]
-        ]
-    },
-    {
-        "id": "3df6785a77f4aa34",
-        "type": "http request",
-        "z": "e5c7a484a1e3febd",
-        "g": "cf5ad31e392515bd",
-        "name": "",
-        "method": "GET",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "http://3.216.219.9:4400/api/admin/sales/daily",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 1510,
-        "y": 620,
-        "wires": [
-            [
-                "773a1e93c9f0713b"
-            ]
-        ]
-    },
-    {
-        "id": "773a1e93c9f0713b",
-        "type": "function",
-        "z": "e5c7a484a1e3febd",
-        "g": "cf5ad31e392515bd",
-        "name": "function 16",
-        "func": "if (typeof msg.payload === 'string')\n    msg.payload = JSON.parse(msg.payload);\n\n\nlet dbData = msg.payload;\n\nlet arrData = Object.keys(dbData);\nlet YearMonth = arrData[0].split('-')[0] + '-'+ arrData[0].split('-')[1];\nlet sales = {};\nsales.series = [];\nsales.data = [];\nsales.labels = [\n    `${YearMonth}`\n];\n\n    \nfor(let i = 0; i < arrData.length; i++){\n    sales.series.push(arrData[i].split('-')[2]);\n    sales.data.push([dbData[arrData[i]]]);\n}\n\nmsg.payload = [sales];\n// let cnt = dbData.total;\n// const stockList = dbData[\"sales_list\"];\n// let sales = {};\n// sales.series = []\n// sales.data = []\n// sales.labels = [\n//     'SALES'\n// ]\n\n// for (let i = 0; i < cnt; i++) {\n//     sales.series.push(stockList[i][\"name\"]);\n//     sales.data.push([stockList[i][\"amount\"]]);\n// }\n\n\n// //msg.payload = stockList;\n// msg.payload = [sales];\n\nreturn msg;\n\n\n\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1670,
-        "y": 620,
-        "wires": [
-            [
-                "a5ddf3ee11bd65c6",
-                "fe2194066e71bd61"
-            ]
-        ]
-    },
-    {
-        "id": "fe2194066e71bd61",
-        "type": "ui_chart",
-        "z": "e5c7a484a1e3febd",
-        "g": "cf5ad31e392515bd",
-        "name": "",
-        "group": "fe74f1ecc84760fe",
-        "order": 4,
-        "width": "10",
-        "height": "5",
-        "label": "일간매출",
-        "chartType": "bar",
-        "legend": "true",
-        "xformat": "HH:mm:ss",
-        "interpolate": "linear",
-        "nodata": "",
-        "dot": false,
-        "ymin": "0",
-        "ymax": "",
-        "removeOlder": 1,
-        "removeOlderPoints": "",
-        "removeOlderUnit": "3600",
-        "cutout": 0,
-        "useOneColor": false,
-        "useUTC": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "outputs": 1,
-        "useDifferentColor": false,
-        "className": "",
-        "x": 1840,
-        "y": 620,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "a5ddf3ee11bd65c6",
-        "type": "debug",
-        "z": "e5c7a484a1e3febd",
-        "g": "cf5ad31e392515bd",
-        "name": "debug 47",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1820,
-        "y": 580,
-        "wires": []
     },
     {
         "id": "e016721541b5bd79",
@@ -1164,30 +921,13 @@
         "topicType": "str",
         "splitLayout": "",
         "className": "",
-        "x": 800,
-        "y": 280,
+        "x": 940,
+        "y": 420,
         "wires": [
             [
                 "dfc1842d60f88381"
             ]
         ]
-    },
-    {
-        "id": "8da251f48c7125cd",
-        "type": "debug",
-        "z": "e5c7a484a1e3febd",
-        "g": "813fef19d4b33f9a",
-        "name": "debug 48",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1100,
-        "y": 280,
-        "wires": []
     },
     {
         "id": "dfc1842d60f88381",
@@ -1206,126 +946,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 950,
-        "y": 280,
-        "wires": [
-            [
-                "8da251f48c7125cd",
-                "abfd7d6bd4522f89"
-            ]
-        ]
-    },
-    {
-        "id": "d39bdbed3d1d825e",
-        "type": "ui_form",
-        "z": "e5c7a484a1e3febd",
-        "g": "ea69cdaf98e8959c",
-        "name": "",
-        "label": "재고 변경",
-        "group": "3610e521ef61d15b",
-        "order": 3,
-        "width": "10",
-        "height": "5",
-        "options": [
-            {
-                "label": "Stock",
-                "value": "name",
-                "type": "text",
-                "required": true,
-                "rows": null
-            },
-            {
-                "label": "Price",
-                "value": "price",
-                "type": "number",
-                "required": true,
-                "rows": null
-            },
-            {
-                "label": "Amount",
-                "value": "amount",
-                "type": "number",
-                "required": true,
-                "rows": null
-            }
-        ],
-        "formValue": {
-            "name": "",
-            "price": "",
-            "amount": ""
-        },
-        "payload": "",
-        "submit": "submit",
-        "cancel": "cancel",
-        "topic": "topic",
-        "topicType": "str",
-        "splitLayout": "",
-        "className": "",
-        "x": 780,
-        "y": 440,
-        "wires": [
-            [
-                "5455fa266fe68c47"
-            ]
-        ]
-    },
-    {
-        "id": "5455fa266fe68c47",
-        "type": "function",
-        "z": "e5c7a484a1e3febd",
-        "g": "ea69cdaf98e8959c",
-        "name": "function 17",
-        "func": "let data ={};\n\ndata.name = msg.payload.name;\n\ndata.price = msg.payload.price;\ndata.amount = msg.payload.amount;\ndata.stock_name = msg.payload.name;\nmsg.payload = data;\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 930,
-        "y": 440,
-        "wires": [
-            [
-                "422660fcc9d40bd0",
-                "18a28b06d5b39b61"
-            ]
-        ]
-    },
-    {
-        "id": "422660fcc9d40bd0",
-        "type": "debug",
-        "z": "e5c7a484a1e3febd",
-        "g": "ea69cdaf98e8959c",
-        "name": "debug 49",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1100,
-        "y": 400,
-        "wires": []
-    },
-    {
-        "id": "18a28b06d5b39b61",
-        "type": "http request",
-        "z": "e5c7a484a1e3febd",
-        "g": "ea69cdaf98e8959c",
-        "name": "",
-        "method": "PUT",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "http://3.216.219.9:4400/api/stocks/update",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 1110,
-        "y": 440,
+        "x": 1090,
+        "y": 420,
         "wires": [
             [
                 "abfd7d6bd4522f89"
@@ -1362,8 +984,8 @@
         "topicType": "msg",
         "splitLayout": "",
         "className": "",
-        "x": 480,
-        "y": 540,
+        "x": 460,
+        "y": 620,
         "wires": [
             [
                 "3fca24db7853ce79"
@@ -1382,8 +1004,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 630,
-        "y": 540,
+        "x": 610,
+        "y": 620,
         "wires": [
             [
                 "6d8ff06c105ad113"
@@ -1407,8 +1029,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 790,
-        "y": 540,
+        "x": 770,
+        "y": 620,
         "wires": [
             [
                 "f32e20d227ec17c5"
@@ -1427,8 +1049,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 950,
-        "y": 540,
+        "x": 930,
+        "y": 620,
         "wires": [
             [
                 "0ee3860127c8064d"
@@ -1452,8 +1074,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 1110,
-        "y": 540,
+        "x": 1090,
+        "y": 620,
         "wires": [
             [
                 "abfd7d6bd4522f89"
@@ -1472,7 +1094,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1690,
+        "x": 1710,
         "y": 460,
         "wires": [
             [
@@ -1520,8 +1142,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 1350,
-        "y": 760,
+        "x": 1370,
+        "y": 680,
         "wires": [
             [
                 "312c2177bfa1d148"
@@ -1545,8 +1167,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 1510,
-        "y": 760,
+        "x": 1530,
+        "y": 680,
         "wires": [
             [
                 "2eee0117e3353972"
@@ -1565,31 +1187,13 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1670,
-        "y": 760,
+        "x": 1690,
+        "y": 680,
         "wires": [
             [
-                "22c3bbe670c37e3b",
                 "0ceb3f155ce83ba2"
             ]
         ]
-    },
-    {
-        "id": "22c3bbe670c37e3b",
-        "type": "debug",
-        "z": "e5c7a484a1e3febd",
-        "g": "fd40b517740262fc",
-        "name": "debug 52",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1820,
-        "y": 720,
-        "wires": []
     },
     {
         "id": "0ceb3f155ce83ba2",
@@ -1630,8 +1234,8 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 1840,
-        "y": 760,
+        "x": 1860,
+        "y": 680,
         "wires": [
             []
         ]
@@ -1658,8 +1262,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 1350,
-        "y": 1300,
+        "x": 1370,
+        "y": 1120,
         "wires": [
             [
                 "ffe746234416dd3a"
@@ -1683,8 +1287,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 1510,
-        "y": 1300,
+        "x": 1530,
+        "y": 1120,
         "wires": [
             [
                 "2f1593a27ac58605"
@@ -1703,8 +1307,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1690,
-        "y": 1300,
+        "x": 1710,
+        "y": 1120,
         "wires": [
             [
                 "4f1e7d184ea1b30e"
@@ -1723,8 +1327,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1890,
-        "y": 1300,
+        "x": 1910,
+        "y": 1120,
         "wires": [
             [
                 "35cf7b9055a311d3"
@@ -1770,8 +1374,8 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 2070,
-        "y": 1300,
+        "x": 2090,
+        "y": 1120,
         "wires": [
             []
         ]
@@ -1806,8 +1410,8 @@
         "topicType": "str",
         "splitLayout": "",
         "className": "",
-        "x": 740,
-        "y": 1160,
+        "x": 780,
+        "y": 1000,
         "wires": [
             [
                 "dae5ccfaac8de4c2"
@@ -1831,8 +1435,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 1050,
-        "y": 1160,
+        "x": 1090,
+        "y": 1000,
         "wires": [
             [
                 "7c4d366e0789aa94"
@@ -1851,8 +1455,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 890,
-        "y": 1160,
+        "x": 930,
+        "y": 1000,
         "wires": [
             [
                 "4781bfe92223ae96"
@@ -1889,8 +1493,8 @@
         "topicType": "str",
         "splitLayout": "",
         "className": "",
-        "x": 730,
-        "y": 1200,
+        "x": 770,
+        "y": 1040,
         "wires": [
             [
                 "ba0b84767a34dda1"
@@ -1909,8 +1513,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 890,
-        "y": 1200,
+        "x": 930,
+        "y": 1040,
         "wires": [
             [
                 "aa5d1595e0b1c6e8"
@@ -1934,8 +1538,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 1050,
-        "y": 1200,
+        "x": 1090,
+        "y": 1040,
         "wires": [
             [
                 "7c4d366e0789aa94"
@@ -1964,8 +1568,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 1350,
-        "y": 1180,
+        "x": 1370,
+        "y": 1020,
         "wires": [
             [
                 "7c4d366e0789aa94"
@@ -1989,8 +1593,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 1510,
-        "y": 1180,
+        "x": 1530,
+        "y": 1020,
         "wires": [
             [
                 "d2e4f219c01669b7"
@@ -2009,8 +1613,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1670,
-        "y": 1180,
+        "x": 1690,
+        "y": 1020,
         "wires": [
             [
                 "6ddec9c3cd317728"
@@ -2031,9 +1635,228 @@
         "format": "{{msg.payload}}",
         "layout": "row-left",
         "className": "",
-        "x": 1840,
-        "y": 1180,
+        "x": 1860,
+        "y": 1020,
         "wires": []
+    },
+    {
+        "id": "d39bdbed3d1d825e",
+        "type": "ui_form",
+        "z": "e5c7a484a1e3febd",
+        "g": "ea69cdaf98e8959c",
+        "name": "",
+        "label": "재고 변경",
+        "group": "3610e521ef61d15b",
+        "order": 3,
+        "width": "10",
+        "height": "5",
+        "options": [
+            {
+                "label": "Stock",
+                "value": "name",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Price",
+                "value": "price",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Amount",
+                "value": "amount",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "name": "",
+            "price": "",
+            "amount": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "topic",
+        "topicType": "str",
+        "splitLayout": "",
+        "className": "",
+        "x": 760,
+        "y": 520,
+        "wires": [
+            [
+                "5455fa266fe68c47"
+            ]
+        ]
+    },
+    {
+        "id": "5455fa266fe68c47",
+        "type": "function",
+        "z": "e5c7a484a1e3febd",
+        "g": "ea69cdaf98e8959c",
+        "name": "function 17",
+        "func": "let data ={};\n\ndata.name = msg.payload.name;\n\ndata.price = msg.payload.price;\ndata.amount = msg.payload.amount;\ndata.stock_name = msg.payload.name;\nmsg.payload = data;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 520,
+        "wires": [
+            [
+                "18a28b06d5b39b61"
+            ]
+        ]
+    },
+    {
+        "id": "18a28b06d5b39b61",
+        "type": "http request",
+        "z": "e5c7a484a1e3febd",
+        "g": "ea69cdaf98e8959c",
+        "name": "",
+        "method": "PUT",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://3.216.219.9:4400/api/stocks/update",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1090,
+        "y": 520,
+        "wires": [
+            [
+                "abfd7d6bd4522f89"
+            ]
+        ]
+    },
+    {
+        "id": "b9d446f5fd553743",
+        "type": "inject",
+        "z": "e5c7a484a1e3febd",
+        "g": "cf5ad31e392515bd",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1370,
+        "y": 580,
+        "wires": [
+            [
+                "3df6785a77f4aa34"
+            ]
+        ]
+    },
+    {
+        "id": "3df6785a77f4aa34",
+        "type": "http request",
+        "z": "e5c7a484a1e3febd",
+        "g": "cf5ad31e392515bd",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://3.216.219.9:4400/api/admin/sales/daily",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1530,
+        "y": 580,
+        "wires": [
+            [
+                "773a1e93c9f0713b"
+            ]
+        ]
+    },
+    {
+        "id": "773a1e93c9f0713b",
+        "type": "function",
+        "z": "e5c7a484a1e3febd",
+        "g": "cf5ad31e392515bd",
+        "name": "function 16",
+        "func": "if (typeof msg.payload === 'string')\n    msg.payload = JSON.parse(msg.payload);\n\n\nlet dbData = msg.payload;\n\nlet arrData = Object.keys(dbData);\nlet YearMonth = arrData[0].split('-')[0] + '-'+ arrData[0].split('-')[1];\nlet sales = {};\nsales.series = [];\nsales.data = [];\nsales.labels = [\n    `${YearMonth}`\n];\n\n    \nfor(let i = 0; i < arrData.length; i++){\n    sales.series.push(arrData[i].split('-')[2]);\n    sales.data.push([dbData[arrData[i]]]);\n}\n\nmsg.payload = [sales];\n// let cnt = dbData.total;\n// const stockList = dbData[\"sales_list\"];\n// let sales = {};\n// sales.series = []\n// sales.data = []\n// sales.labels = [\n//     'SALES'\n// ]\n\n// for (let i = 0; i < cnt; i++) {\n//     sales.series.push(stockList[i][\"name\"]);\n//     sales.data.push([stockList[i][\"amount\"]]);\n// }\n\n\n// //msg.payload = stockList;\n// msg.payload = [sales];\n\nreturn msg;\n\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1690,
+        "y": 580,
+        "wires": [
+            [
+                "fe2194066e71bd61"
+            ]
+        ]
+    },
+    {
+        "id": "fe2194066e71bd61",
+        "type": "ui_chart",
+        "z": "e5c7a484a1e3febd",
+        "g": "cf5ad31e392515bd",
+        "name": "",
+        "group": "fe74f1ecc84760fe",
+        "order": 4,
+        "width": "10",
+        "height": "5",
+        "label": "일간매출",
+        "chartType": "bar",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1860,
+        "y": 580,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "a66694e0efc5cab6",
